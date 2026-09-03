@@ -1,0 +1,14 @@
+{
+ "source_job": "432a6987-1221-4de7-8788-ff348ad0d46b",
+ "atempo": 1.12,
+ "dur_s": 200.87,
+ "target_s": 194.49,
+ "tolerance_pct": 5,
+ "lufs_measured": -13.4,
+ "lufs_target": -16,
+ "n_words_asr": 431,
+ "n_words_script": 424,
+ "wps": 2.111,
+ "whisper": "small int8 uk, beam 1",
+ "notes": "raw VO 224.96 s -> atempo 1.12 (D-15); loudness normalised to -16 LUFS at assembly"
+}

@@ -43,3 +43,9 @@ ts,provider,op,model,units,unit_cost_usd,cost_usd,cumulative_usd,label,note
 2026-09-03T17:16:21Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.8215,still_c61_r1,9:16 1k key frame
 2026-09-03T17:16:21Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.8415,still_c74_r1,9:16 1k key frame
 2026-09-03T17:16:21Z,higgsfield,tts,text2speech_v2/elevenlabs,6.0,0.01,0.06,0.9015,vo_full_rc1,2623 chars one piece; estimated 6 credits pending transactions check
+2026-09-03T17:28:38Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.9215,still_c04_regen,identity fix
+2026-09-03T17:28:38Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.9415,still_c11_regen,identity fix
+2026-09-03T17:28:38Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.9615,still_c12_regen,identity fix
+2026-09-03T17:28:38Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.9815,still_c13_regen,identity fix
+2026-09-03T17:28:38Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.0015,still_c16_regen,identity fix
+2026-09-03T17:28:38Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.0215,still_c17_regen,identity fix
