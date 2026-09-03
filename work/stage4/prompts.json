@@ -1,1 +1,57 @@
-{"_note": "Заполняется по мере генерации: ключ = имя стилла, значение = полный промпт + медиа-референсы + модель + job_id."}
+{
+ "refs": {
+  "heroine_hero": {
+   "model": "nano_banana_pro",
+   "aspect": "9:16",
+   "res": "1k",
+   "medias": [],
+   "prompt": "Photorealistic cinematic portrait, vertical 9:16. Ukrainian woman, age 51, oval face, soft cheekbones, warm brown eyes, natural dark-blond brows, dark-blond shoulder-length hair with honey strands tied in a low ponytail, thin lips with neutral lipstick. Cream silk blouse buttoned to the top, grey-beige silk scarf loosely around the neck. Subtle natural age lines near the eyes, two or three faint horizontal lines on the neck, soft chin. Calm observant expression, not smiling for the camera. Soft daylight from a window, neutral light-grey interior, 50mm lens, shallow depth of field, light film grain. No makeup gloss, no text, no letters, no logos, no watermark.",
+   "job_id": "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160350_c852d36e-7c52-41fc-a8ab-16b2a60c8fc9.png",
+   "round": 1
+  },
+  "product_hero": {
+   "model": "nano_banana_pro",
+   "aspect": "9:16",
+   "res": "1k",
+   "medias": [
+    "image_references: jar photo media 135ff634-aa0a-452d-b95f-4cc53c677c4c (work/stage2/product_photos/jar_drive_16sU0kEZdZ.jpg via raw.githubusercontent)"
+   ],
+   "prompt": "Photorealistic product still, vertical 9:16, of exactly the jar shown in the reference photo: matte lavender-purple frosted glass jar, low wide cylinder about 60mm wide and 45mm tall, brushed silver metal lid with a faint tiny white wordmark on its side that is not legible, tiny white label text on the glass that is blurred and not legible. The jar stands alone on a light wooden café table near a window, soft daylight, 50mm macro lens, shallow depth of field. Keep the exact colors and proportions of the reference jar. No other objects, no added text, no added logos, no watermark.",
+   "job_id": "b41b8270-3124-41e6-b2a3-c450d41a0879",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160351_b41b8270-3124-41e6-b2a3-c450d41a0879.png",
+   "round": 1
+  },
+  "colleague_ref": {
+   "model": "nano_banana_pro",
+   "aspect": "9:16",
+   "res": "1k",
+   "medias": [],
+   "prompt": "Photorealistic cinematic portrait, vertical 9:16. Ukrainian woman, age 32, slim, dark hair in a sleek low ponytail, minimal makeup, white office shirt. Polite, slightly pitying smile, glancing sideways. Office restroom with a large mirror, warm overhead light, 50mm lens, shallow depth of field, light film grain. No text, no letters, no logos, no watermark.",
+   "job_id": "04a929c6-db32-442a-8c76-887beae312a8",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160350_04a929c6-db32-442a-8c76-887beae312a8.png",
+   "round": 1
+  },
+  "marta_ref": {
+   "model": "nano_banana_pro",
+   "aspect": "9:16",
+   "res": "1k",
+   "medias": [],
+   "prompt": "Photorealistic cinematic portrait, vertical 9:16. Ukrainian woman, age 55, short grey hair, thin-frame glasses, dark green knit sweater, calm direct gaze, no lab coat. Sitting at a wooden café table by a window, hands without nail polish resting on the table, soft daylight, 50mm lens, shallow depth of field, light film grain. No text, no letters, no logos, no watermark.",
+   "job_id": "e5b1215e-4ebe-4e5b-bd35-f14966b54ffd",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160350_e5b1215e-4ebe-4e5b-bd35-f14966b54ffd.png",
+   "round": 1
+  },
+  "daughter_ref": {
+   "model": "nano_banana_pro",
+   "aspect": "9:16",
+   "res": "1k",
+   "medias": [],
+   "prompt": "Photorealistic portrait, vertical 9:16. Ukrainian young woman, age 25, light-brown loose hair, oversized grey sweatshirt, holding a ceramic mug with both hands, warm surprised smile, bright kitchen in morning light, 50mm lens, shallow depth of field, light film grain. No text, no letters, no logos, no watermark.",
+   "job_id": "42d8e467-b8e6-4c6b-b76a-7af141f87e9a",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160350_42d8e467-b8e6-4c6b-b76a-7af141f87e9a.png",
+   "round": 1
+  }
+ },
+ "stills": {}
+}

@@ -1,0 +1,30 @@
+# НЕ запускается автоматически. Опция для владельца (см. QUESTIONS.md §8):
+# workflow_dispatch с списком публичных URL (результаты Higgsfield CDN) → файлы коммитятся в ветку assets/<run>.
+# Сессия Claude Code этот workflow НЕ триггерит сама: egress-политика сессии закрывает CDN, и обход политики
+# через CI — решение владельца, не агента.
+name: fetch-assets
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Публичные URL через пробел (mp4/png/jpg/wav)"
+        required: true
+      dest:
+        description: "Папка назначения в репо"
+        default: "deliver/fetched"
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: download
+        run: |
+          mkdir -p "${{ github.event.inputs.dest }}"
+          for u in ${{ github.event.inputs.urls }}; do curl -sSL -o "${{ github.event.inputs.dest }}/$(basename "${u%%\?*}")" "$u"; done
+          ls -la "${{ github.event.inputs.dest }}"
+      - name: commit
+        run: |
+          git config user.name "fetch-assets"; git config user.email "actions@users.noreply.github.com"
+          git add -A && git commit -m "fetch-assets: $(date -u +%FT%TZ)" && git push
