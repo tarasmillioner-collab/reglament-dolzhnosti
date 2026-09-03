@@ -1,12 +1,12 @@
-# VSL Clone Factory — dashboard (2026-09-03 15:48 UTC)
+# VSL Clone Factory — dashboard (2026-09-03 15:54 UTC)
 
 
 ## STATE
 
 ```
-stage: 0
+stage: 2
 attempt: 1
-status: building_pipeline
+status: judging
 budget_cap_usd: 30
 spent_usd: 0.00
 last_update: 2026-09-03T15:40:00Z
@@ -21,19 +21,181 @@ artifacts: {}
 
 ## Stage 1
 
-Gate: **FAIL**
-- FAIL G1-1: work/stage1/DNA.json отсутствует/невалиден
+Gate: **PASS**
+- PASS G1-1: обязательные поля: missing=[]
+- PASS G1-2: сцены покрывают таймлайн: n=13, first=0.0, last=194.49, dur=194.49
+- PASS G1-3: битов=13, без роли=[], без полей=[]
+- PASS G1-4: биты покрывают таймлайн без дыр
+- PASS G1-5: audio_route=suno-first при speech.mode=sung
+- PASS G1-6: sale_starts_s=108.91
+- PASS G1-7: targ.mp4 НЕТ → source.live_measurement=False
+
+Судья judge_stage1_decode.json: **FAIL**
+- FAIL D1: donor file missing: cannot re-measure. `ls targ.mp4` -> No such file or directory; `find . -iname '*.mp4'` returns nothing in the repo. `python3 tools/ffprobe_wrap.py targ.mp4` -> RuntimeError: cmd failed (1): ffprobe ... targ.mp4: No such file or directory. DNA.json claims duration_s=194.49, 720x1280, fps=30.0, but its own source block says present_in_repo=false, live_measurement=false, measured_by='archive: claude-skills-backup/_archive/taras-vsl-adapt', measured_at=2026-08-19 - i.e. these are carried-over archive numbers, not a measurement of any file the judge can see. Zero of the D1 numbers are verifiable at the +/-1% tolerance. → Place the actual donor at /home/user/reglament-dolzhnosti/targ.mp4 (or record the real path in DNA.json source.file) and re-run `python3 tools/ffprobe_wrap.py targ.mp4`, writing duration_s/width/height/fps from that live output with source.live_measurement=true.
+- FAIL D2: donor file missing: cannot re-measure. `python3 tools/scene_cuts.py targ.mp4 --out /tmp/cuts.json` -> RuntimeError: cmd failed (1): ffprobe ... targ.mp4: No such file or directory; /tmp/cuts.json was never produced. Independently of the missing file, D2 cannot pass as written: cuts.median_len is null in DNA.json, so the required median shot length simply does not exist. Also the scenes[] array holds only 13 beat-level spans (each tagged 'per-shot cut list not in archive'), while cuts.n=41 - the actual 41-item cut list is absent from the artifact entirely. Minor internal drift: cuts_per_min stated 12.3 vs computed 41/(194.49/60)=12.65 (2.8% off); avg_len 4.74 does reconcile with 194.49/41=4.74. → Re-run scene_cuts.py on the real donor, persist the full per-shot cut list (start/end/len for all ~41 shots) into DNA.json, and fill cuts.median_len from that list; recompute cuts_per_min from n/duration instead of hardcoding 12.3.
+- FAIL D3: donor file missing: cannot re-measure. The 13 spans in scenes[] are arithmetically contiguous (0.0 -> 194.49, zero gaps, zero overlaps, last end == duration_s), but they are beat boundaries, not scene cuts - every entry carries note 'beat-level span (per-shot cut list not in archive)'. The real shot list (cuts.n=41) is not present in the artifact, so 100% timeline coverage by actual detected scenes is unverifiable; what was checked is self-consistency of a hand-authored beat grid, not scene-cut coverage. → Emit the real scene list from scene_cuts.py into DNA.json and assert coverage programmatically: scenes[0].start==0, scenes[-1].end==duration_s, and scenes[i].end==scenes[i+1].start for all i; keep the beat grid in beats[] as a separate layer.
+- FAIL D4: donor file missing: cannot re-measure. `python3 tools/whisper_words.py targ.mp4 --lang en` -> {"unavailable": true, "error": "403 Forbidden"} - a second, independent blocker: the transcription backend is unreachable even if the file existed. DNA.json states words=460, wpm=142, wps=2.365, segments=51; these are internally consistent (460/194.49=2.365, 2.365*60=141.9) but self-consistency of arithmetic is not verification against whisper. No transcript text or word list is stored anywhere in DNA.json, so nothing can be recounted offline either. → Restore whisper access (fix the 403 on the transcription endpoint), re-run whisper_words.py on the real donor, and persist the word-level transcript (words + timestamps) inside DNA.json so word count and words/sec are auditable without re-hitting the API.
+- FAIL D5: donor file missing: cannot re-measure. `python3 tools/audio_measure.py targ.mp4` -> RuntimeError: cmd failed (254): ffmpeg ... Error opening input file targ.mp4. Beyond that, D5 fails on its face: audio.lufs is null in DNA.json while the rubric demands LUFS within +/-1, so the tolerance cannot even be evaluated. sung/spoken is asserted as speech.mode='sung' and bpm=103.4 with no pitch/rhythm measurement retained; clipping_pct=2.81 is likewise carried from the 2026-08-19 archive. → Re-run audio_measure.py on the real donor and populate audio.lufs (integrated loudness) plus the pitch/rhythm evidence that decides sung-vs-spoken; leaving lufs null must be treated as a hard fail by the stage-1 self-check, not shipped.
+- FAIL D6: donor file missing: cannot re-measure. `python3 tools/caption_ocr.py --video targ.mp4 --fps 2 --out /tmp/cap.json` -> RuntimeError: cmd failed (1): ffprobe ... targ.mp4: No such file or directory; /tmp/cap.json was never produced. DNA.json asserts count=89, per_min=27.5 (consistent: 89/(194.49/60)=27.46), median_hold=1.2, karaoke=false, plus a detailed style claim (white rounded plate, dark text RGB 36,29,30, block centre y=899/1280, band 0.674-0.731). Every one of those pixel-level claims traces to the archived caption-passport, not to an OCR pass the judge can reproduce; the +/-10% caption-count check has no measured counterpart. → Re-run caption_ocr.py at --fps 2 on the real donor, store the resulting per-caption records (text, in/out, bbox, colours) alongside the summary, and derive count/per_min/median_hold/karaoke from that file rather than from prose.
+- PASS D7: Checked structurally against DNA.json (this item does not require the donor). All 13 beats B01-B13 carry the four required attributes: timecode (start+end, plus pct_from/pct_to), a role label, in_frame, and belief - programmatic check over beats[] returned complete=True for 13/13. Roles used: hook, backstory, problem, agitate, problem, mentor, diagnosis, handover, proof, proof, transformation, resolution, brand - a coherent narrative vocabulary, monotonically ordered, with beat spans contiguous from 0.0 to 194.49 and matching the scenes[] grid exactly. → No blocking fix. Tighten by declaring the allowed role enum explicitly in DNA.json and validating beats[].role against it, since the file currently carries a second, disjoint role vocabulary (see optional).
+- FAIL D8: donor file missing: cannot re-measure - and this item additionally fails on internal contradiction, which is decidable without the donor. sale_starts_s=108.91 / sale_starts_pct=56 (verified: 108.91/194.49=56.0%). The rubric requires that second to coincide (+/-5%) with the first brand/offer mention in the transcript, but DNA.json records category_first_mention_pct=19 and brand_first_mention_pct=93.5 - the sale start at 56% matches neither (37 points from the category mention, 37.5 points from the brand mention). Worse, beat B08 at 108.91s is annotated 'первое появление категории', directly contradicting category_first_mention_pct=19 (=36.9s, which lands inside B03 'полка с банками'). Two mutually exclusive definitions of 'first category mention' coexist in one file, and no transcript is stored to adjudicate. → Re-derive sale_starts_s from the whisper transcript by locating the literal first brand/offer/category token with its timestamp, reconcile category_first_mention_pct with the B08 annotation (one of the two is wrong), and store the quoted trigger phrase + its timecode as evidence.
+- FAIL D9: Checked against DNA.json content. The enemy IS named - enemy.object = 'текущее средство героини (банка), которое «делает хуже»; сама проблема на коже' - so half the item is satisfied. The shot count is not: enemy.n_shots=6 contradicts the file's own arithmetic. The note says the count is an estimate over beats B03, B05, B07, but those beats declare est_shots 5 + 3 + 4 = 12, i.e. double the stated 6. The same note reasons '~15% хронометража при 2.5-5.9 с/шот', and 15% of 194.49s = 29.2s, which at 2.5-5.9 s/shot yields 5-12 shots - a range so wide it cannot discriminate 6 from 12. The rubric requires the frames/shots with the enemy to be COUNTED; here they are guessed, and the guess is inconsistent with the beat data it claims to derive from. → Count enemy shots from the real per-shot cut list plus caption/frame evidence rather than estimating; at minimum make n_shots equal the sum of est_shots over the beats cited in the note (12, not 6), and record which shot indices contain the enemy object.
+- PASS D10: Checked against DNA.json content, applying the rule directly. speech.mode = 'sung', therefore the rule 'спето -> Suno-first' demands a Suno-first route, and DNA.json records audio_route = 'suno-first'. The decode-stage routing decision is correct and matches the measured-mode field it depends on. DNA.json separately records audio_route_actual = 'vo+bed (fallback, D-05: Suno недоступен; бед недоступен -> VO без беда, red)', which is a downstream production fallback openly flagged as red, not a violation of the decode rule - the rule-derived route is stated correctly and the deviation is labelled rather than hidden. → No fix needed for the decode rule. Keep audio_route (rule-derived) and audio_route_actual (as-built) as distinct fields so later stages cannot mistake the fallback for the chosen route.
+
+### work/stage1/DNA.md
+
+# DNA донора — targ.mp4 (архивные замеры, red carried)
+**Источник:** архив прогона taras-vsl-adapt (19.08.2026): ffmpeg scene-detect, Groq whisper, пиксельный анализ титров, librosa. Файл в этой среде отсутствует → live_measurement=false, judge-decode пере-измерить не может (D-01).
+
+- Длительность 194.49 с · 720×1280 30 fps · вертикаль 9:16
+- Монтаж: 41 шот, 12.3 склеек/мин, σ длин 2.27, диапазон 1.06–10.07 с, 11 шотов <3 с (27%)
+- Речь: СПЕТО (женский закадровый вокал, баллада без припева), английский, 460 слов, 142 wpm, 600 слогов
+- Музыка: 103.4 BPM, песня = таймлайн; склейки по концу фразы, не под бит
+- Титры: 89 карточек (27.5/мин), белая плашка, тёмный текст, центр y≈0.70, 1–2 строки, 7.3 слова/карточку, hold медиана 1.2 с, числа словами, караоке нет
+- Цвет: насыщенность растёт 38→57→69 по третям; два ч/б-провала (2.0 с на 6%, 5.5 с на 30%)
+- Движение: 24.4→18.5 (гаснет к финалу)
+- Продажа начинается: 108.9 с (56%) — продукт вкладывают в руку; категория звучит с 19%; бренд на 93.5%; CTA 94.9%
+- Враг: текущее средство героини + проблема на коже, ~6 шотов
+
+## Бит-лист
+| id | сек | % | роль | в кадре | убеждение | ср. шот |
+|---|---|---|---|---|---|---|
+| B01 | 0.0–19.45 | 0–10 | hook | встреча с соперницей в публичном месте, её жалеющий взгляд | меня видят старой; чужой взгляд = приговор | 3.84 с |
+| B02 | 19.45–33.06 | 10–17 | backstory | сколько лет вместе, ушёл к молодой | потеря — не моя вина, но моя цена | 2.34 с |
+| B03 | 33.06–46.68 | 17–24 | problem | очередное средство, которое не сработает; полка с банками | я всё пробовала, средства не работают | 2.49 с |
+| B04 | 46.68–62.24 | 24–32 | agitate | её лицо сканирует моё; сочувственная улыбка; ч/б-провал | стыд перед другой женщиной; боль сидит | 8.07 с |
+| B05 | 62.24–79.74 | 32–41 | problem | названа проблема-враг; «свет погас изнутри» | у проблемы есть имя и причина | 5.92 с |
+| B06 | 79.74–89.47 | 41–46 | mentor | чужая женщина с экзотическим авторитетом | есть тот, кто знает | 9.4 с |
+| B07 | 89.47–108.91 | 46–56 | diagnosis | «что ты используешь?» → «прекрати, это делает хуже» | моё средство — часть проблемы (механизм) | 4.78 с |
+| B08 | 108.91–120.58 | 56–62 | handover | продукт вкладывают в руку; первое появление категории | решение конкретно и в моих руках | 6.73 с |
+| B09 | 120.58–132.25 | 62–68 | proof | первые недели, реакция близкого человека | работает — это видят другие | 6.68 с |
+| B10 | 132.25–145.87 | 68–75 | proof | результат: «без тоналки»; текстура кожи | результат настоящий, без маскировки | 5.07 с |
+| B11 | 145.87–167.26 | 75–86 | transformation | возврат в то же место к той же сопернице, теперь она растеряна | жизнь ПОСЛЕ: роли поменялись | 5.41 с |
+| B12 | 167.26–180.88 | 86–93 | resolution | «не потому что её мнение важно, а потому что моё — наконец да» | самоуважение; callback на хук | 4.52 с |
+| B13 | 180.88–194.49 | 93–100 | brand | бренд + CTA + статичная карточка | название, призыв, куда нажать | 6.01 с |
+
+## Акты и ритм
+- Акт I (0–41%): хук→бэкстори→проблема→рана→имя врага. Завязку рубят (2.3–2.5 с), на ране ДЕРЖАТ (8.1 с).
+- Акт II (41–62%): наставница (9.4 с, держит) → диагноз (4.8) → передача продукта (6.7).
+- Акт III (62–100%): пруф 1–2 → возврат к сопернице → разрешение (callback) → бренд-карточка.
+
+## Аудио-маршрут
+Правило: донор спет → Suno-first. Фактически (D-05): Suno недоступен → сплошной VO женским голосом; музыкального беда нет → помечено красным.
+
+## Что переносится (ROLES)
+Только структура/доли/ритм по битам/грамматика титров/кривые. Ни слов, ни образов, ни категории донора.
+
 
 
 ## Stage 2
 
 Gate: **FAIL**
-- FAIL G2-1: строк FACTS: 0 (≥25)
-- FAIL G2-2: строк с источником: 0/0
-- FAIL G2-3: в FACTS.md нет машинных полей price_1/old_price_1/discount_1_pct
+- PASS G2-1: строк FACTS: 52 (≥25)
+- FAIL G2-2: строк с источником: 4/52
+- PASS G2-3: цена 895, старая 1750, скидка 49% (расчёт 49%)
 - PASS G2-4: фото продукта: 4
 - PASS G2-5: ROLES.md: DONOR/PRODUCT/MARKET + блок-лист
-- FAIL G2-6: раздел аватара (пол/возраст/боли/слова) в FACTS
+- PASS G2-6: раздел аватара (пол/возраст/боли/слова) в FACTS
+
+### FACTS.md
+
+# FACTS.md — goPure Tighten & Lift Neck Cream (UA). Ни одного факта без источника (R4).
+
+## §0 Источники (прочитаны полностью 2026-09-03)
+| код | документ | где |
+|---|---|---|
+| S1 | «GOPURE — система подтяжки и уплотнения кожи шеи.docx» (описание продукта, INCI, применение, результаты) | Google Drive id 1CoPV191Lz6D1zyWCVFTps0IxpgjDGYJf |
+| S2 | «MSDS Gopure Tighten & Lift Neck Cream.pdf» (состав с CAS, производитель) | Google Drive id 1PoGji3RTof7BjrfUWTHJoHvqrxJJJs5O |
+| S3 | «BRAND STYLEBOOK — GoPure» (оффер, аватар, тон, цвета) | Google Drive id 1-vus7AB_RpLxXGzvYa9I0BjMAvtyWIQTxgEs3tzCvSE |
+| S4 | «Карта ЦА крема для шеи GoPure» = **Avatar** (сегменты, боли, VOC, возражения, юнит-экономика) | Google Drive id 13hfUxLWrOrnQjLI5mYMjmg9SSuQwPcDH08qISpNI9G0 |
+| S5 | «Исследование рынка крема для шеи GoPure» = **Market Research** (сегменты, VOC-банк 42 цитаты, конкуренты, углы, заголовки) | Google Drive id 1j4wbfPlBBt--EIC8fTaz8UjncvMfKpnDpjS0va-pVFo → work/stage2/src_market_research_GoPure.md |
+| S6 | «Аналіз ринку крему для шиї в Україні» (цены конкурентов, регуляторика, COD-метрики) | Google Drive id 1Y6osV0PYgCLhOh-dKRxFR5KA3ypkFFUqofK6jQaWaWo |
+| S7 | «Аналіз конкурентів та пошук ніш» (карта конкурентов, GAP, оффер) | Google Drive id 1cqTAEaJ0oYaBqi9sKd_p3n54fSo4y7l5xKnmIogIbZY |
+| S8 | «Gemini ЦА исследователь потребительского поведения» = **Beliefs/VOC** (топ-10 болей, барьеры, драйверы, 11 фраз) | Google Drive id 1f6IChZTZHaTL2ZdnQsXqoryR8Ocw0dXMd9Rih60rwCc |
+| S9 | Сайт: gopure-pages/landing.html (UA лендинг, 26.05.2026) | github tarasmillioner-collab/gopure-pages |
+| S10 | Сайт: gopure-pages/advertorial.html (UA адверториал, 26.05.2026) | github tarasmillioner-collab/gopure-pages |
+| S11 | Сайт: копия gopure.space/article.php («7 Причин…», 30.10.2025) | Google Drive id 12KQJ6aY1-Gu8N_8KM6VQqya5BiHH9n1GqxDPJ1IrphY |
+| S12 | «VSL — goPure Tighten & Lift (UA) — сценарій» (12.08.2026, self-audit цен и фактов) | Google Drive id 1E0opnz44PkupC3N5kukaoHg2D3yAgPlz9sWlKgEO1kU |
+| S13 | Фото продукта (банка, коробка, склад) — 4 jpeg | Google Drive ids 16sU0kEZdZ…, 1b776QiNmp…, 1StIejLjj9…, 1KUQGpRky0… → work/stage2/product_photos/ |
+
+Машинные поля (gate): price_1 = 895 · old_price_1 = 1750 · discount_1_pct = 49 · price_2 = 1570 · old_price_2 = 3500 · discount_2_pct = 55 · price_3 = 2055 · old_price_3 = 5250 · discount_3_pct = 61 · guarantee_days = 60 · volume_ml = 50 · duration_donor_s = 194.49
+
+## §1 Продукт и упаковка
+| id | Факт | Источник |
+|---|---|---|
+| F-01 | Название: goPure Tighten & Lift Neck Cream — крем для шиї та декольте | S1, S3, S13 (этикетка) |
+| F-02 | Объём 50 мл (1.7 fl oz), банка — стекло | S1 («50 мл, банка - стекло»), S13 (этикетка «1.7 fl oz (50 ml)») |
+| F-03 | Внешний вид: матовая лавандово-сиреневая стеклянная банка, серебристая металлическая крышка с надписью GOPURE, белая этикетка-текст «GOPURE / Tighten & Lift Neck Cream / 4% Cupuacu Butter, Olive Lipid Complex, Hydrolyzed Hyaluronic Acid, Caffeine»; коробка лавандовая с белым текстом, значки «Safe & Clean», «без глютену», «Not tested on animals» | S13 (фото jar_drive_16sU0kEZdZ.jpg, jar_drive_1b776QiNmp.jpg) |
+| F-04 | Брендовые цвета: индиго-фиолет #4B3FD4, лаванда #D9CFF5, кремово-розовый #FAF3F0, голубой #D6E8F7, красный акцент только для urgency #E03A3A | S3 |
+| F-05 | Производитель по MSDS: Guangdong Renhe Guozhuang Biotechnology Co. Ltd (Китай); MSDS от 05/02/2026 | S2 §1.3 |
+| F-06 | Продукт не классифицируется как опасный (GHS), pH 7.0–7.8, не раздражает кожу/глаза по имеющимся данным | S2 §2, §9, §11 |
+
+## §2 Состав и механизм
+| id | Факт | Источник |
+|---|---|---|
+| F-07 | INCI (полный): Aqua, Aloe Barbadensis Leaf Juice, Glycerin, Theobroma Grandiflorum (Cupuaçu) Seed Butter, Diisooctyl Succinate, Diisopropyl Dimer Dilinoleate, Propanediol, Hydrogenated Ethylhexyl Olivate, Hydrogenated Olive Oil Unsaponifiables, Caprylic/Capric Triglyceride, Simmondsia Chinensis (Jojoba) Seed Oil, Cetearyl Alcohol, Sorbitan Olivate, Cetearyl Olivate, Cetyl Palmitate, Sorbitan Palmitate, Sorbitan Oleate, Hydrolyzed Hyaluronic Acid, Piperonyl Glucose, Lecithin, Caffeine, Palmitoyl Carnitine, Hydrolyzed Plukenetia Volubilis Seed Extract, Geranium Maculatum Extract, Equisetum Arvense Extract, Hamamelis Virginiana Extract, Taraxacum Officinale Extract, Propolis Extract, Camellia Sinensis Leaf Extract, Centella Asiatica Extract, Oryza Sativa Bran Extract, Rosmarinus Officinalis Leaf Extract, Helianthus Annuus Seed Extract, Simmondsia Chinensis Seed Extract, Tamarindus Indica Seed Polysaccharide, Lavandula Angustifolia Oil, Citric Acid, Sclerotium Gum, Potassium Sorbate, Sodium Benzoate, 1,2-Hexanediol, Caprylyl Glycol, Lonicera Caprifolium Flower Extract, Lonicera Japonica Flower Extract | S1 §Состав; S2 §3 (с CAS) |
+| F-08 | Масло купуасу (Theobroma grandiflorum) 4% — заявлено на этикетке; действие по S1: восстанавливает липидный барьер, повышает мягкость и эластичность, уменьшает сухость | S13 (этикетка «4% Cupuacu Butter»), S1 §Как работает |
+| F-09 | Купуасу удерживает воду до 440% от собственной массы («суха губка», наполняет залом изнутри) | S10 §5, S12 §6 |
+| F-10 | Гидролизованная гиалуроновая кислота: удерживает влагу, визуально «наполняет» кожу, морщины менее выражены | S1, S13 (этикетка) |
+| F-11 | Кофеин: микроциркуляция, тонус, лёгкий визуальный лифтинг-эффект; пальмитоил-карнитин — в составе | S1, S13 (этикетка), S11 §6 |
+| F-12 | Оливковый липидный комплекс (Hydrogenated Olive Oil Unsaponifiables, Olivate): смягчение сухой истончённой кожи | S13 (этикетка «Olive Lipid Complex»), S7 §Оффер |
+| F-13 | Полисахарид тамаринда: удерживает воду на поверхности, мгновенный визуальный эффект гладкости | S1 (INCI), S7 §Оффер, S12 §8 |
+| F-14 | Экстракт сача инчи (Hydrolyzed Plukenetia Volubilis Seed Extract) — в INCI; в маркетинге «ретинолоподібна дія без опіку», НЕ ретинол | S1 (INCI), S9 FAQ, S12 §6 |
+| F-15 | Успокаивающие экстракты: центелла, зелёный чай, прополис, розмарин, гамамелис | S1 §Как работает, S7 |
+| F-16 | Итоговая логика механизма: увлажнение + питание + улучшение микроциркуляции → кожа выглядит плотнее и глаже → визуальный эффект подтяжки | S1 §Итоговая логика |
+| F-17 | Формула содержит эфирные масла лаванды и герани — потенциальные аллергены; в коммуникации честно отрабатывать через центеллу/прополис, НЕ называть «без отдушек» | S4 §Риски (2), S7 §Аллергены |
+| F-18 | В составе НЕТ ретинола и кислот; нет силиконов (dimethicone), минеральных масел, парабенов — по INCI | S1 (INCI: отсутствуют), S12 §8б |
+| F-19 | Заявка бренда: комплекс «ActivSmooth™», 6% активов против ~0,1% в обычном лосьоне | S3, S12 §8 (маркетинговая формулировка бренда, не лабораторный протокол) |
+
+## §3 Применение и сроки
+| id | Факт | Источник |
+|---|---|---|
+| F-20 | Наносить на чистую кожу шеи и декольте 1–2 раза в день движениями снизу вверх, не растягивая кожу | S1 §Как применять |
+| F-21 | Минимальный курс 4 недели, оптимальный 6–8 недель; одной банки хватает ≈30 дней | S1 §Важно; S12 §8 («однієї баночки вистачає приблизно на 30 днів») |
+| F-22 | Ожидаемые сроки: 2–4 недели — кожа глаже; 1 месяц — морщины менее выражены; 2 месяца — визуальное уплотнение | S1 §Результаты |
+| F-23 | Первые изменения (мягкость, упругость на ощупь) 7–10 дней; видимое разглаживание мелких морщин 2–3 недели; выраженный лифтинг 4–6 неделя; максимум 90 дней | S9 FAQ, S10 §8 |
+| F-24 | Не заменяет косметологические процедуры; результат накопительный; для III–IV стадии птоза (кожа свисает на 2–3 см) честно: только хирургия | S1 §Нюансы; S10 §8 |
+| F-25 | Впитывается за 30–40 секунд, невесомый гель-крем, не оставляет плёнки, не пачкает одежду | S9 FAQ («поглинається за 30-40 секунд»), S10 FAQ |
+| F-26 | Утром обязательно SPF поверх; UV — главная причина старения шеи | S10 §8, S11 FAQ |
+
+## §4 Цена, оффер, доставка, гарантия
+| id | Факт | Источник |
+|---|---|---|
+| F-27 | Цены наборов: 1 банка — 895 грн; 2 банки — 1 570 грн (785/шт); 3 банки — 2 055 грн (685/шт) | S3, S4 §Экономика, S6 §1, S12 §8 (D-06) |
+| F-28 | Якорная «полная» цена 1 750 грн/банка → скидки 49% / 55% / 61%; экономия 855 / 1 930 / 3 195 грн | S12 §8 и Self-Audit (расчёт сходится: (1750−895)/1750=48.9%) |
+| F-29 | 3 банки = 90 днів = менее 23 грн/день («дешевше за одну каву») | S12 §8 (2055/90=22.83) |
+| F-30 | Альтернативы по цене: ліполітики/Kybella/HIFU 25 000–80 000 грн; биоревитализация 3 500–8 000 грн за сеанс (курс 4–6); хирургическая подтяжка 800 000+ грн / 2 000–5 000 EUR; люкс-кремы Clarins ~3 000–4 360 грн, Guerlain ~10 377 грн | S10 §4, S5 §Существующие решения, S6 §1 |
+| F-31 | Гарантия: 60 днів повернення коштів — не увидела изменений за 2 месяца → возвращает баночку (даже пустую) и получает 100% денег, без вопросов | S9 FAQ, S10 §Гарантия, S11 FAQ, S12 §8б (D-07) |
+| F-32 | Оплата: післяплата (оплата при отриманні на Новій Пошті, осмотр до оплаты), LiqPay/WayForPay, Apple Pay; доставка Нова Пошта 2–3 дні по Україні; безкоштовна доставка від 1 499 грн | S9 FAQ «Як працює доставка і оплата», S4 §Триггеры |
+| F-33 | Юнит-экономика: продажа одной банки убыточна, прибыль только на наборах 2–3 банки → оффер строить вокруг курса 60–90 днів | S4 §Экономика, S6 §5, S7 §Оффер |
+| F-34 | Уровень предложения: «премиум без наценки» — DTC, банка уровня люкса за 895 грн; Medi-Peel 100 мл 690–770 грн — главный конкурент по цене за мл | S7 §GAP 5, S6 §1 |
+
+## §5 Аватар (пол, возраст, боли, её слова)
+| id | Факт | Источник |
+|---|---|---|
+| F-35 | Аватар: женщина, Украина, украиноязычная, 45–60 лет («Наталія/Оксана»); ядро выкупа COD — 45–54 (сегмент B «Превентивная коррекция»: работающая, стабильный средний доход, покупает онлайн, максимальный выкуп на Новой Почте) | S3 §Avatar, S4 §Сегменты, S4 §Анализ выкупа |
+| F-36 | Второй сегмент по объёму лидов: 55–68 («Зрелая эстетика»), дешёвые лиды, но чаще срывают выкуп; сегмент D «Косметологический диссидент» 50–60 — разочаровались в уколах, готовы на бандлы | S4 §Сегменты |
+| F-37 | Главная боль №1: «лицо ухоженное, а шея выдаёт возраст» — контраст лицо/шея, шок от фото в профиль | S4 §Топ-5 болей (1), S8 §1, S5 VOC #4, #25, #31 |
+| F-38 | Боль №2: «кольца Венеры» — горизонтальные заломы, «текстовая шея» от телефона; №3: «индюшачья шея»/потеря овала; №4: утренняя помятость декольте после сна на боку; №5: сухость «как пергамент» | S4 §Топ-5 болей, S8 §1, S5 VOC #1, #15, #23, #26 |
+| F-39 | Психология: гардеробные ограничения (шарфы, водолазки, застёгнутый ворот даже летом), избегание фото в профиль и камеры в Zoom, страх близости («когда муж обнимает за шею — напрягаюсь») | S4 §Психоэмоциональные триггеры, S5 VOC #10, #36, S8 §6 |
+| F-40 | Её слова (VOC, дословно): «Лицо еще молодое, а шея предательски выдает возраст»; «Шкіра на шиї стала виглядати як пергаментний папір»; «Я перестала носити ланцюжки і сукні з відкритими плечима. Постійно купую шарфики»; «Зранку встаю і бачу в декольте таку пом'ятість, наче мене всю ніч жужмили»; «Боюсь уколів у шию, це боляче і дорого»; «Хочу знову носити блузки з відкритим декольте і не ховатися за шарфами» | S8 §5, S4 §VOC |
+| F-41 | Возражения: «кремы не убирают глубокие морщины, только уколы»; «крем для лица работает так же»; «незнакомый бренд, боюсь заказывать»; «у меня чувствительная кожа»; «дорого за 50 мл» | S4 §Топ-5 возражений, S8 §3 |
+| F-42 | Драйверы: безопасная безболезненная альтернатива уколам; экзотика купуасу + понятные активы; курсовая логика 60–90 дней; COD «осмотр на почте, потом оплата»; реакция близких («чоловік зауважив різницю») | S4 §Драйверы, S8 §4, S11 §2 |
+| F-43 | Тон бренда: честный, экспертно-спокойный, без «мінус 10 років»; никакого шейминга возраста | S3 §Tone, S6 §Meta |
+| F-44 | Юридика/Meta: запрещены «до/после»-сплиты, формулировки про возраст как недостаток («Твоя шея выглядит старой?»), терапевтические claims («лечит», «восстанавливает коллаген», «клинически доказано» без PIF) | S6 §5, S5 §Регулирование |
+
+## §6 Допустимые и рискованные claims
+| id | Факт | Источник |
+|---|---|---|
+| F-45 | Разрешённые формулировки: «візуально покращує пружність і щільність», «зменшує видимість дрібних зморшок і кілець Венери», «інтенсивно зволожує, згладжує крепову текстуру», «візуальний ефект ліфтингу» | S5 §Регулирование (таблица) |
+| F-46 | Соцдоказательство из источников: «91% користувачів помітили видимо більш підтягнуту шкіру через 4 тижні», «96% — менш зморшкувата», «93% — дрібні зморшки менш помітні», «86% — шкіра виглядає піднятою» — опитування споживачів (сайт). РИСК: S6 §5/S4 требуют убрать «клінічні» заявления и американские отзывы → в клоне только как «за відгуками покупчинь» без «клінічно» (D-08) | S11 §2, §7; S10 §7; S6 §5 |
+| F-47 | Механизм «гравитационная ловушка»: кожа шеи ~50% тоньше щеки (0,5–0,66 мм), почти без сальных желез, не крепится к кости (платизма); густые кремы на восках/силиконах утяжеляют и тянут вниз | S10 §1–2, S12 §4б, S5 §Механизмы («Thin-Skin Neck Aging Gap») |
+| F-48 | Tech neck: голова 4–5 кг, при наклоне 45° нагрузка 20+ кг; менопауза — до 30% коллагена за первые 5 лет | S12 §5, S5 §Обзор |
+| F-49 | «Слепая зона линии челюсти»: уход годами останавливался на подбородке — не её вина, ей так сказала индустрия (мягкий враг = шаблон бьюти-индустрии) | S5 §Механизмы, §Мягкий враг |
+| F-50 | НЕ использовать (нет в INCI/источниках противоречат): «Matrixyl® 2.5%» (сайт S10/S11 заявляет, в INCI S1/S2 нет пальмитоил-пентапептида), «Matribust/Matrixbust», «подвійне сліпе на 124 жінках», «800 млн переглядів TikTok», «Good Morning America», «14-денна гарантія», американские имена врачей | S1/S2 vs S10/S11; S6 §5; S4 §Риски (1) |
+| F-51 | Телефон на лендинге «+38 (050) 123-45-67» — заглушка; в end card не использовать | S9 (footer) — см. QUESTIONS §7 |
+| F-52 | Бренд GoPure = юридический риск (одноимённый бренд США); в ролике бренд называем как на упаковке «goPure Tighten & Lift», без «оригінальний американський» | S4 §Риски (1), S7 §Юридические риски |
+
 
 Референсы/стиллы: work/stage2/product_photos/jar_drive_16sU0kEZdZ.jpg, work/stage2/product_photos/jar_drive_1KUQGpRky0.jpg, work/stage2/product_photos/jar_drive_1StIejLjj9.jpg, work/stage2/product_photos/jar_drive_1b776QiNmp.jpg
 

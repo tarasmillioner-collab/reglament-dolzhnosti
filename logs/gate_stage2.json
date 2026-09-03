@@ -4,18 +4,18 @@
   "items": [
     {
       "id": "G2-1",
-      "pass": false,
-      "evidence": "строк FACTS: 0 (≥25)"
+      "pass": true,
+      "evidence": "строк FACTS: 52 (≥25)"
     },
     {
       "id": "G2-2",
-      "pass": [],
-      "evidence": "строк с источником: 0/0"
+      "pass": false,
+      "evidence": "строк с источником: 4/52"
     },
     {
       "id": "G2-3",
-      "pass": false,
-      "evidence": "в FACTS.md нет машинных полей price_1/old_price_1/discount_1_pct"
+      "pass": true,
+      "evidence": "цена 895, старая 1750, скидка 49% (расчёт 49%)"
     },
     {
       "id": "G2-4",
@@ -29,7 +29,7 @@
     },
     {
       "id": "G2-6",
-      "pass": false,
+      "pass": true,
       "evidence": "раздел аватара (пол/возраст/боли/слова) в FACTS"
     }
   ]
