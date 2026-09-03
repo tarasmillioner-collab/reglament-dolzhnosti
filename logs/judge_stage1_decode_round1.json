@@ -1,0 +1,77 @@
+{
+  "verdict": "FAIL",
+  "items": [
+    {
+      "id": "D1",
+      "pass": false,
+      "evidence": "donor file missing: cannot re-measure. `ls targ.mp4` -> No such file or directory; `find . -iname '*.mp4'` returns nothing in the repo. `python3 tools/ffprobe_wrap.py targ.mp4` -> RuntimeError: cmd failed (1): ffprobe ... targ.mp4: No such file or directory. DNA.json claims duration_s=194.49, 720x1280, fps=30.0, but its own source block says present_in_repo=false, live_measurement=false, measured_by='archive: claude-skills-backup/_archive/taras-vsl-adapt', measured_at=2026-08-19 - i.e. these are carried-over archive numbers, not a measurement of any file the judge can see. Zero of the D1 numbers are verifiable at the +/-1% tolerance.",
+      "fix": "Place the actual donor at /home/user/reglament-dolzhnosti/targ.mp4 (or record the real path in DNA.json source.file) and re-run `python3 tools/ffprobe_wrap.py targ.mp4`, writing duration_s/width/height/fps from that live output with source.live_measurement=true."
+    },
+    {
+      "id": "D2",
+      "pass": false,
+      "evidence": "donor file missing: cannot re-measure. `python3 tools/scene_cuts.py targ.mp4 --out /tmp/cuts.json` -> RuntimeError: cmd failed (1): ffprobe ... targ.mp4: No such file or directory; /tmp/cuts.json was never produced. Independently of the missing file, D2 cannot pass as written: cuts.median_len is null in DNA.json, so the required median shot length simply does not exist. Also the scenes[] array holds only 13 beat-level spans (each tagged 'per-shot cut list not in archive'), while cuts.n=41 - the actual 41-item cut list is absent from the artifact entirely. Minor internal drift: cuts_per_min stated 12.3 vs computed 41/(194.49/60)=12.65 (2.8% off); avg_len 4.74 does reconcile with 194.49/41=4.74.",
+      "fix": "Re-run scene_cuts.py on the real donor, persist the full per-shot cut list (start/end/len for all ~41 shots) into DNA.json, and fill cuts.median_len from that list; recompute cuts_per_min from n/duration instead of hardcoding 12.3."
+    },
+    {
+      "id": "D3",
+      "pass": false,
+      "evidence": "donor file missing: cannot re-measure. The 13 spans in scenes[] are arithmetically contiguous (0.0 -> 194.49, zero gaps, zero overlaps, last end == duration_s), but they are beat boundaries, not scene cuts - every entry carries note 'beat-level span (per-shot cut list not in archive)'. The real shot list (cuts.n=41) is not present in the artifact, so 100% timeline coverage by actual detected scenes is unverifiable; what was checked is self-consistency of a hand-authored beat grid, not scene-cut coverage.",
+      "fix": "Emit the real scene list from scene_cuts.py into DNA.json and assert coverage programmatically: scenes[0].start==0, scenes[-1].end==duration_s, and scenes[i].end==scenes[i+1].start for all i; keep the beat grid in beats[] as a separate layer."
+    },
+    {
+      "id": "D4",
+      "pass": false,
+      "evidence": "donor file missing: cannot re-measure. `python3 tools/whisper_words.py targ.mp4 --lang en` -> {\"unavailable\": true, \"error\": \"403 Forbidden\"} - a second, independent blocker: the transcription backend is unreachable even if the file existed. DNA.json states words=460, wpm=142, wps=2.365, segments=51; these are internally consistent (460/194.49=2.365, 2.365*60=141.9) but self-consistency of arithmetic is not verification against whisper. No transcript text or word list is stored anywhere in DNA.json, so nothing can be recounted offline either.",
+      "fix": "Restore whisper access (fix the 403 on the transcription endpoint), re-run whisper_words.py on the real donor, and persist the word-level transcript (words + timestamps) inside DNA.json so word count and words/sec are auditable without re-hitting the API."
+    },
+    {
+      "id": "D5",
+      "pass": false,
+      "evidence": "donor file missing: cannot re-measure. `python3 tools/audio_measure.py targ.mp4` -> RuntimeError: cmd failed (254): ffmpeg ... Error opening input file targ.mp4. Beyond that, D5 fails on its face: audio.lufs is null in DNA.json while the rubric demands LUFS within +/-1, so the tolerance cannot even be evaluated. sung/spoken is asserted as speech.mode='sung' and bpm=103.4 with no pitch/rhythm measurement retained; clipping_pct=2.81 is likewise carried from the 2026-08-19 archive.",
+      "fix": "Re-run audio_measure.py on the real donor and populate audio.lufs (integrated loudness) plus the pitch/rhythm evidence that decides sung-vs-spoken; leaving lufs null must be treated as a hard fail by the stage-1 self-check, not shipped."
+    },
+    {
+      "id": "D6",
+      "pass": false,
+      "evidence": "donor file missing: cannot re-measure. `python3 tools/caption_ocr.py --video targ.mp4 --fps 2 --out /tmp/cap.json` -> RuntimeError: cmd failed (1): ffprobe ... targ.mp4: No such file or directory; /tmp/cap.json was never produced. DNA.json asserts count=89, per_min=27.5 (consistent: 89/(194.49/60)=27.46), median_hold=1.2, karaoke=false, plus a detailed style claim (white rounded plate, dark text RGB 36,29,30, block centre y=899/1280, band 0.674-0.731). Every one of those pixel-level claims traces to the archived caption-passport, not to an OCR pass the judge can reproduce; the +/-10% caption-count check has no measured counterpart.",
+      "fix": "Re-run caption_ocr.py at --fps 2 on the real donor, store the resulting per-caption records (text, in/out, bbox, colours) alongside the summary, and derive count/per_min/median_hold/karaoke from that file rather than from prose."
+    },
+    {
+      "id": "D7",
+      "pass": true,
+      "evidence": "Checked structurally against DNA.json (this item does not require the donor). All 13 beats B01-B13 carry the four required attributes: timecode (start+end, plus pct_from/pct_to), a role label, in_frame, and belief - programmatic check over beats[] returned complete=True for 13/13. Roles used: hook, backstory, problem, agitate, problem, mentor, diagnosis, handover, proof, proof, transformation, resolution, brand - a coherent narrative vocabulary, monotonically ordered, with beat spans contiguous from 0.0 to 194.49 and matching the scenes[] grid exactly.",
+      "fix": "No blocking fix. Tighten by declaring the allowed role enum explicitly in DNA.json and validating beats[].role against it, since the file currently carries a second, disjoint role vocabulary (see optional)."
+    },
+    {
+      "id": "D8",
+      "pass": false,
+      "evidence": "donor file missing: cannot re-measure - and this item additionally fails on internal contradiction, which is decidable without the donor. sale_starts_s=108.91 / sale_starts_pct=56 (verified: 108.91/194.49=56.0%). The rubric requires that second to coincide (+/-5%) with the first brand/offer mention in the transcript, but DNA.json records category_first_mention_pct=19 and brand_first_mention_pct=93.5 - the sale start at 56% matches neither (37 points from the category mention, 37.5 points from the brand mention). Worse, beat B08 at 108.91s is annotated 'первое появление категории', directly contradicting category_first_mention_pct=19 (=36.9s, which lands inside B03 'полка с банками'). Two mutually exclusive definitions of 'first category mention' coexist in one file, and no transcript is stored to adjudicate.",
+      "fix": "Re-derive sale_starts_s from the whisper transcript by locating the literal first brand/offer/category token with its timestamp, reconcile category_first_mention_pct with the B08 annotation (one of the two is wrong), and store the quoted trigger phrase + its timecode as evidence."
+    },
+    {
+      "id": "D9",
+      "pass": false,
+      "evidence": "Checked against DNA.json content. The enemy IS named - enemy.object = 'текущее средство героини (банка), которое «делает хуже»; сама проблема на коже' - so half the item is satisfied. The shot count is not: enemy.n_shots=6 contradicts the file's own arithmetic. The note says the count is an estimate over beats B03, B05, B07, but those beats declare est_shots 5 + 3 + 4 = 12, i.e. double the stated 6. The same note reasons '~15% хронометража при 2.5-5.9 с/шот', and 15% of 194.49s = 29.2s, which at 2.5-5.9 s/shot yields 5-12 shots - a range so wide it cannot discriminate 6 from 12. The rubric requires the frames/shots with the enemy to be COUNTED; here they are guessed, and the guess is inconsistent with the beat data it claims to derive from.",
+      "fix": "Count enemy shots from the real per-shot cut list plus caption/frame evidence rather than estimating; at minimum make n_shots equal the sum of est_shots over the beats cited in the note (12, not 6), and record which shot indices contain the enemy object."
+    },
+    {
+      "id": "D10",
+      "pass": true,
+      "evidence": "Checked against DNA.json content, applying the rule directly. speech.mode = 'sung', therefore the rule 'спето -> Suno-first' demands a Suno-first route, and DNA.json records audio_route = 'suno-first'. The decode-stage routing decision is correct and matches the measured-mode field it depends on. DNA.json separately records audio_route_actual = 'vo+bed (fallback, D-05: Suno недоступен; бед недоступен -> VO без беда, red)', which is a downstream production fallback openly flagged as red, not a violation of the decode rule - the rule-derived route is stated correctly and the deviation is labelled rather than hidden.",
+      "fix": "No fix needed for the decode rule. Keep audio_route (rule-derived) and audio_route_actual (as-built) as distinct fields so later stages cannot mistake the fallback for the chosen route."
+    }
+  ],
+  "top3_fixes": [
+    "Put the donor back in reach: targ.mp4 does not exist anywhere in the repo (find . -iname '*.mp4' -> empty) and DNA.json itself admits source.present_in_repo=false / live_measurement=false. Every measurable item (D1-D6, D8) is unverifiable archive carry-over from 2026-08-19 until the file is restored and all five tools are re-run against it.",
+    "Fix the two hard internal contradictions that fail even without the donor: (a) sale_starts_pct=56 matches neither category_first_mention_pct=19 nor brand_first_mention_pct=93.5, while beat B08 at 56% is itself labelled 'первое появление категории' - two conflicting definitions in one file (D8); (b) enemy.n_shots=6 versus est_shots 5+3+4=12 for the very beats B03/B05/B07 the note cites (D9).",
+    "Fill the null fields the rubric measures directly: audio.lufs is null (D5 requires LUFS +/-1) and cuts.median_len is null (D2 requires median shot length). Also persist the artifacts the numbers came from - the ~41-item per-shot cut list, the word-level whisper transcript, and the per-caption OCR records - so a judge can recount offline instead of trusting prose."
+  ],
+  "optional": [
+    "Unblock whisper: tools/whisper_words.py returned {\"unavailable\": true, \"error\": \"403 Forbidden\"}, an independent blocker from the missing file. Even with targ.mp4 restored, D4 could not be re-measured until this endpoint is reachable.",
+    "Reconcile the two disjoint role vocabularies. beats[].role uses hook/backstory/problem/agitate/mentor/diagnosis/handover/proof/transformation/resolution/brand, while role_profile_pct uses setup/trigger/problem/wound/mentor/mechanism/product/transform/proof/social/cta/card. 8 of the 13 beat roles (agitate, backstory, brand, diagnosis, handover, hook, resolution, transformation) appear in no declared list, and role_profile_pct - though it does sum to 100.0 - allocates 13.9% to 'social', a role no beat carries. Declare one enum and derive the profile from the beats.",
+    "Recompute cuts.cuts_per_min: stated 12.3 vs 41/(194.49/60)=12.65, a 2.8% drift. Within the 10% band, so not a fail, but it signals hand-entered rather than derived numbers.",
+    "Numbers that DO reconcile internally and are worth preserving once re-measured: wps 2.365 = 460/194.49, wpm 142, captions per_min 27.5 = 89/194.49*60, avg_len 4.74 = 194.49/41, sale_starts_pct 56.0 = 108.91/194.49, sigma 2.27 inside the declared invariant band 2.2-2.4, and wpm 142 inside the declared band 135-150.",
+    "Stage 1 is already self-flagged red in DNA.json (source.note: 'Stage 1 = red carried (D-01): judge-decode не может пере-измерить без файла'). This verdict confirms that flag rather than discovering it - the artifact is honest about its provenance, it simply cannot pass a re-measurement rubric in this state."
+  ]
+}
