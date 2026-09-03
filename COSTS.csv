@@ -4,3 +4,31 @@ ts,provider,op,model,units,unit_cost_usd,cost_usd,cumulative_usd,label,note
 2026-09-03T16:05:02Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.06,ref_colleague_ref,"stage4 ref still, 1k 9:16"
 2026-09-03T16:05:02Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.08,ref_marta_ref,"stage4 ref still, 1k 9:16"
 2026-09-03T16:05:02Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.1,ref_daughter_ref,"stage4 ref still, 1k 9:16"
+2026-09-03T16:18:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.12,still_c01_r1,9:16 1k
+2026-09-03T16:18:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.14,still_c02_r1,9:16 1k
+2026-09-03T16:18:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.16,still_c03_r1,9:16 1k
+2026-09-03T16:18:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.18,still_c04_r1,9:16 1k
+2026-09-03T16:18:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.2,still_c05_r1,9:16 1k
+2026-09-03T16:18:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.22,still_c06_r1,9:16 1k
+2026-09-03T16:18:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.24,still_c07_r1,9:16 1k
+2026-09-03T16:18:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.26,still_c08_r1,9:16 1k
+2026-09-03T16:18:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.28,still_c09_r1,9:16 1k
+2026-09-03T16:18:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.3,still_c10_r1,9:16 1k
+2026-09-03T16:18:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.32,still_c11_r1,9:16 1k
+2026-09-03T16:18:31Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.34,still_c12_r1,9:16 1k
+2026-09-03T16:18:31Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.36,still_c13_r1,9:16 1k
+2026-09-03T16:18:31Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.38,still_c14_r1,9:16 1k
+2026-09-03T16:18:31Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.4,still_c15_r1,9:16 1k
+2026-09-03T16:18:31Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.42,still_c16_r1,9:16 1k
+2026-09-03T16:18:31Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.44,still_c17_r1,9:16 1k
+2026-09-03T16:18:31Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.46,still_c18_r1,9:16 1k
+2026-09-03T16:18:31Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.48,still_c19_r1,9:16 1k
+2026-09-03T16:19:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.5,still_c01_r2,9:16 1k
+2026-09-03T16:19:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.52,still_c02_r2,9:16 1k
+2026-09-03T16:19:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.54,still_c03_r2,9:16 1k
+2026-09-03T16:19:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.56,still_c04_r2,9:16 1k
+2026-09-03T16:19:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.58,still_c05_r2,9:16 1k
+2026-09-03T16:19:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.6,still_c06_r2,9:16 1k
+2026-09-03T16:19:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.62,still_c07_r2,9:16 1k
+2026-09-03T16:19:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.64,still_c08_r2,9:16 1k
+2026-09-03T16:29:29Z,higgsfield,tts,text2speech_v2/elevenlabs,0.15,0.01,0.0015,0.6415,vo_test_elena,voice test 4 short sentences

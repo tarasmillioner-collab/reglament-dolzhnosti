@@ -53,5 +53,496 @@
    "round": 1
   }
  },
- "stills": {}
+ "stills": [
+  {
+   "id": "c01",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Scene (Ukrainian brief): Крупно: руки героїні (51) підтягують шовковий сіро-бежевий шарф під горло; за вікном офісу яскраве літнє сонце.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "9a98e26f-6db5-4722-8c8b-8f32391480b7",
+   "round": 1,
+   "status": "superseded",
+   "note": "round 1 prompt = same builder applied to the pre-judge shot_desc; c01–c08 superseded after judge round 1 (hook rewrite)"
+  },
+  {
+   "id": "c02",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Any competitor jar is plain white, unlabeled, blurred label. Scene (Ukrainian brief): Той самий план, камера повільно опускається: край шарфа відходить, видно горизонтальні лінії на шиї; пальці торкаються їх.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "418c2803-b011-4ce5-ad7d-79d8e3e36ff2",
+   "round": 1,
+   "status": "superseded",
+   "note": "round 1 prompt = same builder applied to the pre-judge shot_desc; c01–c08 superseded after judge round 1 (hook rewrite)"
+  },
+  {
+   "id": "c03",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Scene (Ukrainian brief): Офісна вбиральня, дзеркало: обличчя героїні крупно — доглянуте, спокійне, легка втома в очах.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "538139f4-1fd3-4d67-b38b-3d06e7b619a4",
+   "round": 1,
+   "status": "superseded",
+   "note": "round 1 prompt = same builder applied to the pre-judge shot_desc; c01–c08 superseded after judge round 1 (hook rewrite)"
+  },
+  {
+   "id": "c04",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Colleague Alina, 32, dark hair, office blouse; same face as second reference. Scene (Ukrainian brief): Загальний план: героїня і колега Аліна поруч біля дзеркала; погляд колеги на мить ковзає на шию героїні.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ],
+    [
+     "colleague",
+     "04a929c6-db32-442a-8c76-887beae312a8"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "0e153b2f-6b63-4fa7-b494-b804d5260b0c",
+   "round": 1,
+   "status": "superseded",
+   "note": "round 1 prompt = same builder applied to the pre-judge shot_desc; c01–c08 superseded after judge round 1 (hook rewrite)"
+  },
+  {
+   "id": "c05",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Colleague Alina, 32, dark hair, office blouse; same face as second reference. Scene (Ukrainian brief): Той самий план: колега вже дивиться на себе, поправляє волосся; героїня застигла, рука біля шарфа.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ],
+    [
+     "colleague",
+     "04a929c6-db32-442a-8c76-887beae312a8"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "8f3b7377-7bd3-408e-9c4d-412f9475d4ec",
+   "round": 1,
+   "status": "superseded",
+   "note": "round 1 prompt = same builder applied to the pre-judge shot_desc; c01–c08 superseded after judge round 1 (hook rewrite)"
+  },
+  {
+   "id": "c06",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Scene (Ukrainian brief): Дзеркало, героїня крупніше, дивиться собі в очі; тепле верхнє світло.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "83e9cde4-b559-4608-ad1f-3b7535f82a00",
+   "round": 1,
+   "status": "superseded",
+   "note": "round 1 prompt = same builder applied to the pre-judge shot_desc; c01–c08 superseded after judge round 1 (hook rewrite)"
+  },
+  {
+   "id": "c07",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Scene (Ukrainian brief): Героїня застібає верхній ґудзик блузи під шарфом; дзеркало у розфокусі.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "a710a74a-076a-46f3-b9a9-7a79dc8b6180",
+   "round": 1,
+   "status": "superseded",
+   "note": "round 1 prompt = same builder applied to the pre-judge shot_desc; c01–c08 superseded after judge round 1 (hook rewrite)"
+  },
+  {
+   "id": "c08",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Scene (Ukrainian brief): Той самий план: погляд героїні вниз, долоня лягає на шарф; пауза.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "3d3dfc74-1301-4172-a51f-6e9078951ca3",
+   "round": 1,
+   "status": "superseded",
+   "note": "round 1 prompt = same builder applied to the pre-judge shot_desc; c01–c08 superseded after judge round 1 (hook rewrite)"
+  },
+  {
+   "id": "c09",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Scene (Ukrainian brief): Ранкова ванна, сироватка на обличчі, швидкий монтаж.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "248dadfb-134b-469b-afea-585e915367ec",
+   "round": 1,
+   "status": "completed",
+   "note": "",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160926_248dadfb-134b-469b-afea-585e915367ec.png"
+  },
+  {
+   "id": "c10",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Scene (Ukrainian brief): Полиця з флаконами без написів; рука бере флакон.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "9353c8fc-0929-44b8-8764-f407326f3ac1",
+   "round": 1,
+   "status": "completed",
+   "note": "",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160925_9353c8fc-0929-44b8-8764-f407326f3ac1.png"
+  },
+  {
+   "id": "c11",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Scene (Ukrainian brief): Вечір, лампа, героїня наносить крем на щоки.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "3e5bcfb0-f6a3-4d4f-9dfb-f1bde711348e",
+   "round": 1,
+   "status": "completed",
+   "note": "",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160924_3e5bcfb0-f6a3-4d4f-9dfb-f1bde711348e.png"
+  },
+  {
+   "id": "c12",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Scene (Ukrainian brief): Макро: пальці з кремом зупиняються на лінії щелепи. Шия — нижче, суха.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "671c785c-1e30-4683-80d7-2ecd28abc6b6",
+   "round": 1,
+   "status": "completed",
+   "note": "",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160925_671c785c-1e30-4683-80d7-2ecd28abc6b6.png"
+  },
+  {
+   "id": "c13",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Cutaway insert, no people's faces, no product, no brand. Scene (Ukrainian brief): Cutaway: глянцева реклама крему для обличчя в журналі, рука гортає; жодного тексту не читається.",
+   "refs": [],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "7ac0704b-38cc-49bc-b402-4f14dc3283ca",
+   "round": 1,
+   "status": "completed",
+   "note": "",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160938_7ac0704b-38cc-49bc-b402-4f14dc3283ca.png"
+  },
+  {
+   "id": "c14",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Scene (Ukrainian brief): Дзеркало, долоня героїні на шиї, погляд у камеру.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "df73bfff-4c1f-413a-b4b0-2a874ec75f8c",
+   "round": 1,
+   "status": "completed",
+   "note": "",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160938_df73bfff-4c1f-413a-b4b0-2a874ec75f8c.png"
+  },
+  {
+   "id": "c15",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Any competitor jar is plain white, unlabeled, blurred label. Scene (Ukrainian brief): Рука бере з полиці важку білу банку без назви (ворог).",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "1485505e-ba11-4838-b9dc-f4b0732a59fd",
+   "round": 1,
+   "status": "completed",
+   "note": "",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160938_1485505e-ba11-4838-b9dc-f4b0732a59fd.png"
+  },
+  {
+   "id": "c16",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Any competitor jar is plain white, unlabeled, blurred label. Scene (Ukrainian brief): Густий білий крем шаром на шиї, важко розтирається.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "b9e51572-575e-4378-9855-bd645d8548b4",
+   "round": 1,
+   "status": "completed",
+   "note": "",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160938_b9e51572-575e-4378-9855-bd645d8548b4.png"
+  },
+  {
+   "id": "c17",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Any competitor jar is plain white, unlabeled, blurred label. Scene (Ukrainian brief): Дзеркало: під підборіддям нова мʼяка складка.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "f5489430-0222-4941-8bba-eac68a2c468e",
+   "round": 1,
+   "status": "completed",
+   "note": "",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160938_f5489430-0222-4941-8bba-eac68a2c468e.png"
+  },
+  {
+   "id": "c18",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Any competitor jar is plain white, unlabeled, blurred label. Scene (Ukrainian brief): Макро складки під підборіддям, природне світло.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "e74d2d3f-ea1f-4ff2-ba61-91f87e1fd4ae",
+   "round": 1,
+   "status": "completed",
+   "note": "",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160938_e74d2d3f-ea1f-4ff2-ba61-91f87e1fd4ae.png"
+  },
+  {
+   "id": "c19",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Any competitor jar is plain white, unlabeled, blurred label. Scene (Ukrainian brief): Героїня зачиняє шафку, повну початих банок без назв.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "d2403b78-d26e-4c84-9892-0f3a73b4c7e2",
+   "round": 1,
+   "status": "completed",
+   "note": "",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160938_d2403b78-d26e-4c84-9892-0f3a73b4c7e2.png"
+  },
+  {
+   "id": "c01",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Scene (Ukrainian brief): Крупно: руки героїні (51) підтягують шовковий сіро-бежевий шарф під горло; за вікном офісу яскраве літнє сонце.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "e6c6d38e-c4ea-407d-8661-caa6d9a840b5",
+   "round": 2,
+   "status": "completed",
+   "note": "hook rewrite after judge-marketer round 1 (T1); scene brief given in English in the actual call, identical content to shot_desc",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161915_e6c6d38e-c4ea-407d-8661-caa6d9a840b5.png"
+  },
+  {
+   "id": "c02",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Any competitor jar is plain white, unlabeled, blurred label. Scene (Ukrainian brief): Той самий план, камера повільно опускається: край шарфа відходить, видно горизонтальні лінії на шиї; пальці торкаються їх.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "94f97182-7441-483c-aaef-da95d8e7f115",
+   "round": 2,
+   "status": "completed",
+   "note": "hook rewrite after judge-marketer round 1 (T1); scene brief given in English in the actual call, identical content to shot_desc",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161916_94f97182-7441-483c-aaef-da95d8e7f115.png"
+  },
+  {
+   "id": "c03",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Scene (Ukrainian brief): Офісна вбиральня, дзеркало: обличчя героїні крупно — доглянуте, спокійне, легка втома в очах.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "7faa87dd-db1b-46ea-9b57-a70b1c0bd94e",
+   "round": 2,
+   "status": "completed",
+   "note": "hook rewrite after judge-marketer round 1 (T1); scene brief given in English in the actual call, identical content to shot_desc",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161915_7faa87dd-db1b-46ea-9b57-a70b1c0bd94e.png"
+  },
+  {
+   "id": "c04",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Colleague Alina, 32, dark hair, office blouse; same face as second reference. Scene (Ukrainian brief): Загальний план: героїня і колега Аліна поруч біля дзеркала; погляд колеги на мить ковзає на шию героїні.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ],
+    [
+     "colleague",
+     "04a929c6-db32-442a-8c76-887beae312a8"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "c20399f7-b9ae-4235-b529-963fa926cfa1",
+   "round": 2,
+   "status": "completed",
+   "note": "hook rewrite after judge-marketer round 1 (T1); scene brief given in English in the actual call, identical content to shot_desc",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161915_c20399f7-b9ae-4235-b529-963fa926cfa1.png"
+  },
+  {
+   "id": "c05",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Colleague Alina, 32, dark hair, office blouse; same face as second reference. Scene (Ukrainian brief): Той самий план: колега вже дивиться на себе, поправляє волосся; героїня застигла, рука біля шарфа.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ],
+    [
+     "colleague",
+     "04a929c6-db32-442a-8c76-887beae312a8"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "f10d1330-d005-4025-9de8-816a2c8e0911",
+   "round": 2,
+   "status": "completed",
+   "note": "hook rewrite after judge-marketer round 1 (T1); scene brief given in English in the actual call, identical content to shot_desc",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161916_f10d1330-d005-4025-9de8-816a2c8e0911.png"
+  },
+  {
+   "id": "c06",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Scene (Ukrainian brief): Дзеркало, героїня крупніше, дивиться собі в очі; тепле верхнє світло.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "ec317834-681f-43a2-9cbf-a6b52b4af6d5",
+   "round": 2,
+   "status": "completed",
+   "note": "hook rewrite after judge-marketer round 1 (T1); scene brief given in English in the actual call, identical content to shot_desc",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161915_ec317834-681f-43a2-9cbf-a6b52b4af6d5.png"
+  },
+  {
+   "id": "c07",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Scene (Ukrainian brief): Героїня застібає верхній ґудзик блузи під шарфом; дзеркало у розфокусі.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "166f67ef-cd5d-4444-91c5-c509311e389e",
+   "round": 2,
+   "status": "completed",
+   "note": "hook rewrite after judge-marketer round 1 (T1); scene brief given in English in the actual call, identical content to shot_desc",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161915_166f67ef-cd5d-4444-91c5-c509311e389e.png"
+  },
+  {
+   "id": "c08",
+   "prompt": "Photorealistic cinematic still, vertical 9:16, natural light, shallow depth of field, 35mm look, muted warm palette, no text, no logos, no watermark, no captions. Act I look: slightly desaturated, cool-neutral grade. Heroine Oksana, 51, Ukrainian woman, dark-blond honey hair in a low ponytail, cream silk blouse, grey-beige silk scarf, oatmeal cardigan; same face as reference image. Scene (Ukrainian brief): Той самий план: погляд героїні вниз, долоня лягає на шарф; пауза.",
+   "refs": [
+    [
+     "hero",
+     "c852d36e-7c52-41fc-a8ab-16b2a60c8fc9"
+    ]
+   ],
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "1k",
+   "job_id": "35440aa9-dc77-4c7a-bc7e-1499bb0d3d1a",
+   "round": 2,
+   "status": "completed",
+   "note": "hook rewrite after judge-marketer round 1 (T1); scene brief given in English in the actual call, identical content to shot_desc",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161915_35440aa9-dc77-4c7a-bc7e-1499bb0d3d1a.png"
+  }
+ ],
+ "prompt_builder": "tools/still_prompts.py"
 }

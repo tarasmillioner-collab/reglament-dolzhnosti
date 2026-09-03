@@ -1,1622 +1,1625 @@
 [
- {
-  "id": "c01",
-  "beat": "B01",
-  "role": "hook",
-  "shot": 1,
-  "text": "Їй тридцять два",
-  "hot": "тридцять",
-  "shot_desc": "Офісна вбиральня, дзеркало. Молода колега (32) поправляє волосся; поруч героїня (51). Тепле верхнє світло.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": true,
-  "claims": [
-   "F-35",
-   "F-37"
-  ],
-  "t_start": 0.0,
-  "t_end": 1.77,
-  "words": 3,
-  "funcs": [
-   "hook"
-  ]
- },
- {
-  "id": "c02",
-  "beat": "B01",
-  "role": "hook",
-  "shot": 1,
-  "text": "Мені пʼятдесят один",
-  "hot": "пʼятдесят",
-  "shot_desc": "Те саме дзеркало, героїня у кадрі крупніше, легка втома в очах.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-35"
-  ],
-  "t_start": 1.77,
-  "t_end": 3.54,
-  "words": 3,
-  "funcs": []
- },
- {
-  "id": "c03",
-  "beat": "B01",
-  "role": "hook",
-  "shot": 2,
-  "text": "Ми стояли поруч біля дзеркала",
-  "hot": "дзеркала",
-  "shot_desc": "Загальний план: дві жінки поруч біля дзеркала, відображення обох.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": true,
-  "claims": [
-   "F-37"
-  ],
-  "t_start": 3.54,
-  "t_end": 6.48,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c04",
-  "beat": "B01",
-  "role": "hook",
-  "shot": 3,
-  "text": "Вона глянула на мою шию",
-  "hot": "шию",
-  "shot_desc": "Крупно: очі колеги ковзають вниз, на шию героїні.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-37"
-  ],
-  "t_start": 6.48,
-  "t_end": 9.43,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c05",
-  "beat": "B01",
-  "role": "hook",
-  "shot": 3,
-  "text": "І посміхнулась — так, як шкода",
-  "hot": "посміхнулась",
-  "shot_desc": "Крупно: посмішка колеги — ввічлива, жаліслива.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-37"
-  ],
-  "t_start": 9.43,
-  "t_end": 12.38,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c06",
-  "beat": "B01",
-  "role": "hook",
-  "shot": 4,
-  "text": "Я поправила шарф. Улітку.",
-  "hot": "шарф",
-  "shot_desc": "Руки героїні підтягують шовковий шарф вище; за вікном літнє сонце.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": true,
-  "claims": [
-   "F-39",
-   "F-40"
-  ],
-  "t_start": 12.38,
-  "t_end": 14.73,
-  "words": 4,
-  "funcs": []
- },
- {
-  "id": "c07",
-  "beat": "B01",
-  "role": "hook",
-  "shot": 5,
-  "text": "Обличчя ще тримається",
-  "hot": "обличчя",
-  "shot_desc": "Дзеркало, крупно обличчя героїні — доглянуте, спокійне.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-37"
-  ],
-  "t_start": 14.73,
-  "t_end": 16.5,
-  "words": 3,
-  "funcs": []
- },
- {
-  "id": "c08",
-  "beat": "B01",
-  "role": "hook",
-  "shot": 5,
-  "text": "А шия вже здала мене",
-  "hot": "шия",
-  "shot_desc": "Панорама вниз: шия з горизонтальними лініями, пальці торкаються.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": true,
-  "key_frame": false,
-  "claims": [
-   "F-37",
-   "F-38"
-  ],
-  "t_start": 16.5,
-  "t_end": 19.45,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c09",
-  "beat": "B02",
-  "role": "backstory",
-  "shot": 6,
-  "text": "Двадцять років я доглядала обличчя",
-  "hot": "обличчя",
-  "shot_desc": "Ранкова ванна, сироватка на обличчі, швидкий монтаж.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-49"
-  ],
-  "t_start": 19.45,
-  "t_end": 22.07,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c10",
-  "beat": "B02",
-  "role": "backstory",
-  "shot": 7,
-  "text": "Сироватки. Крем. Косметолог.",
-  "hot": "сироватки",
-  "shot_desc": "Полиця з флаконами без написів; рука бере флакон.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-49"
-  ],
-  "t_start": 22.07,
-  "t_end": 23.64,
-  "words": 3,
-  "funcs": []
- },
- {
-  "id": "c11",
-  "beat": "B02",
-  "role": "backstory",
-  "shot": 8,
-  "text": "Щовечора",
-  "hot": "щовечора",
-  "shot_desc": "Вечір, лампа, героїня наносить крем на щоки.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-49"
-  ],
-  "t_start": 23.64,
-  "t_end": 24.16,
-  "words": 1,
-  "funcs": []
- },
- {
-  "id": "c12",
-  "beat": "B02",
-  "role": "backstory",
-  "shot": 9,
-  "text": "І зупинялась рівно на підборідді",
-  "hot": "підборідді",
-  "shot_desc": "Макро: пальці з кремом зупиняються на лінії щелепи. Шия — нижче, суха.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": true,
-  "claims": [
-   "F-49"
-  ],
-  "t_start": 24.16,
-  "t_end": 26.78,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c13",
-  "beat": "B02",
-  "role": "backstory",
-  "shot": 10,
-  "text": "Так робить кожна. Так нас навчили.",
-  "hot": "навчили",
-  "shot_desc": "Cutaway: глянцева реклама крему для обличчя в журналі, рука гортає; жодного тексту не читається.",
-  "world": "cutaway",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-49"
-  ],
-  "t_start": 26.78,
-  "t_end": 29.92,
-  "words": 6,
-  "funcs": []
- },
- {
-  "id": "c14",
-  "beat": "B02",
-  "role": "backstory",
-  "shot": 11,
-  "text": "Ніхто не сказав: шия — інша шкіра",
-  "hot": "шия",
-  "shot_desc": "Дзеркало, долоня героїні на шиї, погляд у камеру.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-47"
-  ],
-  "t_start": 29.92,
-  "t_end": 33.06,
-  "words": 6,
-  "funcs": []
- },
- {
-  "id": "c15",
-  "beat": "B03",
-  "role": "problem",
-  "shot": 12,
-  "text": "Тоді я купила густий дорогий крем",
-  "hot": "крем",
-  "shot_desc": "Рука бере з полиці важку білу банку без назви (ворог).",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": true,
-  "key_frame": false,
-  "claims": [
-   "F-47"
-  ],
-  "t_start": 33.06,
-  "t_end": 36.47,
-  "words": 6,
-  "funcs": []
- },
- {
-  "id": "c16",
-  "beat": "B03",
-  "role": "problem",
-  "shot": 13,
-  "text": "Наносила двічі на день. Місяць.",
-  "hot": "двічі",
-  "shot_desc": "Густий білий крем шаром на шиї, важко розтирається.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": true,
-  "key_frame": false,
-  "claims": [
-   "F-47"
-  ],
-  "t_start": 36.47,
-  "t_end": 39.3,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c17",
-  "beat": "B03",
-  "role": "problem",
-  "shot": 14,
-  "text": "Ідеально. Стало гірше.",
-  "hot": "гірше",
-  "shot_desc": "Дзеркало: під підборіддям нова мʼяка складка.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": true,
-  "key_frame": false,
-  "claims": [
-   "F-47"
-  ],
-  "t_start": 39.3,
-  "t_end": 41.01,
-  "words": 3,
-  "funcs": []
- },
- {
-  "id": "c18",
-  "beat": "B03",
-  "role": "problem",
-  "shot": 15,
-  "text": "Зʼявилась складка, якої не було",
-  "hot": "складка",
-  "shot_desc": "Макро складки під підборіддям, природне світло.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": true,
-  "key_frame": false,
-  "claims": [
-   "F-38"
-  ],
-  "t_start": 41.01,
-  "t_end": 43.84,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c19",
-  "beat": "B03",
-  "role": "problem",
-  "shot": 16,
-  "text": "Я подумала: це я запустила",
-  "hot": "запустила",
-  "shot_desc": "Героїня зачиняє шафку, повну початих банок без назв.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": true,
-  "key_frame": false,
-  "claims": [
-   "F-41"
-  ],
-  "t_start": 43.84,
-  "t_end": 46.68,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c20",
-  "beat": "B04",
-  "role": "agitate",
-  "shot": 17,
-  "text": "Знаєте, що найгірше? Не зморшки.",
-  "hot": "зморшки",
-  "shot_desc": "Ніч, кухня, героїня сидить з телефоном. Довгий план.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": true,
-  "claims": [
-   "F-39"
-  ],
-  "t_start": 46.68,
-  "t_end": 49.04,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c21",
-  "beat": "B04",
-  "role": "agitate",
-  "shot": 17,
-  "text": "Погляд.",
-  "hot": "погляд",
-  "shot_desc": "Той самий план, повільний наїзд.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-39"
-  ],
-  "t_start": 49.04,
-  "t_end": 49.51,
-  "words": 1,
-  "funcs": []
- },
- {
-  "id": "c22",
-  "beat": "B04",
-  "role": "agitate",
-  "shot": 17,
-  "text": "Фото з дня народження доньки",
-  "hot": "фото",
-  "shot_desc": "Екран телефона: святкове фото, пальці збільшують профіль героїні (без тексту на екрані).",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-37"
-  ],
-  "t_start": 49.51,
-  "t_end": 51.87,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c23",
-  "beat": "B04",
-  "role": "agitate",
-  "shot": 17,
-  "text": "Побачила себе в профіль",
-  "hot": "профіль",
-  "shot_desc": "Її обличчя над екраном: розуміння.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-37"
-  ],
-  "t_start": 51.87,
-  "t_end": 53.75,
-  "words": 4,
-  "funcs": []
- },
- {
-  "id": "c24",
-  "beat": "B04",
-  "role": "agitate",
-  "shot": 18,
-  "text": "Чужа шия. Мʼяка. Пуста.",
-  "hot": "шия",
-  "shot_desc": "Чорно-біло: повільний наїзд, долоня на горлі.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": true,
-  "key_frame": true,
-  "claims": [
-   "F-38",
-   "F-40"
-  ],
-  "t_start": 53.75,
-  "t_end": 55.64,
-  "words": 4,
-  "funcs": []
- },
- {
-  "id": "c25",
-  "beat": "B04",
-  "role": "agitate",
-  "shot": 18,
-  "text": "Вимкнула камеру на дзвінках",
-  "hot": "камеру",
-  "shot_desc": "Чорно-біло: ноутбук, вона закриває камеру пальцем.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-39"
-  ],
-  "t_start": 55.64,
-  "t_end": 57.52,
-  "words": 4,
-  "funcs": []
- },
- {
-  "id": "c26",
-  "beat": "B04",
-  "role": "agitate",
-  "shot": 18,
-  "text": "Застібала верхній ґудзик. Улітку.",
-  "hot": "ґудзик",
-  "shot_desc": "Чорно-біло: пальці застібають верхній ґудзик блузи.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-39"
-  ],
-  "t_start": 57.52,
-  "t_end": 59.41,
-  "words": 4,
-  "funcs": []
- },
- {
-  "id": "c27",
-  "beat": "B04",
-  "role": "agitate",
-  "shot": 18,
-  "text": "Чоловік обіймав за шию — я напружувалась",
-  "hot": "напружувалась",
-  "shot_desc": "Чорно-біло: руки чоловіка зі спини лягають на плечі, вона завмирає.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-39"
-  ],
-  "t_start": 59.41,
-  "t_end": 62.24,
-  "words": 6,
-  "funcs": []
- },
- {
-  "id": "c28",
-  "beat": "B05",
-  "role": "problem",
-  "shot": 19,
-  "text": "Я не знала того, що знаю зараз",
-  "hot": "знаю",
-  "shot_desc": "Героїня зараз, денне світло, спокійний прямий погляд.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [],
-  "t_start": 62.24,
-  "t_end": 65.74,
-  "words": 7,
-  "funcs": []
- },
- {
-  "id": "c29",
-  "beat": "B05",
-  "role": "problem",
-  "shot": 20,
-  "text": "Шкіра шиї удвічі тонша за щоку",
-  "hot": "тонша",
-  "shot_desc": "Cutaway: рука малює маркером на папері зріз щоки (товстий) і шиї (тонка лінія).",
-  "world": "cutaway",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": true,
-  "claims": [
-   "F-47"
-  ],
-  "t_start": 65.74,
-  "t_end": 68.74,
-  "words": 6,
-  "funcs": []
- },
- {
-  "id": "c30",
-  "beat": "B05",
-  "role": "problem",
-  "shot": 20,
-  "text": "Пів міліметра. Майже немає сальних залоз.",
-  "hot": "залоз",
-  "shot_desc": "Cutaway: той самий аркуш, олівець обводить тонку лінію.",
-  "world": "cutaway",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-47"
-  ],
-  "t_start": 68.74,
-  "t_end": 71.74,
-  "words": 6,
-  "funcs": []
- },
- {
-  "id": "c31",
-  "beat": "B05",
-  "role": "problem",
-  "shot": 20,
-  "text": "Не кріпиться до кістки — тримається на мʼязі",
-  "hot": "мʼязі",
-  "shot_desc": "Cutaway: під лінією шиї малюється порожнеча і одна тонка смужка мʼяза.",
-  "world": "cutaway",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-47"
-  ],
-  "t_start": 71.74,
-  "t_end": 75.24,
-  "words": 7,
-  "funcs": []
- },
- {
-  "id": "c32",
-  "beat": "B05",
-  "role": "problem",
-  "shot": 21,
-  "text": "Густий крем на ній — не догляд. Вантаж.",
-  "hot": "вантаж",
-  "shot_desc": "Cutaway-метафора: важка крапля густого крему падає на тонку натягнуту тканину, тканина провисає.",
-  "world": "cutaway",
-  "product_visible": false,
-  "enemy_in_frame": true,
-  "key_frame": false,
-  "claims": [
-   "F-47"
-  ],
-  "t_start": 75.24,
-  "t_end": 78.74,
-  "words": 7,
-  "funcs": []
- },
- {
-  "id": "c33",
-  "beat": "B05",
-  "role": "problem",
-  "shot": 21,
-  "text": "Гравітаційна пастка",
-  "hot": "пастка",
-  "shot_desc": "Cutaway: тканина провисає ще нижче, крапля за краплею.",
-  "world": "cutaway",
-  "product_visible": false,
-  "enemy_in_frame": true,
-  "key_frame": false,
-  "claims": [
-   "F-47"
-  ],
-  "t_start": 78.74,
-  "t_end": 79.74,
-  "words": 2,
-  "funcs": []
- },
- {
-  "id": "c34",
-  "beat": "B06",
-  "role": "mentor",
-  "shot": 22,
-  "text": "Марта — технологиня, двадцять років формул",
-  "hot": "Марта",
-  "shot_desc": "Кавʼярня. Марта (55, коротке сиве волосся, спокійний погляд) навпроти героїні. Один довгий план.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": true,
-  "claims": [],
-  "t_start": 79.74,
-  "t_end": 82.44,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c35",
-  "beat": "B06",
-  "role": "mentor",
-  "shot": 22,
-  "text": "Вона побачила мій шарф",
-  "hot": "шарф",
-  "shot_desc": "Той самий план: погляд Марти на шарф героїні.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-39"
-  ],
-  "t_start": 82.44,
-  "t_end": 84.6,
-  "words": 4,
-  "funcs": []
- },
- {
-  "id": "c36",
-  "beat": "B06",
-  "role": "mentor",
-  "shot": 22,
-  "text": "І не спитала нічого",
-  "hot": "нічого",
-  "shot_desc": "Той самий план: пауза, Марта мовчить.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [],
-  "t_start": 84.6,
-  "t_end": 86.77,
-  "words": 4,
-  "funcs": []
- },
- {
-  "id": "c37",
-  "beat": "B06",
-  "role": "mentor",
-  "shot": 22,
-  "text": "Тільки: покажи, що ти мажеш",
-  "hot": "мажеш",
-  "shot_desc": "Той самий план: Марта простягає долоню.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [],
-  "t_start": 86.77,
-  "t_end": 89.47,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c38",
-  "beat": "B07",
-  "role": "diagnosis",
-  "shot": 23,
-  "text": "Я дістала банку",
-  "hot": "банку",
-  "shot_desc": "Героїня ставить важку білу банку без назви на стіл кавʼярні (ворог).",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": true,
-  "key_frame": false,
-  "claims": [
-   "F-47"
-  ],
-  "t_start": 89.47,
-  "t_end": 91.05,
-  "words": 3,
-  "funcs": []
- },
- {
-  "id": "c39",
-  "beat": "B07",
-  "role": "diagnosis",
-  "shot": 24,
-  "text": "Вона перевернула. Прочитала склад.",
-  "hot": "склад",
-  "shot_desc": "Руки Марти перевертають банку; етикетка розмита, текст не читається.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": true,
-  "key_frame": false,
-  "claims": [
-   "F-47"
-  ],
-  "t_start": 91.05,
-  "t_end": 93.15,
-  "words": 4,
-  "funcs": []
- },
- {
-  "id": "c40",
-  "beat": "B07",
-  "role": "diagnosis",
-  "shot": 24,
-  "text": "Воски. Силікони. Парафін.",
-  "hot": "силікони",
-  "shot_desc": "Крупно: палець Марти веде по розмитій етикетці.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": true,
-  "key_frame": false,
-  "claims": [
-   "F-47"
-  ],
-  "t_start": 93.15,
-  "t_end": 94.72,
-  "words": 3,
-  "funcs": []
- },
- {
-  "id": "c41",
-  "beat": "B07",
-  "role": "diagnosis",
-  "shot": 25,
-  "text": "Припини. Це не підтягує. Це тягне вниз.",
-  "hot": "вниз",
-  "shot_desc": "Обличчя Марти крупно, прямо.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-47"
-  ],
-  "t_start": 94.72,
-  "t_end": 98.4,
-  "words": 7,
-  "funcs": []
- },
- {
-  "id": "c42",
-  "beat": "B07",
-  "role": "diagnosis",
-  "shot": 25,
-  "text": "Двічі на день ти кладеш на шию гирю",
-  "hot": "гирю",
-  "shot_desc": "Марта показує рукою рух «вниз».",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-47"
-  ],
-  "t_start": 98.4,
-  "t_end": 102.61,
-  "words": 8,
-  "funcs": []
- },
- {
-  "id": "c43",
-  "beat": "B07",
-  "role": "diagnosis",
-  "shot": 26,
-  "text": "Шкірі шиї потрібне інше. Не вага. Вода.",
-  "hot": "вода",
-  "shot_desc": "Cutaway: суха зморщена губка на чорному тлі; падає одна крапля.",
-  "world": "cutaway",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": true,
-  "claims": [
-   "F-09"
-  ],
-  "t_start": 102.61,
-  "t_end": 106.28,
-  "words": 7,
-  "funcs": []
- },
- {
-  "id": "c44",
-  "beat": "B07",
-  "role": "diagnosis",
-  "shot": 26,
-  "text": "Наповнити залом зсередини — без ваги",
-  "hot": "зсередини",
-  "shot_desc": "Cutaway: губка розбухає і стає гладкою (прискорено).",
-  "world": "cutaway",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-09"
-  ],
-  "t_start": 106.28,
-  "t_end": 108.91,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c45",
-  "beat": "B08",
-  "role": "handover",
-  "shot": 27,
-  "text": "Вона дістала маленьку лавандову баночку",
-  "hot": "баночку",
-  "shot_desc": "Рука Марти ставить на стіл лавандову скляну банку goPure з сріблястою кришкою (як на фото) і підсуває героїні.",
-  "world": "hero",
-  "product_visible": true,
-  "enemy_in_frame": false,
-  "key_frame": true,
-  "claims": [
-   "F-02",
-   "F-03"
-  ],
-  "t_start": 108.91,
-  "t_end": 111.15,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c46",
-  "beat": "B08",
-  "role": "handover",
-  "shot": 27,
-  "text": "Скляну. Легку.",
-  "hot": "легку",
-  "shot_desc": "Героїня піднімає банку, зважує в долоні.",
-  "world": "hero",
-  "product_visible": true,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-02"
-  ],
-  "t_start": 111.15,
-  "t_end": 112.05,
-  "words": 2,
-  "funcs": []
- },
- {
-  "id": "c47",
-  "beat": "B08",
-  "role": "handover",
-  "shot": 28,
-  "text": "Купуасу — масло з Амазонії",
-  "hot": "купуасу",
-  "shot_desc": "Cutaway: плід купуасу і масло, макро, тропічне світло.",
-  "world": "cutaway",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-08"
-  ],
-  "t_start": 112.05,
-  "t_end": 113.85,
-  "words": 4,
-  "funcs": []
- },
- {
-  "id": "c48",
-  "beat": "B08",
-  "role": "handover",
-  "shot": 28,
-  "text": "Тримає води в чотири з половиною рази більше за вагу",
-  "hot": "води",
-  "shot_desc": "Cutaway: крапля води всмоктується в масло/губку.",
-  "world": "cutaway",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-09"
-  ],
-  "t_start": 113.85,
-  "t_end": 118.34,
-  "words": 10,
-  "funcs": []
- },
- {
-  "id": "c49",
-  "beat": "B08",
-  "role": "handover",
-  "shot": 27,
-  "text": "Без восків. Спробуй. Шістдесят днів.",
-  "hot": "спробуй",
-  "shot_desc": "Банка goPure в долоні героїні, крупно; Марта на другому плані.",
-  "world": "hero",
-  "product_visible": true,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-18",
-   "F-21"
-  ],
-  "t_start": 118.34,
-  "t_end": 120.58,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c50",
-  "beat": "B09",
-  "role": "proof",
-  "shot": 29,
-  "text": "Перші два тижні — нічого. Тільки мʼякше.",
-  "hot": "мʼякше",
-  "shot_desc": "Ранок, героїня наносить крем goPure на шию рухами знизу вгору; банка поруч.",
-  "world": "hero",
-  "product_visible": true,
-  "enemy_in_frame": false,
-  "key_frame": true,
-  "claims": [
-   "F-20",
-   "F-23"
-  ],
-  "t_start": 120.58,
-  "t_end": 123.5,
-  "words": 6,
-  "funcs": []
- },
- {
-  "id": "c51",
-  "beat": "B09",
-  "role": "proof",
-  "shot": 30,
-  "text": "На третьому тижні донька зайшла на кухню",
-  "hot": "донька",
-  "shot_desc": "Кухня, донька (25) заходить з чашкою.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-42"
-  ],
-  "t_start": 123.5,
-  "t_end": 126.9,
-  "words": 7,
-  "funcs": []
- },
- {
-  "id": "c52",
-  "beat": "B09",
-  "role": "proof",
-  "shot": 30,
-  "text": "Мам, ти без шарфа?",
-  "hot": "шарфа",
-  "shot_desc": "Донька дивиться, здивовано-тепло.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-42"
-  ],
-  "t_start": 126.9,
-  "t_end": 128.85,
-  "words": 4,
-  "funcs": []
- },
- {
-  "id": "c53",
-  "beat": "B09",
-  "role": "proof",
-  "shot": 30,
-  "text": "Я навіть не помітила, що зняла його",
-  "hot": "зняла",
-  "shot_desc": "Героїня торкається відкритої шиї, усміхається.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-42"
-  ],
-  "t_start": 128.85,
-  "t_end": 132.25,
-  "words": 7,
-  "funcs": []
- },
- {
-  "id": "c54",
-  "beat": "B10",
-  "role": "proof",
-  "shot": 31,
-  "text": "На шостому тижні я зробила те, чого не робила три роки",
-  "hot": "три",
-  "shot_desc": "Героїня біля вікна тримає телефон збоку, знімає профіль.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-22"
-  ],
-  "t_start": 132.25,
-  "t_end": 136.53,
-  "words": 11,
-  "funcs": []
- },
- {
-  "id": "c55",
-  "beat": "B10",
-  "role": "proof",
-  "shot": 31,
-  "text": "Фото в профіль. Без тонального. Без фільтра.",
-  "hot": "профіль",
-  "shot_desc": "Екран телефона: її профіль, шия відкрита (без тексту).",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-22"
-  ],
-  "t_start": 136.53,
-  "t_end": 139.25,
-  "words": 7,
-  "funcs": []
- },
- {
-  "id": "c56",
-  "beat": "B10",
-  "role": "proof",
-  "shot": 32,
-  "text": "Лінії не зникли. Але шкіра стала щільною.",
-  "hot": "щільною",
-  "shot_desc": "Макро шиї: гладка, щільна, природне світло; лінії тонші.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": true,
-  "claims": [
-   "F-24",
-   "F-45"
-  ],
-  "t_start": 139.25,
-  "t_end": 141.98,
-  "words": 7,
-  "funcs": []
- },
- {
-  "id": "c57",
-  "beat": "B10",
-  "role": "proof",
-  "shot": 32,
-  "text": "Гладкою",
-  "hot": "гладкою",
-  "shot_desc": "Долоня проводить по шиї.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-45"
-  ],
-  "t_start": 141.98,
-  "t_end": 142.37,
-  "words": 1,
-  "funcs": []
- },
- {
-  "id": "c58",
-  "beat": "B10",
-  "role": "proof",
-  "shot": 33,
-  "text": "За відгуками — девʼять із десяти жінок за чотири тижні",
-  "hot": "девʼять",
-  "shot_desc": "Cutaway: кілька жінок 45–60 на сонячній вулиці, сміються, відкриті шиї; без тексту.",
-  "world": "cutaway",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-46"
-  ],
-  "t_start": 142.37,
-  "t_end": 145.87,
-  "words": 9,
-  "funcs": []
- },
- {
-  "id": "c59",
-  "beat": "B11",
-  "role": "transformation",
-  "shot": 34,
-  "text": "Корпоратив. Той самий офіс.",
-  "hot": "офіс",
-  "shot_desc": "Вечір, офіс у теплих гірляндах, люди з келихами.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [],
-  "t_start": 145.87,
-  "t_end": 147.77,
-  "words": 4,
-  "funcs": []
- },
- {
-  "id": "c60",
-  "beat": "B11",
-  "role": "transformation",
-  "shot": 34,
-  "text": "Та сама колега",
-  "hot": "колега",
-  "shot_desc": "Молода колега у натовпі повертається.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-37"
-  ],
-  "t_start": 147.77,
-  "t_end": 149.2,
-  "words": 3,
-  "funcs": []
- },
- {
-  "id": "c61",
-  "beat": "B11",
-  "role": "transformation",
-  "shot": 35,
-  "text": "Я — в сукні з вирізом. Без шарфа.",
-  "hot": "вирізом",
-  "shot_desc": "Героїня в сукні з V-вирізом і тонким ланцюжком, спокійна.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": true,
-  "claims": [
-   "F-39",
-   "F-40"
-  ],
-  "t_start": 149.2,
-  "t_end": 152.52,
-  "words": 7,
-  "funcs": []
- },
- {
-  "id": "c62",
-  "beat": "B11",
-  "role": "transformation",
-  "shot": 36,
-  "text": "Вона глянула на мою шию. І розгубилась.",
-  "hot": "розгубилась",
-  "shot_desc": "Колега дивиться на шию героїні, збентежено.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-37"
-  ],
-  "t_start": 152.52,
-  "t_end": 155.85,
-  "words": 7,
-  "funcs": []
- },
- {
-  "id": "c63",
-  "beat": "B11",
-  "role": "transformation",
-  "shot": 36,
-  "text": "Я памʼятаю, як стояла. Пряма. Відкрита.",
-  "hot": "пряма",
-  "shot_desc": "Героїня крупно, пряма постава.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [],
-  "t_start": 155.85,
-  "t_end": 158.7,
-  "words": 6,
-  "funcs": []
- },
- {
-  "id": "c64",
-  "beat": "B11",
-  "role": "transformation",
-  "shot": 37,
-  "text": "Я знову ношу ланцюжки",
-  "hot": "ланцюжки",
-  "shot_desc": "Монтаж: застібка ланцюжка на шиї.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-40"
-  ],
-  "t_start": 158.7,
-  "t_end": 160.61,
-  "words": 4,
-  "funcs": []
- },
- {
-  "id": "c65",
-  "beat": "B11",
-  "role": "transformation",
-  "shot": 37,
-  "text": "Я вмикаю камеру",
-  "hot": "камеру",
-  "shot_desc": "Ноутбук: камера увімкнена, вона усміхається в дзвінку.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-39"
-  ],
-  "t_start": 160.61,
-  "t_end": 162.03,
-  "words": 3,
-  "funcs": []
- },
- {
-  "id": "c66",
-  "beat": "B11",
-  "role": "transformation",
-  "shot": 37,
-  "text": "Не відвертаюсь від фотографа",
-  "hot": "фотографа",
-  "shot_desc": "Хтось фотографує її збоку; вона не відвертається.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-39"
-  ],
-  "t_start": 162.03,
-  "t_end": 163.93,
-  "words": 4,
-  "funcs": []
- },
- {
-  "id": "c67",
-  "beat": "B11",
-  "role": "transformation",
-  "shot": 37,
-  "text": "Чоловік обіймає за шию — я не напружуюсь",
-  "hot": "обіймає",
-  "shot_desc": "Руки чоловіка на плечах зі спини; вона розслаблена, кладе долоню на його руку.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-39"
-  ],
-  "t_start": 163.93,
-  "t_end": 167.26,
-  "words": 7,
-  "funcs": [
-   "callback"
-  ]
- },
- {
-  "id": "c68",
-  "beat": "B12",
-  "role": "resolution",
-  "shot": 38,
-  "text": "Знаєте, що змінилось? Не її погляд. Мій.",
-  "hot": "мій",
-  "shot_desc": "Дзеркало, героїня дивиться на себе спокійно.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [],
-  "t_start": 167.26,
-  "t_end": 169.64,
-  "words": 7,
-  "funcs": []
- },
- {
-  "id": "c69",
-  "beat": "B12",
-  "role": "resolution",
-  "shot": 38,
-  "text": "Я перестала ховатися",
-  "hot": "ховатися",
-  "shot_desc": "Той самий план, легка усмішка.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-40"
-  ],
-  "t_start": 169.64,
-  "t_end": 170.66,
-  "words": 3,
-  "funcs": [
-   "callback"
-  ]
- },
- {
-  "id": "c70",
-  "beat": "B12",
-  "role": "resolution",
-  "shot": 39,
-  "text": "Не тому, що вона помітила",
-  "hot": "помітила",
-  "shot_desc": "Шарф складений у шухляду, рука її зачиняє.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [],
-  "t_start": 170.66,
-  "t_end": 172.37,
-  "words": 5,
-  "funcs": []
- },
- {
-  "id": "c71",
-  "beat": "B12",
-  "role": "resolution",
-  "shot": 39,
-  "text": "А тому, що я дивлюсь на себе — і мені так",
-  "hot": "так",
-  "shot_desc": "Героїня у дзеркалі, погляд у камеру.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [],
-  "t_start": 172.37,
-  "t_end": 175.77,
-  "words": 10,
-  "funcs": []
- },
- {
-  "id": "c72",
-  "beat": "B12",
-  "role": "resolution",
-  "shot": 40,
-  "text": "Шия — не вирок. Просто інша шкіра.",
-  "hot": "шкіра",
-  "shot_desc": "Долоня на шиї, мʼяка посмішка.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-47"
-  ],
-  "t_start": 175.77,
-  "t_end": 177.82,
-  "words": 6,
-  "funcs": []
- },
- {
-  "id": "c73",
-  "beat": "B12",
-  "role": "resolution",
-  "shot": 40,
-  "text": "Якій двадцять років ніхто не давав того, що треба",
-  "hot": "треба",
-  "shot_desc": "Той самий план, повільний відʼїзд.",
-  "world": "hero",
-  "product_visible": false,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-49"
-  ],
-  "t_start": 177.82,
-  "t_end": 180.88,
-  "words": 9,
-  "funcs": []
- },
- {
-  "id": "c74",
-  "beat": "B13",
-  "role": "brand",
-  "shot": 41,
-  "text": "Крем для шиї goPure Tighten & Lift",
-  "hot": "goPure",
-  "shot_desc": "Героїня тримає банку goPure біля обличчя, тепле світло; банка як на фото.",
-  "world": "hero",
-  "product_visible": true,
-  "enemy_in_frame": false,
-  "key_frame": true,
-  "claims": [
-   "F-01",
-   "F-03"
-  ],
-  "t_start": 180.88,
-  "t_end": 182.45,
-  "words": 6,
-  "funcs": [
-   "brand",
-   "offer"
-  ]
- },
- {
-  "id": "c75",
-  "beat": "B13",
-  "role": "brand",
-  "shot": 41,
-  "text": "Не інʼєкції за тридцять тисяч. Не люкс за три тисячі.",
-  "hot": "інʼєкції",
-  "shot_desc": "Банка в руці; за кадром нічого не змінюється.",
-  "world": "hero",
-  "product_visible": true,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-30"
-  ],
-  "t_start": 182.45,
-  "t_end": 185.07,
-  "words": 10,
-  "funcs": [
-   "price",
-   "offer"
-  ]
- },
- {
-  "id": "c76",
-  "beat": "B13",
-  "role": "brand",
-  "shot": 41,
-  "text": "Вісімсот девʼяносто пʼять гривень замість тисячі семисот пʼятдесяти",
-  "hot": "вісімсот",
-  "shot_desc": "End card (світ героїні): банка + ціна 895 ₴, стара 1 750 ₴ перекреслена.",
-  "world": "hero",
-  "product_visible": true,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-27",
-   "F-28"
-  ],
-  "t_start": 185.07,
-  "t_end": 187.16,
-  "words": 8,
-  "funcs": [
-   "price"
-  ]
- },
- {
-  "id": "c77",
-  "beat": "B13",
-  "role": "brand",
-  "shot": 42,
-  "text": "Три баночки — по шістсот вісімдесят пʼять. Менше за каву на день.",
-  "hot": "каву",
-  "shot_desc": "End card: 3 банки — 2 055 ₴ (685/шт), бейдж «Найвигідніше»; поруч чашка кави.",
-  "world": "hero",
-  "product_visible": true,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-27",
-   "F-29"
-  ],
-  "t_start": 187.16,
-  "t_end": 190.04,
-  "words": 11,
-  "funcs": [
-   "price",
-   "offer"
-  ]
- },
- {
-  "id": "c78",
-  "beat": "B13",
-  "role": "brand",
-  "shot": 42,
-  "text": "Акційна ціна — поки діє. Шістдесят днів гарантії.",
-  "hot": "гарантії",
-  "shot_desc": "End card: печатка «60 днів гарантії повернення коштів».",
-  "world": "hero",
-  "product_visible": true,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-28",
-   "F-31"
-  ],
-  "t_start": 190.04,
-  "t_end": 191.87,
-  "words": 7,
-  "funcs": [
-   "urgency",
-   "guarantee"
-  ]
- },
- {
-  "id": "c79",
-  "beat": "B13",
-  "role": "brand",
-  "shot": 42,
-  "text": "Оплата при отриманні. Натисніть кнопку.",
-  "hot": "кнопку",
-  "shot_desc": "End card: «Оплата при отриманні · Нова Пошта», кнопка «Замовити».",
-  "world": "hero",
-  "product_visible": true,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-32"
-  ],
-  "t_start": 191.87,
-  "t_end": 193.18,
-  "words": 5,
-  "funcs": [
-   "cta"
-  ]
- },
- {
-  "id": "c80",
-  "beat": "B13",
-  "role": "brand",
-  "shot": 42,
-  "text": "І зніміть уже цей шарф",
-  "hot": "шарф",
-  "shot_desc": "End card: у кутку — шовковий шарф, кинутий на стілець (callback).",
-  "world": "hero",
-  "product_visible": true,
-  "enemy_in_frame": false,
-  "key_frame": false,
-  "claims": [
-   "F-40"
-  ],
-  "t_start": 193.18,
-  "t_end": 194.49,
-  "words": 5,
-  "funcs": [
-   "callback",
-   "cta"
-  ]
- }
+  {
+    "id": "c01",
+    "beat": "B01",
+    "role": "hook",
+    "shot": 1,
+    "text": "Я поправила шарф. Улітку.",
+    "hot": "шарф",
+    "shot_desc": "Крупно: руки героїні (51) підтягують шовковий сіро-бежевий шарф під горло; за вікном офісу яскраве літнє сонце.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": true,
+    "claims": [
+      "F-39",
+      "F-40"
+    ],
+    "t_start": 0.0,
+    "t_end": 2.0,
+    "words": 4,
+    "funcs": [
+      "hook"
+    ]
+  },
+  {
+    "id": "c02",
+    "beat": "B01",
+    "role": "hook",
+    "shot": 1,
+    "text": "А шия вже здала мене",
+    "hot": "шия",
+    "shot_desc": "Той самий план, камера повільно опускається: край шарфа відходить, видно горизонтальні лінії на шиї; пальці торкаються їх.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": true,
+    "key_frame": true,
+    "claims": [
+      "F-37",
+      "F-38"
+    ],
+    "t_start": 2.0,
+    "t_end": 4.5,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c03",
+    "beat": "B01",
+    "role": "hook",
+    "shot": 2,
+    "text": "Обличчя ще тримається",
+    "hot": "обличчя",
+    "shot_desc": "Офісна вбиральня, дзеркало: обличчя героїні крупно — доглянуте, спокійне, легка втома в очах.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": true,
+    "claims": [
+      "F-37"
+    ],
+    "t_start": 4.5,
+    "t_end": 7.5,
+    "words": 3,
+    "funcs": []
+  },
+  {
+    "id": "c04",
+    "beat": "B01",
+    "role": "hook",
+    "shot": 3,
+    "text": "Колега поруч глянула на мою шию",
+    "hot": "шию",
+    "shot_desc": "Загальний план: героїня і колега Аліна поруч біля дзеркала; погляд колеги на мить ковзає на шию героїні.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-37"
+    ],
+    "t_start": 7.5,
+    "t_end": 10.0,
+    "words": 6,
+    "funcs": []
+  },
+  {
+    "id": "c05",
+    "beat": "B01",
+    "role": "hook",
+    "shot": 3,
+    "text": "І одразу — на своє відображення",
+    "hot": "відображення",
+    "shot_desc": "Той самий план: колега вже дивиться на себе, поправляє волосся; героїня застигла, рука біля шарфа.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-37"
+    ],
+    "t_start": 10.0,
+    "t_end": 12.38,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c06",
+    "beat": "B01",
+    "role": "hook",
+    "shot": 4,
+    "text": "Мені пʼятдесят один",
+    "hot": "пʼятдесят",
+    "shot_desc": "Дзеркало, героїня крупніше, дивиться собі в очі; тепле верхнє світло.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": true,
+    "claims": [
+      "F-35"
+    ],
+    "t_start": 12.38,
+    "t_end": 14.73,
+    "words": 3,
+    "funcs": []
+  },
+  {
+    "id": "c07",
+    "beat": "B01",
+    "role": "hook",
+    "shot": 5,
+    "text": "Я ховала її. Роками.",
+    "hot": "ховала",
+    "shot_desc": "Героїня застібає верхній ґудзик блузи під шарфом; дзеркало у розфокусі.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-39"
+    ],
+    "t_start": 14.73,
+    "t_end": 17.0,
+    "words": 4,
+    "funcs": []
+  },
+  {
+    "id": "c08",
+    "beat": "B01",
+    "role": "hook",
+    "shot": 5,
+    "text": "Навіть від чоловіка",
+    "hot": "чоловіка",
+    "shot_desc": "Той самий план: погляд героїні вниз, долоня лягає на шарф; пауза.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-39"
+    ],
+    "t_start": 17.0,
+    "t_end": 19.45,
+    "words": 3,
+    "funcs": []
+  },
+  {
+    "id": "c09",
+    "beat": "B02",
+    "role": "backstory",
+    "shot": 6,
+    "text": "Двадцять років я доглядала обличчя",
+    "hot": "обличчя",
+    "shot_desc": "Ранкова ванна, сироватка на обличчі, швидкий монтаж.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-49"
+    ],
+    "t_start": 19.45,
+    "t_end": 22.07,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c10",
+    "beat": "B02",
+    "role": "backstory",
+    "shot": 7,
+    "text": "Сироватки. Крем. Косметолог.",
+    "hot": "сироватки",
+    "shot_desc": "Полиця з флаконами без написів; рука бере флакон.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-49"
+    ],
+    "t_start": 22.07,
+    "t_end": 23.64,
+    "words": 3,
+    "funcs": []
+  },
+  {
+    "id": "c11",
+    "beat": "B02",
+    "role": "backstory",
+    "shot": 8,
+    "text": "Щовечора",
+    "hot": "щовечора",
+    "shot_desc": "Вечір, лампа, героїня наносить крем на щоки.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-49"
+    ],
+    "t_start": 23.64,
+    "t_end": 24.16,
+    "words": 1,
+    "funcs": []
+  },
+  {
+    "id": "c12",
+    "beat": "B02",
+    "role": "backstory",
+    "shot": 9,
+    "text": "І зупинялась рівно на підборідді",
+    "hot": "підборідді",
+    "shot_desc": "Макро: пальці з кремом зупиняються на лінії щелепи. Шия — нижче, суха.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": true,
+    "claims": [
+      "F-49"
+    ],
+    "t_start": 24.16,
+    "t_end": 26.78,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c13",
+    "beat": "B02",
+    "role": "backstory",
+    "shot": 10,
+    "text": "Так робить кожна. Так нас навчили.",
+    "hot": "навчили",
+    "shot_desc": "Cutaway: глянцева реклама крему для обличчя в журналі, рука гортає; жодного тексту не читається.",
+    "world": "cutaway",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-49"
+    ],
+    "t_start": 26.78,
+    "t_end": 29.92,
+    "words": 6,
+    "funcs": []
+  },
+  {
+    "id": "c14",
+    "beat": "B02",
+    "role": "backstory",
+    "shot": 11,
+    "text": "Ніхто не сказав: шия — інша шкіра",
+    "hot": "шия",
+    "shot_desc": "Дзеркало, долоня героїні на шиї, погляд у камеру.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-47"
+    ],
+    "t_start": 29.92,
+    "t_end": 33.06,
+    "words": 6,
+    "funcs": []
+  },
+  {
+    "id": "c15",
+    "beat": "B03",
+    "role": "problem",
+    "shot": 12,
+    "text": "Тоді я купила густий дорогий крем",
+    "hot": "крем",
+    "shot_desc": "Рука бере з полиці важку білу банку без назви (ворог).",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": true,
+    "key_frame": false,
+    "claims": [
+      "F-47"
+    ],
+    "t_start": 33.06,
+    "t_end": 36.47,
+    "words": 6,
+    "funcs": []
+  },
+  {
+    "id": "c16",
+    "beat": "B03",
+    "role": "problem",
+    "shot": 13,
+    "text": "Наносила двічі на день. Місяць.",
+    "hot": "двічі",
+    "shot_desc": "Густий білий крем шаром на шиї, важко розтирається.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": true,
+    "key_frame": false,
+    "claims": [
+      "F-47"
+    ],
+    "t_start": 36.47,
+    "t_end": 39.3,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c17",
+    "beat": "B03",
+    "role": "problem",
+    "shot": 14,
+    "text": "Ідеально. Стало гірше.",
+    "hot": "гірше",
+    "shot_desc": "Дзеркало: під підборіддям нова мʼяка складка.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": true,
+    "key_frame": false,
+    "claims": [
+      "F-47"
+    ],
+    "t_start": 39.3,
+    "t_end": 41.01,
+    "words": 3,
+    "funcs": []
+  },
+  {
+    "id": "c18",
+    "beat": "B03",
+    "role": "problem",
+    "shot": 15,
+    "text": "Зʼявилась складка, якої не було",
+    "hot": "складка",
+    "shot_desc": "Макро складки під підборіддям, природне світло.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": true,
+    "key_frame": false,
+    "claims": [
+      "F-38"
+    ],
+    "t_start": 41.01,
+    "t_end": 43.84,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c19",
+    "beat": "B03",
+    "role": "problem",
+    "shot": 16,
+    "text": "Я подумала: це я запустила",
+    "hot": "запустила",
+    "shot_desc": "Героїня зачиняє шафку, повну початих банок без назв.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": true,
+    "key_frame": false,
+    "claims": [
+      "F-41"
+    ],
+    "t_start": 43.84,
+    "t_end": 46.68,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c20",
+    "beat": "B04",
+    "role": "agitate",
+    "shot": 17,
+    "text": "Знаєте, що найгірше? Не зморшки.",
+    "hot": "зморшки",
+    "shot_desc": "Ніч, кухня, героїня сидить з телефоном. Довгий план.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": true,
+    "claims": [
+      "F-39"
+    ],
+    "t_start": 46.68,
+    "t_end": 49.04,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c21",
+    "beat": "B04",
+    "role": "agitate",
+    "shot": 17,
+    "text": "Погляд.",
+    "hot": "погляд",
+    "shot_desc": "Той самий план, повільний наїзд.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-39"
+    ],
+    "t_start": 49.04,
+    "t_end": 49.51,
+    "words": 1,
+    "funcs": []
+  },
+  {
+    "id": "c22",
+    "beat": "B04",
+    "role": "agitate",
+    "shot": 17,
+    "text": "Фото з дня народження доньки",
+    "hot": "фото",
+    "shot_desc": "Екран телефона: святкове фото, пальці збільшують профіль героїні (без тексту на екрані).",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-37"
+    ],
+    "t_start": 49.51,
+    "t_end": 51.87,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c23",
+    "beat": "B04",
+    "role": "agitate",
+    "shot": 17,
+    "text": "Побачила себе в профіль",
+    "hot": "профіль",
+    "shot_desc": "Її обличчя над екраном: розуміння.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-37"
+    ],
+    "t_start": 51.87,
+    "t_end": 53.75,
+    "words": 4,
+    "funcs": []
+  },
+  {
+    "id": "c24",
+    "beat": "B04",
+    "role": "agitate",
+    "shot": 18,
+    "text": "Чужа шия. Мʼяка. Пуста.",
+    "hot": "шия",
+    "shot_desc": "Чорно-біло: повільний наїзд, долоня на горлі.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": true,
+    "key_frame": true,
+    "claims": [
+      "F-38",
+      "F-40"
+    ],
+    "t_start": 53.75,
+    "t_end": 55.64,
+    "words": 4,
+    "funcs": []
+  },
+  {
+    "id": "c25",
+    "beat": "B04",
+    "role": "agitate",
+    "shot": 18,
+    "text": "Вимкнула камеру на дзвінках",
+    "hot": "камеру",
+    "shot_desc": "Чорно-біло: ноутбук, вона закриває камеру пальцем.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-39"
+    ],
+    "t_start": 55.64,
+    "t_end": 57.52,
+    "words": 4,
+    "funcs": []
+  },
+  {
+    "id": "c26",
+    "beat": "B04",
+    "role": "agitate",
+    "shot": 18,
+    "text": "Застібала верхній ґудзик. Улітку.",
+    "hot": "ґудзик",
+    "shot_desc": "Чорно-біло: пальці застібають верхній ґудзик блузи.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-39"
+    ],
+    "t_start": 57.52,
+    "t_end": 59.41,
+    "words": 4,
+    "funcs": []
+  },
+  {
+    "id": "c27",
+    "beat": "B04",
+    "role": "agitate",
+    "shot": 18,
+    "text": "Чоловік обіймав за шию — я напружувалась",
+    "hot": "напружувалась",
+    "shot_desc": "Чорно-біло: руки чоловіка зі спини лягають на плечі, вона завмирає.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-39"
+    ],
+    "t_start": 59.41,
+    "t_end": 62.24,
+    "words": 6,
+    "funcs": []
+  },
+  {
+    "id": "c28",
+    "beat": "B05",
+    "role": "problem",
+    "shot": 19,
+    "text": "Я не знала того, що знаю зараз",
+    "hot": "знаю",
+    "shot_desc": "Героїня зараз, денне світло, спокійний прямий погляд.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [],
+    "t_start": 62.24,
+    "t_end": 65.74,
+    "words": 7,
+    "funcs": []
+  },
+  {
+    "id": "c29",
+    "beat": "B05",
+    "role": "problem",
+    "shot": 20,
+    "text": "Шкіра шиї удвічі тонша за щоку",
+    "hot": "тонша",
+    "shot_desc": "Cutaway: рука малює маркером на папері зріз щоки (товстий) і шиї (тонка лінія).",
+    "world": "cutaway",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": true,
+    "claims": [
+      "F-47"
+    ],
+    "t_start": 65.74,
+    "t_end": 68.74,
+    "words": 6,
+    "funcs": []
+  },
+  {
+    "id": "c30",
+    "beat": "B05",
+    "role": "problem",
+    "shot": 20,
+    "text": "І тримається не на кістці — на мʼязі",
+    "hot": "мʼязі",
+    "shot_desc": "Cutaway: під тонкою лінією шиї малюється порожнеча і одна смужка мʼяза; олівець обводить.",
+    "world": "cutaway",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-47"
+    ],
+    "t_start": 68.74,
+    "t_end": 71.74,
+    "words": 7,
+    "funcs": []
+  },
+  {
+    "id": "c31",
+    "beat": "B05",
+    "role": "problem",
+    "shot": 21,
+    "text": "Густий крем на ній — не догляд. Вантаж.",
+    "hot": "вантаж",
+    "shot_desc": "Героїня в дзеркалі: пальці тягнуть шар густого білого крему вниз по шиї, шкіра зсувається за рукою (ворог).",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": true,
+    "key_frame": false,
+    "claims": [
+      "F-47"
+    ],
+    "t_start": 71.74,
+    "t_end": 75.24,
+    "words": 7,
+    "funcs": []
+  },
+  {
+    "id": "c32",
+    "beat": "B05",
+    "role": "problem",
+    "shot": 21,
+    "text": "Я сама тягнула її вниз.",
+    "hot": "вниз",
+    "shot_desc": "Той самий план, крупніше: долоня зупиняється, героїня дивиться на свої пальці в кремі.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": true,
+    "key_frame": false,
+    "claims": [
+      "F-47"
+    ],
+    "t_start": 75.24,
+    "t_end": 77.74,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c33",
+    "beat": "B05",
+    "role": "problem",
+    "shot": 21,
+    "text": "Двічі на день.",
+    "hot": "двічі",
+    "shot_desc": "Той самий план: героїня повільно опускає руку; погляд у дзеркало.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-47"
+    ],
+    "t_start": 77.74,
+    "t_end": 79.74,
+    "words": 3,
+    "funcs": []
+  },
+  {
+    "id": "c34",
+    "beat": "B06",
+    "role": "mentor",
+    "shot": 22,
+    "text": "Марта, сусідка з третього. Технологиня.",
+    "hot": "Марта",
+    "shot_desc": "Кухня героїні, субота, ранкове світло. Марта (55, коротке сиве волосся, окуляри, зелений светр) за столом навпроти, дві чашки кави. Один довгий план.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": true,
+    "claims": [],
+    "t_start": 79.74,
+    "t_end": 82.44,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c35",
+    "beat": "B06",
+    "role": "mentor",
+    "shot": 22,
+    "text": "Зайшла на каву. Побачила мій шарф",
+    "hot": "шарф",
+    "shot_desc": "Той самий план: погляд Марти зупиняється на шарфі героїни.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-39"
+    ],
+    "t_start": 82.44,
+    "t_end": 84.6,
+    "words": 6,
+    "funcs": []
+  },
+  {
+    "id": "c36",
+    "beat": "B06",
+    "role": "mentor",
+    "shot": 22,
+    "text": "І не спитала нічого",
+    "hot": "нічого",
+    "shot_desc": "Той самий план: пауза, Марта мовчить.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [],
+    "t_start": 84.6,
+    "t_end": 86.77,
+    "words": 4,
+    "funcs": []
+  },
+  {
+    "id": "c37",
+    "beat": "B06",
+    "role": "mentor",
+    "shot": 22,
+    "text": "Тільки: покажи, що ти мажеш",
+    "hot": "мажеш",
+    "shot_desc": "Той самий план: Марта простягає долоню.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [],
+    "t_start": 86.77,
+    "t_end": 89.47,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c38",
+    "beat": "B07",
+    "role": "diagnosis",
+    "shot": 23,
+    "text": "Я дістала банку",
+    "hot": "банку",
+    "shot_desc": "Героїня ставить важку білу банку без назви на кухонний стіл поруч із чашками (ворог).",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": true,
+    "key_frame": false,
+    "claims": [
+      "F-47"
+    ],
+    "t_start": 89.47,
+    "t_end": 91.05,
+    "words": 3,
+    "funcs": []
+  },
+  {
+    "id": "c39",
+    "beat": "B07",
+    "role": "diagnosis",
+    "shot": 24,
+    "text": "Вона перевернула. Прочитала склад.",
+    "hot": "склад",
+    "shot_desc": "Руки Марти перевертають банку; етикетка розмита, текст не читається.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": true,
+    "key_frame": false,
+    "claims": [
+      "F-47"
+    ],
+    "t_start": 91.05,
+    "t_end": 93.15,
+    "words": 4,
+    "funcs": []
+  },
+  {
+    "id": "c40",
+    "beat": "B07",
+    "role": "diagnosis",
+    "shot": 24,
+    "text": "Воски. Силікони.",
+    "hot": "силікони",
+    "shot_desc": "Крупно: палець Марти веде по розмитій етикетці.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": true,
+    "key_frame": false,
+    "claims": [
+      "F-47"
+    ],
+    "t_start": 93.15,
+    "t_end": 94.72,
+    "words": 2,
+    "funcs": []
+  },
+  {
+    "id": "c41",
+    "beat": "B07",
+    "role": "diagnosis",
+    "shot": 25,
+    "text": "Припини. Це не підтягує. Це тягне вниз.",
+    "hot": "вниз",
+    "shot_desc": "Обличчя Марти крупно, прямо.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-47"
+    ],
+    "t_start": 94.72,
+    "t_end": 98.4,
+    "words": 7,
+    "funcs": []
+  },
+  {
+    "id": "c42",
+    "beat": "B07",
+    "role": "diagnosis",
+    "shot": 25,
+    "text": "Двічі на день ти кладеш на шию гирю",
+    "hot": "гирю",
+    "shot_desc": "Марта показує рукою рух «вниз».",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-47"
+    ],
+    "t_start": 98.4,
+    "t_end": 102.61,
+    "words": 8,
+    "funcs": []
+  },
+  {
+    "id": "c43",
+    "beat": "B07",
+    "role": "diagnosis",
+    "shot": 26,
+    "text": "Шкірі шиї потрібне інше. Не вага. Вода.",
+    "hot": "вода",
+    "shot_desc": "Cutaway: суха зморщена губка на чорному тлі; падає одна крапля.",
+    "world": "cutaway",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": true,
+    "claims": [
+      "F-09"
+    ],
+    "t_start": 102.61,
+    "t_end": 106.28,
+    "words": 7,
+    "funcs": []
+  },
+  {
+    "id": "c44",
+    "beat": "B07",
+    "role": "diagnosis",
+    "shot": 26,
+    "text": "Наповнити залом зсередини — без ваги",
+    "hot": "зсередини",
+    "shot_desc": "Cutaway: губка розбухає і стає гладкою (прискорено).",
+    "world": "cutaway",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-09"
+    ],
+    "t_start": 106.28,
+    "t_end": 108.91,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c45",
+    "beat": "B08",
+    "role": "handover",
+    "shot": 27,
+    "text": "Вона дістала маленьку лавандову баночку",
+    "hot": "баночку",
+    "shot_desc": "Рука Марти ставить на кухонний стіл лавандову скляну банку goPure з сріблястою кришкою (як на фото) і підсуває героїні.",
+    "world": "hero",
+    "product_visible": true,
+    "enemy_in_frame": false,
+    "key_frame": true,
+    "claims": [
+      "F-02",
+      "F-03"
+    ],
+    "t_start": 108.91,
+    "t_end": 111.15,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c46",
+    "beat": "B08",
+    "role": "handover",
+    "shot": 27,
+    "text": "Скляну. Легку.",
+    "hot": "легку",
+    "shot_desc": "Героїня піднімає банку, зважує в долоні.",
+    "world": "hero",
+    "product_visible": true,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-02",
+      "F-25"
+    ],
+    "t_start": 111.15,
+    "t_end": 112.05,
+    "words": 2,
+    "funcs": []
+  },
+  {
+    "id": "c47",
+    "beat": "B08",
+    "role": "handover",
+    "shot": 28,
+    "text": "Купуасу — екзотичне масло",
+    "hot": "купуасу",
+    "shot_desc": "Cutaway: плід купуасу і масло, макро, тропічне світло.",
+    "world": "cutaway",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-08",
+      "F-42"
+    ],
+    "t_start": 112.05,
+    "t_end": 113.85,
+    "words": 3,
+    "funcs": []
+  },
+  {
+    "id": "c48",
+    "beat": "B08",
+    "role": "handover",
+    "shot": 28,
+    "text": "Воно вбирає воду і тримає її",
+    "hot": "воду",
+    "shot_desc": "Cutaway: макро — масло купуасу тане на шкірі, крапля води розтікається і зникає в ньому.",
+    "world": "cutaway",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-09"
+    ],
+    "t_start": 113.85,
+    "t_end": 118.34,
+    "words": 6,
+    "funcs": []
+  },
+  {
+    "id": "c49",
+    "beat": "B08",
+    "role": "handover",
+    "shot": 27,
+    "text": "Без силіконів. Спробуй. Шістдесят днів.",
+    "hot": "спробуй",
+    "shot_desc": "Банка goPure в долоні героїні, крупно; Марта на другому плані.",
+    "world": "hero",
+    "product_visible": true,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-18",
+      "F-21",
+      "F-31",
+      "F-33"
+    ],
+    "t_start": 118.34,
+    "t_end": 120.58,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c50",
+    "beat": "B09",
+    "role": "proof",
+    "shot": 29,
+    "text": "Перші два тижні — нічого. Тільки мʼякше.",
+    "hot": "мʼякше",
+    "shot_desc": "Ранок, героїня наносить крем goPure на шию рухами знизу вгору; банка поруч.",
+    "world": "hero",
+    "product_visible": true,
+    "enemy_in_frame": false,
+    "key_frame": true,
+    "claims": [
+      "F-20",
+      "F-23"
+    ],
+    "t_start": 120.58,
+    "t_end": 123.5,
+    "words": 6,
+    "funcs": []
+  },
+  {
+    "id": "c51",
+    "beat": "B09",
+    "role": "proof",
+    "shot": 30,
+    "text": "На третьому тижні донька зайшла на кухню",
+    "hot": "донька",
+    "shot_desc": "Кухня, донька (25) заходить з чашкою.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-42"
+    ],
+    "t_start": 123.5,
+    "t_end": 126.9,
+    "words": 7,
+    "funcs": []
+  },
+  {
+    "id": "c52",
+    "beat": "B09",
+    "role": "proof",
+    "shot": 30,
+    "text": "Мам, ти без шарфа?",
+    "hot": "шарфа",
+    "shot_desc": "Донька дивиться, здивовано-тепло.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-42"
+    ],
+    "t_start": 126.9,
+    "t_end": 128.85,
+    "words": 4,
+    "funcs": []
+  },
+  {
+    "id": "c53",
+    "beat": "B09",
+    "role": "proof",
+    "shot": 30,
+    "text": "Я навіть не помітила, що зняла його",
+    "hot": "зняла",
+    "shot_desc": "Героїня торкається відкритої шиї, усміхається.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-42"
+    ],
+    "t_start": 128.85,
+    "t_end": 132.25,
+    "words": 7,
+    "funcs": []
+  },
+  {
+    "id": "c54",
+    "beat": "B10",
+    "role": "proof",
+    "shot": 31,
+    "text": "На шостому тижні я зробила те, чого не робила три роки",
+    "hot": "три",
+    "shot_desc": "Героїня біля вікна тримає телефон збоку, знімає профіль.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-22"
+    ],
+    "t_start": 132.25,
+    "t_end": 136.53,
+    "words": 11,
+    "funcs": []
+  },
+  {
+    "id": "c55",
+    "beat": "B10",
+    "role": "proof",
+    "shot": 31,
+    "text": "Фото в профіль. Без тонального. Без фільтра.",
+    "hot": "профіль",
+    "shot_desc": "Екран телефона: її профіль, шия відкрита (без тексту).",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-22"
+    ],
+    "t_start": 136.53,
+    "t_end": 139.25,
+    "words": 7,
+    "funcs": []
+  },
+  {
+    "id": "c56",
+    "beat": "B10",
+    "role": "proof",
+    "shot": 32,
+    "text": "Лінії не зникли. Але шкіра стала щільною.",
+    "hot": "щільною",
+    "shot_desc": "Макро шиї: гладка, щільна, природне світло; лінії тонші.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": true,
+    "claims": [
+      "F-24",
+      "F-45"
+    ],
+    "t_start": 139.25,
+    "t_end": 141.98,
+    "words": 7,
+    "funcs": []
+  },
+  {
+    "id": "c57",
+    "beat": "B10",
+    "role": "proof",
+    "shot": 32,
+    "text": "Гладкою",
+    "hot": "гладкою",
+    "shot_desc": "Долоня проводить по шиї.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-45"
+    ],
+    "t_start": 141.98,
+    "t_end": 142.37,
+    "words": 1,
+    "funcs": []
+  },
+  {
+    "id": "c58",
+    "beat": "B10",
+    "role": "proof",
+    "shot": 33,
+    "text": "Девʼять жінок із десяти сказали: за чотири тижні шия підтягнутіша",
+    "hot": "девʼять",
+    "shot_desc": "Cutaway: кілька жінок 45–60 на сонячній вулиці, сміються, відкриті шиї; без тексту.",
+    "world": "cutaway",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-46"
+    ],
+    "t_start": 142.37,
+    "t_end": 145.87,
+    "words": 9,
+    "funcs": []
+  },
+  {
+    "id": "c59",
+    "beat": "B11",
+    "role": "transformation",
+    "shot": 34,
+    "text": "Корпоратив. Той самий офіс.",
+    "hot": "офіс",
+    "shot_desc": "Вечір, офіс у теплих гірляндах, люди з келихами.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [],
+    "t_start": 145.87,
+    "t_end": 147.77,
+    "words": 4,
+    "funcs": []
+  },
+  {
+    "id": "c60",
+    "beat": "B11",
+    "role": "transformation",
+    "shot": 34,
+    "text": "Та сама колега",
+    "hot": "колега",
+    "shot_desc": "Молода колега у натовпі повертається.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-37"
+    ],
+    "t_start": 147.77,
+    "t_end": 149.2,
+    "words": 3,
+    "funcs": []
+  },
+  {
+    "id": "c61",
+    "beat": "B11",
+    "role": "transformation",
+    "shot": 35,
+    "text": "Я — в сукні з вирізом. Без шарфа.",
+    "hot": "вирізом",
+    "shot_desc": "Героїня в сукні з V-вирізом і тонким ланцюжком, спокійна.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": true,
+    "claims": [
+      "F-39",
+      "F-40"
+    ],
+    "t_start": 149.2,
+    "t_end": 152.52,
+    "words": 7,
+    "funcs": []
+  },
+  {
+    "id": "c62",
+    "beat": "B11",
+    "role": "transformation",
+    "shot": 36,
+    "text": "Вона глянула на мою шию. І розгубилась.",
+    "hot": "розгубилась",
+    "shot_desc": "Колега дивиться на шию героїні, збентежено.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-37"
+    ],
+    "t_start": 152.52,
+    "t_end": 155.85,
+    "words": 7,
+    "funcs": []
+  },
+  {
+    "id": "c63",
+    "beat": "B11",
+    "role": "transformation",
+    "shot": 36,
+    "text": "Я памʼятаю, як стояла. Пряма. Відкрита.",
+    "hot": "пряма",
+    "shot_desc": "Героїня крупно, пряма постава.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [],
+    "t_start": 155.85,
+    "t_end": 158.7,
+    "words": 6,
+    "funcs": []
+  },
+  {
+    "id": "c64",
+    "beat": "B11",
+    "role": "transformation",
+    "shot": 37,
+    "text": "Я знову ношу ланцюжки",
+    "hot": "ланцюжки",
+    "shot_desc": "Монтаж: застібка ланцюжка на шиї.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-40"
+    ],
+    "t_start": 158.7,
+    "t_end": 160.61,
+    "words": 4,
+    "funcs": []
+  },
+  {
+    "id": "c65",
+    "beat": "B11",
+    "role": "transformation",
+    "shot": 37,
+    "text": "Я вмикаю камеру",
+    "hot": "камеру",
+    "shot_desc": "Ноутбук: камера увімкнена, вона усміхається в дзвінку.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-39"
+    ],
+    "t_start": 160.61,
+    "t_end": 162.03,
+    "words": 3,
+    "funcs": []
+  },
+  {
+    "id": "c66",
+    "beat": "B11",
+    "role": "transformation",
+    "shot": 37,
+    "text": "Не відвертаюсь від фотографа",
+    "hot": "фотографа",
+    "shot_desc": "Хтось фотографує її збоку; вона не відвертається.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-39"
+    ],
+    "t_start": 162.03,
+    "t_end": 163.93,
+    "words": 4,
+    "funcs": []
+  },
+  {
+    "id": "c67",
+    "beat": "B11",
+    "role": "transformation",
+    "shot": 37,
+    "text": "Чоловік обіймає за шию — я не напружуюсь",
+    "hot": "обіймає",
+    "shot_desc": "Руки чоловіка на плечах зі спини; вона розслаблена, кладе долоню на його руку.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-39"
+    ],
+    "t_start": 163.93,
+    "t_end": 167.26,
+    "words": 7,
+    "funcs": [
+      "callback"
+    ]
+  },
+  {
+    "id": "c68",
+    "beat": "B12",
+    "role": "resolution",
+    "shot": 38,
+    "text": "Знаєте, що змінилось? Не її погляд. Мій.",
+    "hot": "мій",
+    "shot_desc": "Дзеркало, героїня дивиться на себе спокійно.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [],
+    "t_start": 167.26,
+    "t_end": 169.64,
+    "words": 7,
+    "funcs": []
+  },
+  {
+    "id": "c69",
+    "beat": "B12",
+    "role": "resolution",
+    "shot": 38,
+    "text": "Я перестала ховатися",
+    "hot": "ховатися",
+    "shot_desc": "Той самий план, легка усмішка.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-40"
+    ],
+    "t_start": 169.64,
+    "t_end": 170.66,
+    "words": 3,
+    "funcs": [
+      "callback"
+    ]
+  },
+  {
+    "id": "c70",
+    "beat": "B12",
+    "role": "resolution",
+    "shot": 39,
+    "text": "Не тому, що вона помітила",
+    "hot": "помітила",
+    "shot_desc": "Шарф складений у шухляду, рука її зачиняє.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [],
+    "t_start": 170.66,
+    "t_end": 172.37,
+    "words": 5,
+    "funcs": []
+  },
+  {
+    "id": "c71",
+    "beat": "B12",
+    "role": "resolution",
+    "shot": 39,
+    "text": "А тому, що я дивлюсь на себе — і мені так",
+    "hot": "так",
+    "shot_desc": "Героїня у дзеркалі, погляд у камеру.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [],
+    "t_start": 172.37,
+    "t_end": 175.77,
+    "words": 10,
+    "funcs": []
+  },
+  {
+    "id": "c72",
+    "beat": "B12",
+    "role": "resolution",
+    "shot": 40,
+    "text": "Шия — не вирок. Просто інша шкіра.",
+    "hot": "шкіра",
+    "shot_desc": "Долоня на шиї, мʼяка посмішка.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-47"
+    ],
+    "t_start": 175.77,
+    "t_end": 177.82,
+    "words": 6,
+    "funcs": []
+  },
+  {
+    "id": "c73",
+    "beat": "B12",
+    "role": "resolution",
+    "shot": 40,
+    "text": "Якій двадцять років ніхто не давав того, що треба",
+    "hot": "треба",
+    "shot_desc": "Той самий план, повільний відʼїзд.",
+    "world": "hero",
+    "product_visible": false,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-49"
+    ],
+    "t_start": 177.82,
+    "t_end": 180.88,
+    "words": 9,
+    "funcs": []
+  },
+  {
+    "id": "c74",
+    "beat": "B13",
+    "role": "brand",
+    "shot": 41,
+    "text": "Крем для шиї goPure Tighten & Lift",
+    "hot": "goPure",
+    "shot_desc": "Героїня тримає банку goPure біля обличчя, тепле світло; банка як на фото.",
+    "world": "hero",
+    "product_visible": true,
+    "enemy_in_frame": false,
+    "key_frame": true,
+    "claims": [
+      "F-01",
+      "F-03"
+    ],
+    "t_start": 180.88,
+    "t_end": 182.45,
+    "words": 6,
+    "funcs": [
+      "brand",
+      "offer"
+    ]
+  },
+  {
+    "id": "c75",
+    "beat": "B13",
+    "role": "brand",
+    "shot": 41,
+    "text": "Не інʼєкції за тридцять тисяч. Не люкс за три тисячі.",
+    "hot": "інʼєкції",
+    "shot_desc": "Банка в руці; за кадром нічого не змінюється.",
+    "world": "hero",
+    "product_visible": true,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-30"
+    ],
+    "t_start": 182.45,
+    "t_end": 185.07,
+    "words": 10,
+    "funcs": [
+      "price",
+      "offer"
+    ]
+  },
+  {
+    "id": "c76",
+    "beat": "B13",
+    "role": "brand",
+    "shot": 41,
+    "text": "Вісімсот девʼяносто пʼять гривень замість тисячі семисот пʼятдесяти",
+    "hot": "вісімсот",
+    "shot_desc": "End card (світ героїні): банка + ціна 895 ₴, стара 1 750 ₴ перекреслена.",
+    "world": "hero",
+    "product_visible": true,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-27",
+      "F-28"
+    ],
+    "t_start": 185.07,
+    "t_end": 187.16,
+    "words": 8,
+    "funcs": [
+      "price"
+    ]
+  },
+  {
+    "id": "c77",
+    "beat": "B13",
+    "role": "brand",
+    "shot": 42,
+    "text": "Три баночки — по шістсот вісімдесят пʼять. Менше за каву на день.",
+    "hot": "каву",
+    "shot_desc": "End card: 3 банки — 2 055 ₴ (685/шт), бейдж «Найвигідніше»; поруч чашка кави.",
+    "world": "hero",
+    "product_visible": true,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-27",
+      "F-29"
+    ],
+    "t_start": 187.16,
+    "t_end": 190.04,
+    "words": 11,
+    "funcs": [
+      "price",
+      "offer"
+    ]
+  },
+  {
+    "id": "c78",
+    "beat": "B13",
+    "role": "brand",
+    "shot": 42,
+    "text": "Акційна ціна — поки діє. Шістдесят днів гарантії.",
+    "hot": "гарантії",
+    "shot_desc": "End card: печатка «60 днів гарантії повернення коштів».",
+    "world": "hero",
+    "product_visible": true,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-28",
+      "F-31"
+    ],
+    "t_start": 190.04,
+    "t_end": 191.87,
+    "words": 7,
+    "funcs": [
+      "urgency",
+      "guarantee"
+    ]
+  },
+  {
+    "id": "c79",
+    "beat": "B13",
+    "role": "brand",
+    "shot": 42,
+    "text": "Оплата при отриманні. Натисніть кнопку.",
+    "hot": "кнопку",
+    "shot_desc": "End card: «Оплата при отриманні · Нова Пошта», кнопка «Замовити».",
+    "world": "hero",
+    "product_visible": true,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-32"
+    ],
+    "t_start": 191.87,
+    "t_end": 193.18,
+    "words": 5,
+    "funcs": [
+      "cta"
+    ]
+  },
+  {
+    "id": "c80",
+    "beat": "B13",
+    "role": "brand",
+    "shot": 42,
+    "text": "І зніміть уже цей шарф",
+    "hot": "шарф",
+    "shot_desc": "End card: у кутку — шовковий шарф, кинутий на стілець (callback).",
+    "world": "hero",
+    "product_visible": true,
+    "enemy_in_frame": false,
+    "key_frame": false,
+    "claims": [
+      "F-40"
+    ],
+    "t_start": 193.18,
+    "t_end": 194.49,
+    "words": 5,
+    "funcs": [
+      "callback",
+      "cta"
+    ]
+  }
 ]
