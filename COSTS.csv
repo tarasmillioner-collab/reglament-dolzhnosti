@@ -49,3 +49,29 @@ ts,provider,op,model,units,unit_cost_usd,cost_usd,cumulative_usd,label,note
 2026-09-03T17:28:38Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.9815,still_c13_regen,identity fix
 2026-09-03T17:28:38Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.0015,still_c16_regen,identity fix
 2026-09-03T17:28:38Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.0215,still_c17_regen,identity fix
+2026-09-03T17:58:48Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.0415,still_c28_r1,
+2026-09-03T17:58:48Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.0615,still_c31_r1,
+2026-09-03T17:58:48Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.0815,still_c38_r1,
+2026-09-03T17:58:48Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.1015,still_c39_r1,
+2026-09-03T17:58:48Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.1215,still_c41_r1,
+2026-09-03T17:58:48Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.1415,still_c47_r1,
+2026-09-03T17:58:48Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.1615,still_c51_r1,
+2026-09-03T17:58:48Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.1815,still_c54_r1,
+2026-09-03T17:58:48Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.2015,still_c58_r1,
+2026-09-03T17:58:48Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.2215,still_c59_r1,
+2026-09-03T17:58:48Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.2415,still_c62_r1,
+2026-09-03T17:58:49Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.2615,still_c64_r1,
+2026-09-03T17:58:49Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,1.3115,clip_sh02_rc1,480p 9:16 no audio
+2026-09-03T17:58:49Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,1.3615,clip_sh04_rc1,480p 9:16 no audio
+2026-09-03T17:58:49Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,1.4115,clip_sh05_rc1,480p 9:16 no audio
+2026-09-03T17:58:49Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,1.4615,clip_sh06_rc1,480p 9:16 no audio
+2026-09-03T17:58:49Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,1.5115,clip_sh07_rc1,480p 9:16 no audio
+2026-09-03T17:58:49Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,1.5615,clip_sh11_rc1,480p 9:16 no audio
+2026-09-03T17:58:49Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,1.6115,clip_sh12_rc1,480p 9:16 no audio
+2026-09-03T17:58:49Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,1.6615,clip_sh15_rc1,480p 9:16 no audio
+2026-09-03T17:58:49Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,1.7115,clip_sh16_rc1,480p 9:16 no audio
+2026-09-03T18:50:33Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.7315,still_c68_r1,
+2026-09-03T18:50:33Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.7515,still_c70_r1,
+2026-09-03T18:50:33Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.7715,still_c72_r1,
+2026-09-03T18:50:33Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.7915,still_c77_r1,
+2026-09-03T18:50:33Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,1.8415,clip_sh01_rc1,480p 9:16 no audio

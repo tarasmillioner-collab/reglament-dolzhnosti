@@ -1,0 +1,234 @@
+[
+ {
+  "shot": 1,
+  "cards": [
+   "c01",
+   "c02"
+  ],
+  "t_start": 0.0,
+  "t_end": 3.98,
+  "dur_shot": 3.98,
+  "clip_dur": 5,
+  "start_image": "e6c6d38e-c4ea-407d-8661-caa6d9a840b5",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Крупно: руки героїні (51) підтягують шовковий сіро-бежевий шарф під горло; за вікном офісу яскраве літнє сонце. Той самий план, камера повільно опускається: край шарфа відходить, видно горизонтальні лінії на шиї; пальці торкаються їх.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "46ba7c22-cbc7-485a-a59e-a4c04185a886",
+  "status": "pending",
+  "rc": 1,
+  "note": "first submission blocked by preset recommendation, then 429; resubmitted with declined_preset_id"
+ },
+ {
+  "shot": 2,
+  "cards": [
+   "c03"
+  ],
+  "t_start": 3.98,
+  "t_end": 5.9,
+  "dur_shot": 1.92,
+  "clip_dur": 5,
+  "start_image": "7faa87dd-db1b-46ea-9b57-a70b1c0bd94e",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Офісна вбиральня, дзеркало: обличчя героїні крупно — доглянуте, спокійне, легка втома в очах.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "d2ac4e23-4621-4f4a-a2d6-3df56ab85423",
+  "status": "completed",
+  "rc": 1,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175733_d2ac4e23-4621-4f4a-a2d6-3df56ab85423.mp4"
+ },
+ {
+  "shot": 4,
+  "cards": [
+   "c06"
+  ],
+  "t_start": 10.6,
+  "t_end": 12.12,
+  "dur_shot": 1.52,
+  "clip_dur": 5,
+  "start_image": "ec317834-681f-43a2-9cbf-a6b52b4af6d5",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Дзеркало, героїня крупніше, дивиться собі в очі; тепле верхнє світло.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "9af15f84-bf79-4dda-b4a4-25d97b5c7fcc",
+  "status": "completed",
+  "rc": 1,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175734_9af15f84-bf79-4dda-b4a4-25d97b5c7fcc.mp4"
+ },
+ {
+  "shot": 5,
+  "cards": [
+   "c07",
+   "c08"
+  ],
+  "t_start": 12.12,
+  "t_end": 16.08,
+  "dur_shot": 3.96,
+  "clip_dur": 5,
+  "start_image": "166f67ef-cd5d-4444-91c5-c509311e389e",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Героїня застібає верхній ґудзик блузи під шарфом; дзеркало у розфокусі. Той самий план: погляд героїні вниз, долоня лягає на шарф; пауза.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "f5bc3c82-f1d1-42ed-a245-b4e624f76746",
+  "status": "completed",
+  "rc": 1,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175733_f5bc3c82-f1d1-42ed-a245-b4e624f76746.mp4"
+ },
+ {
+  "shot": 6,
+  "cards": [
+   "c09"
+  ],
+  "t_start": 16.08,
+  "t_end": 18.44,
+  "dur_shot": 2.36,
+  "clip_dur": 5,
+  "start_image": "248dadfb-134b-469b-afea-585e915367ec",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Ранкова ванна, сироватка на обличчі, швидкий монтаж.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "12ae4ddd-69d1-42f2-8d82-8abaeaa890b3",
+  "status": "completed",
+  "rc": 1,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175733_12ae4ddd-69d1-42f2-8d82-8abaeaa890b3.mp4"
+ },
+ {
+  "shot": 7,
+  "cards": [
+   "c10"
+  ],
+  "t_start": 18.44,
+  "t_end": 21.14,
+  "dur_shot": 2.7,
+  "clip_dur": 5,
+  "start_image": "9353c8fc-0929-44b8-8764-f407326f3ac1",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Полиця з флаконами без написів; рука бере флакон.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "a2da2b1b-f4d8-4aa0-afa2-1cb7bc1ad6f7",
+  "status": "completed",
+  "rc": 1,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175733_a2da2b1b-f4d8-4aa0-afa2-1cb7bc1ad6f7.mp4"
+ },
+ {
+  "shot": 11,
+  "cards": [
+   "c14"
+  ],
+  "t_start": 26.8,
+  "t_end": 30.46,
+  "dur_shot": 3.66,
+  "clip_dur": 5,
+  "start_image": "df73bfff-4c1f-413a-b4b0-2a874ec75f8c",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Дзеркало, долоня героїні на шиї, погляд у камеру.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "07aa3c4e-5287-49f6-9346-def68b40316b",
+  "status": "completed",
+  "rc": 1,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175733_07aa3c4e-5287-49f6-9346-def68b40316b.mp4"
+ },
+ {
+  "shot": 12,
+  "cards": [
+   "c15"
+  ],
+  "t_start": 30.46,
+  "t_end": 32.62,
+  "dur_shot": 2.16,
+  "clip_dur": 5,
+  "start_image": "1485505e-ba11-4838-b9dc-f4b0732a59fd",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Рука бере з полиці важку білу банку без назви (ворог).",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "6c0810ad-37e1-41aa-adaa-1536623c2f11",
+  "status": "completed",
+  "rc": 1,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175733_6c0810ad-37e1-41aa-adaa-1536623c2f11.mp4"
+ },
+ {
+  "shot": 15,
+  "cards": [
+   "c18"
+  ],
+  "t_start": 37.58,
+  "t_end": 39.66,
+  "dur_shot": 2.08,
+  "clip_dur": 5,
+  "start_image": "e74d2d3f-ea1f-4ff2-ba61-91f87e1fd4ae",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Макро складки під підборіддям, природне світло.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "7f1b8e41-5218-4a14-974c-924c3054137b",
+  "status": "completed",
+  "rc": 1,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175733_7f1b8e41-5218-4a14-974c-924c3054137b.mp4"
+ },
+ {
+  "shot": 16,
+  "cards": [
+   "c19"
+  ],
+  "t_start": 39.66,
+  "t_end": 41.98,
+  "dur_shot": 2.32,
+  "clip_dur": 5,
+  "start_image": "d2403b78-d26e-4c84-9892-0f3a73b4c7e2",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Героїня зачиняє шафку, повну початих банок без назв.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "26173275-1e37-4702-a39e-3bc5ac7a95a8",
+  "status": "completed",
+  "rc": 1,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175733_26173275-1e37-4702-a39e-3bc5ac7a95a8.mp4"
+ }
+]

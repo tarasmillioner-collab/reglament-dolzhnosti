@@ -1,6 +1,6 @@
 {
   "gate": "stage4",
-  "verdict": "FAIL",
+  "verdict": "PASS",
   "items": [
     {
       "id": "G4-1",
@@ -10,7 +10,7 @@
     {
       "id": "G4-2",
       "pass": true,
-      "evidence": "stills.json: 19 стиллов"
+      "evidence": "stills.json: 29 стиллов"
     },
     {
       "id": "G4-3",
@@ -29,8 +29,8 @@
     },
     {
       "id": "G4-6",
-      "pass": false,
-      "evidence": "key frames без стилла: ['c20', 'c24', 'c29', 'c34', 'c43', 'c45', 'c50', 'c56', 'c61', 'c74']"
+      "pass": true,
+      "evidence": "key frames без стилла: []"
     }
   ]
 }

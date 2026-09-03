@@ -8,7 +8,7 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c01.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
   "job_id": "e6c6d38e-c4ea-407d-8661-caa6d9a840b5",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161915_e6c6d38e-c4ea-407d-8661-caa6d9a840b5.png",
   "round": 2,
@@ -24,7 +24,7 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c02.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
   "job_id": "94f97182-7441-483c-aaef-da95d8e7f115",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161916_94f97182-7441-483c-aaef-da95d8e7f115.png",
   "round": 2,
@@ -40,7 +40,7 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c03.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
   "job_id": "7faa87dd-db1b-46ea-9b57-a70b1c0bd94e",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161915_7faa87dd-db1b-46ea-9b57-a70b1c0bd94e.png",
   "round": 2,
@@ -57,12 +57,17 @@
    "extras.md"
   ],
   "path": "work/stage4/stills/tiles/c04.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
-  "job_id": "c20399f7-b9ae-4235-b529-963fa926cfa1",
-  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161915_c20399f7-b9ae-4235-b529-963fa926cfa1.png",
-  "round": 2,
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
+  "job_id": "df06dfe1-6489-415d-a358-bbd77a7d7a35",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_172821_df06dfe1-6489-415d-a358-bbd77a7d7a35.png",
+  "round": 3,
   "text_allowed": false,
-  "note": "tile 126x211 cropped from contact sheet (D-12/D-13); full-res 1k image lives at url"
+  "note": "tile 126x211 cropped from contact sheet (D-12/D-13); full-res 1k image lives at url",
+  "ocr_checked": true,
+  "ocr_has_text": false,
+  "glitch_checked": true,
+  "glitch_flags": [],
+  "ocr_note": "caption_ocr returned \"Fas Lit\" (2 tokens) from the window light strip at 126px; visually no text/logos in the frame (checked on sheet_excerpt_r2.jpg)"
  },
  {
   "card": "c05",
@@ -74,7 +79,7 @@
    "extras.md"
   ],
   "path": "work/stage4/stills/tiles/c05.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
   "job_id": "f10d1330-d005-4025-9de8-816a2c8e0911",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161916_f10d1330-d005-4025-9de8-816a2c8e0911.png",
   "round": 2,
@@ -90,7 +95,7 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c06.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
   "job_id": "ec317834-681f-43a2-9cbf-a6b52b4af6d5",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161915_ec317834-681f-43a2-9cbf-a6b52b4af6d5.png",
   "round": 2,
@@ -106,7 +111,7 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c07.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
   "job_id": "166f67ef-cd5d-4444-91c5-c509311e389e",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161915_166f67ef-cd5d-4444-91c5-c509311e389e.png",
   "round": 2,
@@ -122,7 +127,7 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c08.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
   "job_id": "35440aa9-dc77-4c7a-bc7e-1499bb0d3d1a",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_161915_35440aa9-dc77-4c7a-bc7e-1499bb0d3d1a.png",
   "round": 2,
@@ -138,7 +143,7 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c09.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
   "job_id": "248dadfb-134b-469b-afea-585e915367ec",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160926_248dadfb-134b-469b-afea-585e915367ec.png",
   "round": 1,
@@ -154,7 +159,7 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c10.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
   "job_id": "9353c8fc-0929-44b8-8764-f407326f3ac1",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160925_9353c8fc-0929-44b8-8764-f407326f3ac1.png",
   "round": 1,
@@ -170,10 +175,10 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c11.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
-  "job_id": "3e5bcfb0-f6a3-4d4f-9dfb-f1bde711348e",
-  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160924_3e5bcfb0-f6a3-4d4f-9dfb-f1bde711348e.png",
-  "round": 1,
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
+  "job_id": "e1b2204b-d4b1-4821-87be-1eab22fe379b",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_172821_e1b2204b-d4b1-4821-87be-1eab22fe379b.png",
+  "round": 2,
   "text_allowed": false,
   "note": "tile 126x211 cropped from contact sheet (D-12/D-13); full-res 1k image lives at url"
  },
@@ -186,10 +191,10 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c12.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
-  "job_id": "671c785c-1e30-4683-80d7-2ecd28abc6b6",
-  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160925_671c785c-1e30-4683-80d7-2ecd28abc6b6.png",
-  "round": 1,
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
+  "job_id": "9b3a4c6c-db35-4e26-9c60-78ad181062ab",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_172821_9b3a4c6c-db35-4e26-9c60-78ad181062ab.png",
+  "round": 2,
   "text_allowed": false,
   "note": "tile 126x211 cropped from contact sheet (D-12/D-13); full-res 1k image lives at url"
  },
@@ -201,10 +206,10 @@
    "world.md"
   ],
   "path": "work/stage4/stills/tiles/c13.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
-  "job_id": "7ac0704b-38cc-49bc-b402-4f14dc3283ca",
-  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160938_7ac0704b-38cc-49bc-b402-4f14dc3283ca.png",
-  "round": 1,
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
+  "job_id": "6e13199a-2194-4f51-a14d-bbe168631ef8",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_172821_6e13199a-2194-4f51-a14d-bbe168631ef8.png",
+  "round": 2,
   "text_allowed": false,
   "note": "tile 126x211 cropped from contact sheet (D-12/D-13); full-res 1k image lives at url"
  },
@@ -217,7 +222,7 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c14.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
   "job_id": "df73bfff-4c1f-413a-b4b0-2a874ec75f8c",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160938_df73bfff-4c1f-413a-b4b0-2a874ec75f8c.png",
   "round": 1,
@@ -233,7 +238,7 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c15.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
   "job_id": "1485505e-ba11-4838-b9dc-f4b0732a59fd",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160938_1485505e-ba11-4838-b9dc-f4b0732a59fd.png",
   "round": 1,
@@ -249,10 +254,10 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c16.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
-  "job_id": "b9e51572-575e-4378-9855-bd645d8548b4",
-  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160938_b9e51572-575e-4378-9855-bd645d8548b4.png",
-  "round": 1,
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
+  "job_id": "79ddac4c-2c91-4519-82b8-af72298812ce",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_172821_79ddac4c-2c91-4519-82b8-af72298812ce.png",
+  "round": 2,
   "text_allowed": false,
   "note": "tile 126x211 cropped from contact sheet (D-12/D-13); full-res 1k image lives at url"
  },
@@ -265,10 +270,10 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c17.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
-  "job_id": "f5489430-0222-4941-8bba-eac68a2c468e",
-  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160938_f5489430-0222-4941-8bba-eac68a2c468e.png",
-  "round": 1,
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
+  "job_id": "1d4536be-bcf5-42c6-a0ae-48dc14237792",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_172821_1d4536be-bcf5-42c6-a0ae-48dc14237792.png",
+  "round": 2,
   "text_allowed": false,
   "note": "tile 126x211 cropped from contact sheet (D-12/D-13); full-res 1k image lives at url"
  },
@@ -281,7 +286,7 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c18.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
   "job_id": "e74d2d3f-ea1f-4ff2-ba61-91f87e1fd4ae",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160938_e74d2d3f-ea1f-4ff2-ba61-91f87e1fd4ae.png",
   "round": 1,
@@ -297,11 +302,173 @@
    "heroine.md"
   ],
   "path": "work/stage4/stills/tiles/c19.jpg",
-  "sheet": "work/stage4/stills/sheet_excerpt_r1.jpg",
+  "sheet": "work/stage4/stills/sheet_excerpt_r2.jpg",
   "job_id": "d2403b78-d26e-4c84-9892-0f3a73b4c7e2",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_160938_d2403b78-d26e-4c84-9892-0f3a73b4c7e2.png",
   "round": 1,
   "text_allowed": false,
   "note": "tile 126x211 cropped from contact sheet (D-12/D-13); full-res 1k image lives at url"
+ },
+ {
+  "card": "c20",
+  "beat": "B04",
+  "key_frame": true,
+  "passports": [
+   "world.md",
+   "heroine.md"
+  ],
+  "path": "work/stage4/stills/tiles/c20.jpg",
+  "sheet": "work/stage4/stills/sheet_keyframes_r1.jpg",
+  "job_id": "7fcbac20-cc35-44d5-8e87-c6d438c77c82",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_171600_7fcbac20-cc35-44d5-8e87-c6d438c77c82.png",
+  "round": 1,
+  "text_allowed": false,
+  "note": "tile from key-frame contact sheet"
+ },
+ {
+  "card": "c24",
+  "beat": "B04",
+  "key_frame": true,
+  "passports": [
+   "world.md",
+   "heroine.md"
+  ],
+  "path": "work/stage4/stills/tiles/c24.jpg",
+  "sheet": "work/stage4/stills/sheet_keyframes_r1.jpg",
+  "job_id": "f12b20b0-7f2b-40b0-847e-5451031a1409",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_171601_f12b20b0-7f2b-40b0-847e-5451031a1409.png",
+  "round": 1,
+  "text_allowed": false,
+  "note": "tile from key-frame contact sheet"
+ },
+ {
+  "card": "c29",
+  "beat": "B05",
+  "key_frame": true,
+  "passports": [
+   "world.md"
+  ],
+  "path": "work/stage4/stills/tiles/c29.jpg",
+  "sheet": "work/stage4/stills/sheet_keyframes_r1.jpg",
+  "job_id": "a06be93d-c098-4298-93ef-a04c2c47b6fe",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_171601_a06be93d-c098-4298-93ef-a04c2c47b6fe.png",
+  "round": 1,
+  "text_allowed": false,
+  "note": "tile from key-frame contact sheet"
+ },
+ {
+  "card": "c34",
+  "beat": "B06",
+  "key_frame": true,
+  "passports": [
+   "world.md",
+   "heroine.md",
+   "extras.md"
+  ],
+  "path": "work/stage4/stills/tiles/c34.jpg",
+  "sheet": "work/stage4/stills/sheet_keyframes_r1.jpg",
+  "job_id": "7fa1c20e-40ba-40e4-858a-3ffa7b68d40d",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_171601_7fa1c20e-40ba-40e4-858a-3ffa7b68d40d.png",
+  "round": 1,
+  "text_allowed": false,
+  "note": "tile from key-frame contact sheet"
+ },
+ {
+  "card": "c43",
+  "beat": "B07",
+  "key_frame": true,
+  "passports": [
+   "world.md"
+  ],
+  "path": "work/stage4/stills/tiles/c43.jpg",
+  "sheet": "work/stage4/stills/sheet_keyframes_r1.jpg",
+  "job_id": "c0cfc758-d5f7-4688-9ad8-7949632dbacf",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_171600_c0cfc758-d5f7-4688-9ad8-7949632dbacf.png",
+  "round": 1,
+  "text_allowed": false,
+  "note": "tile from key-frame contact sheet"
+ },
+ {
+  "card": "c45",
+  "beat": "B08",
+  "key_frame": true,
+  "passports": [
+   "world.md",
+   "heroine.md",
+   "product.md"
+  ],
+  "path": "work/stage4/stills/tiles/c45.jpg",
+  "sheet": "work/stage4/stills/sheet_keyframes_r1.jpg",
+  "job_id": "e30f4145-4979-4415-a169-a209f24f52df",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_171601_e30f4145-4979-4415-a169-a209f24f52df.png",
+  "round": 1,
+  "text_allowed": false,
+  "note": "tile from key-frame contact sheet"
+ },
+ {
+  "card": "c50",
+  "beat": "B09",
+  "key_frame": true,
+  "passports": [
+   "world.md",
+   "heroine.md",
+   "product.md"
+  ],
+  "path": "work/stage4/stills/tiles/c50.jpg",
+  "sheet": "work/stage4/stills/sheet_keyframes_r1.jpg",
+  "job_id": "e9129c00-cad6-4da5-b1cb-d35f52ea4f13",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_171601_e9129c00-cad6-4da5-b1cb-d35f52ea4f13.png",
+  "round": 1,
+  "text_allowed": false,
+  "note": "tile from key-frame contact sheet"
+ },
+ {
+  "card": "c56",
+  "beat": "B10",
+  "key_frame": true,
+  "passports": [
+   "world.md",
+   "heroine.md"
+  ],
+  "path": "work/stage4/stills/tiles/c56.jpg",
+  "sheet": "work/stage4/stills/sheet_keyframes_r1.jpg",
+  "job_id": "be72c6c8-0eb2-4d98-9b5e-943c2011b902",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_171601_be72c6c8-0eb2-4d98-9b5e-943c2011b902.png",
+  "round": 1,
+  "text_allowed": false,
+  "note": "tile from key-frame contact sheet"
+ },
+ {
+  "card": "c61",
+  "beat": "B11",
+  "key_frame": true,
+  "passports": [
+   "world.md",
+   "heroine.md"
+  ],
+  "path": "work/stage4/stills/tiles/c61.jpg",
+  "sheet": "work/stage4/stills/sheet_keyframes_r1.jpg",
+  "job_id": "a4bee617-c9ec-4b99-a37e-b8c2a6a4127c",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_171600_a4bee617-c9ec-4b99-a37e-b8c2a6a4127c.png",
+  "round": 1,
+  "text_allowed": false,
+  "note": "tile from key-frame contact sheet"
+ },
+ {
+  "card": "c74",
+  "beat": "B13",
+  "key_frame": true,
+  "passports": [
+   "world.md",
+   "heroine.md",
+   "product.md"
+  ],
+  "path": "work/stage4/stills/tiles/c74.jpg",
+  "sheet": "work/stage4/stills/sheet_keyframes_r1.jpg",
+  "job_id": "6db4d5fd-fdb6-43df-b72b-64a5dc7ced41",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_171601_6db4d5fd-fdb6-43df-b72b-64a5dc7ced41.png",
+  "round": 1,
+  "text_allowed": false,
+  "note": "tile from key-frame contact sheet"
  }
 ]
