@@ -75,3 +75,9 @@ ts,provider,op,model,units,unit_cost_usd,cost_usd,cumulative_usd,label,note
 2026-09-03T18:50:33Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.7715,still_c72_r1,
 2026-09-03T18:50:33Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,1.7915,still_c77_r1,
 2026-09-03T18:50:33Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,1.8415,clip_sh01_rc1,480p 9:16 no audio
+2026-09-03T18:52:22Z,higgsfield,video,seedance_2_0_mini,8.0,0.01,0.08,1.9215,clip_sh03_rc1,480p 9:16 no audio
+2026-09-03T18:52:22Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,1.9715,clip_sh08_rc1,480p 9:16 no audio
+2026-09-03T18:52:22Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,2.0215,clip_sh09_rc1,480p 9:16 no audio
+2026-09-03T18:52:22Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,2.0715,clip_sh10_rc1,480p 9:16 no audio
+2026-09-03T18:52:22Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,2.1215,clip_sh13_rc1,480p 9:16 no audio
+2026-09-03T18:52:22Z,higgsfield,video,seedance_2_0_mini,5.0,0.01,0.05,2.1715,clip_sh14_rc1,480p 9:16 no audio

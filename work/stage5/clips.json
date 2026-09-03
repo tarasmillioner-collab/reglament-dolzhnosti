@@ -19,9 +19,10 @@
    "generate_audio": false
   },
   "job_id": "46ba7c22-cbc7-485a-a59e-a4c04185a886",
-  "status": "pending",
+  "status": "completed",
   "rc": 1,
-  "note": "first submission blocked by preset recommendation, then 429; resubmitted with declined_preset_id"
+  "note": "first submission blocked by preset recommendation, then 429; resubmitted with declined_preset_id",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_184958_46ba7c22-cbc7-485a-a59e-a4c04185a886.mp4"
  },
  {
   "shot": 2,
@@ -45,6 +46,29 @@
   "status": "completed",
   "rc": 1,
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175733_d2ac4e23-4621-4f4a-a2d6-3df56ab85423.mp4"
+ },
+ {
+  "shot": 3,
+  "cards": [
+   "c04",
+   "c05"
+  ],
+  "t_start": 5.9,
+  "t_end": 10.6,
+  "dur_shot": 4.7,
+  "clip_dur": 8,
+  "start_image": "df06dfe1-6489-415d-a358-bbd77a7d7a35",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Загальний план: героїня і колега Аліна поруч біля дзеркала; погляд колеги на мить ковзає на шию героїні. Той самий план: колега вже дивиться на себе, поправляє волосся; героїня застигла, рука біля шарфа.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "fbf91b2f-276f-4e3c-bd43-a7671e0c38af",
+  "status": "pending",
+  "rc": 1
  },
  {
   "shot": 4,
@@ -140,6 +164,72 @@
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175733_a2da2b1b-f4d8-4aa0-afa2-1cb7bc1ad6f7.mp4"
  },
  {
+  "shot": 8,
+  "cards": [
+   "c11"
+  ],
+  "t_start": 21.14,
+  "t_end": 22.04,
+  "dur_shot": 0.9,
+  "clip_dur": 5,
+  "start_image": "e1b2204b-d4b1-4821-87be-1eab22fe379b",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Вечір, лампа, героїня наносить крем на щоки.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "1d75e5c9-a807-419c-af83-57690422bb6a",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 9,
+  "cards": [
+   "c12"
+  ],
+  "t_start": 22.04,
+  "t_end": 24.62,
+  "dur_shot": 2.58,
+  "clip_dur": 5,
+  "start_image": "9b3a4c6c-db35-4e26-9c60-78ad181062ab",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Макро: пальці з кремом зупиняються на лінії щелепи. Шия — нижче, суха.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "88dc682c-c829-48c8-9098-5411723d021d",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 10,
+  "cards": [
+   "c13"
+  ],
+  "t_start": 24.62,
+  "t_end": 26.8,
+  "dur_shot": 2.18,
+  "clip_dur": 5,
+  "start_image": "6e13199a-2194-4f51-a14d-bbe168631ef8",
+  "world": "cutaway",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Cutaway: глянцева реклама крему для обличчя в журналі, рука гортає; жодного тексту не читається.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "084d52da-b5fd-4324-b229-eade92560626",
+  "status": "pending",
+  "rc": 1
+ },
+ {
   "shot": 11,
   "cards": [
    "c14"
@@ -184,6 +274,50 @@
   "status": "completed",
   "rc": 1,
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175733_6c0810ad-37e1-41aa-adaa-1536623c2f11.mp4"
+ },
+ {
+  "shot": 13,
+  "cards": [
+   "c16"
+  ],
+  "t_start": 32.62,
+  "t_end": 35.32,
+  "dur_shot": 2.7,
+  "clip_dur": 5,
+  "start_image": "79ddac4c-2c91-4519-82b8-af72298812ce",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Густий білий крем шаром на шиї, важко розтирається.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "89cea6d3-e544-4078-962d-bc84f53dd72d",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 14,
+  "cards": [
+   "c17"
+  ],
+  "t_start": 35.32,
+  "t_end": 37.58,
+  "dur_shot": 2.26,
+  "clip_dur": 5,
+  "start_image": "1d4536be-bcf5-42c6-a0ae-48dc14237792",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Дзеркало: під підборіддям нова мʼяка складка.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "7e26bea2-793b-433b-8834-98f0ed0cb5b8",
+  "status": "pending",
+  "rc": 1
  },
  {
   "shot": 15,

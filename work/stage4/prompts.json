@@ -984,8 +984,9 @@
    "resolution": "1k",
    "job_id": "e35ac693-4a38-4c2f-9cd5-72e6d58aa443",
    "round": 1,
-   "status": "pending",
-   "note": "shot still for full render (English scene brief in call)"
+   "status": "completed",
+   "note": "shot still for full render (English scene brief in call)",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175822_e35ac693-4a38-4c2f-9cd5-72e6d58aa443.png"
   },
   {
    "id": "c59",
@@ -1001,8 +1002,9 @@
    "resolution": "1k",
    "job_id": "f8a7e6b4-16fa-4108-af5e-2b1d2f71953c",
    "round": 1,
-   "status": "pending",
-   "note": "shot still for full render (English scene brief in call)"
+   "status": "completed",
+   "note": "shot still for full render (English scene brief in call)",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175822_f8a7e6b4-16fa-4108-af5e-2b1d2f71953c.png"
   },
   {
    "id": "c62",
@@ -1018,8 +1020,9 @@
    "resolution": "1k",
    "job_id": "eb4c328a-4057-4bd9-aa76-836cf70cf306",
    "round": 1,
-   "status": "pending",
-   "note": "shot still for full render (English scene brief in call)"
+   "status": "completed",
+   "note": "shot still for full render (English scene brief in call)",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175822_eb4c328a-4057-4bd9-aa76-836cf70cf306.png"
   },
   {
    "id": "c64",
@@ -1035,8 +1038,9 @@
    "resolution": "1k",
    "job_id": "9671192e-2951-436c-b77e-ee3decb36fd3",
    "round": 1,
-   "status": "pending",
-   "note": "shot still for full render (English scene brief in call)"
+   "status": "completed",
+   "note": "shot still for full render (English scene brief in call)",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175822_9671192e-2951-436c-b77e-ee3decb36fd3.png"
   },
   {
    "id": "c68",
@@ -1052,8 +1056,9 @@
    "resolution": "1k",
    "job_id": "2fe6b412-96ed-4fe8-bf1e-0bd64a22e831",
    "round": 1,
-   "status": "pending",
-   "note": "shot still for full render; c77 = end-card base plate (3 jars, empty upper third for text overlay added with ffmpeg)"
+   "status": "completed",
+   "note": "shot still for full render; c77 = end-card base plate (3 jars, empty upper third for text overlay added with ffmpeg)",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_185016_2fe6b412-96ed-4fe8-bf1e-0bd64a22e831.png"
   },
   {
    "id": "c70",
@@ -1069,8 +1074,9 @@
    "resolution": "1k",
    "job_id": "2b91ffb9-8904-4dcf-931c-6042f064b12e",
    "round": 1,
-   "status": "pending",
-   "note": "shot still for full render; c77 = end-card base plate (3 jars, empty upper third for text overlay added with ffmpeg)"
+   "status": "completed",
+   "note": "shot still for full render; c77 = end-card base plate (3 jars, empty upper third for text overlay added with ffmpeg)",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_185016_2b91ffb9-8904-4dcf-931c-6042f064b12e.png"
   },
   {
    "id": "c72",
@@ -1086,8 +1092,9 @@
    "resolution": "1k",
    "job_id": "de2e736c-754f-4235-8720-841262522016",
    "round": 1,
-   "status": "pending",
-   "note": "shot still for full render; c77 = end-card base plate (3 jars, empty upper third for text overlay added with ffmpeg)"
+   "status": "completed",
+   "note": "shot still for full render; c77 = end-card base plate (3 jars, empty upper third for text overlay added with ffmpeg)",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_185016_de2e736c-754f-4235-8720-841262522016.png"
   },
   {
    "id": "c77",
@@ -1107,8 +1114,9 @@
    "resolution": "1k",
    "job_id": "6ec2e604-2434-4b70-ba4b-b2c513680334",
    "round": 1,
-   "status": "pending",
-   "note": "shot still for full render; c77 = end-card base plate (3 jars, empty upper third for text overlay added with ffmpeg)"
+   "status": "completed",
+   "note": "shot still for full render; c77 = end-card base plate (3 jars, empty upper third for text overlay added with ffmpeg)",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_185016_6ec2e604-2434-4b70-ba4b-b2c513680334.png"
   }
  ],
  "prompt_builder": "tools/still_prompts.py"
