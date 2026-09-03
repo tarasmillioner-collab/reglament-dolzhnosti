@@ -1,0 +1,10 @@
+{
+ "job_id": "432a6987-1221-4de7-8788-ff348ad0d46b",
+ "engine": "text2speech_v2/elevenlabs (Higgsfield)",
+ "voice": "Elena ca83ca7f-c186-493d-bd69-0d765fa861b2",
+ "text_file": "work/stage5/tts_text.txt",
+ "chars": 2623,
+ "words": 424,
+ "status": "pending",
+ "rule": "R7: one continuous piece, no per-phrase TTS"
+}

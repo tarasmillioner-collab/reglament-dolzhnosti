@@ -32,3 +32,14 @@ ts,provider,op,model,units,unit_cost_usd,cost_usd,cumulative_usd,label,note
 2026-09-03T16:19:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.62,still_c07_r2,9:16 1k
 2026-09-03T16:19:30Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.64,still_c08_r2,9:16 1k
 2026-09-03T16:29:29Z,higgsfield,tts,text2speech_v2/elevenlabs,0.15,0.01,0.0015,0.6415,vo_test_elena,voice test 4 short sentences
+2026-09-03T17:16:21Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.6615,still_c20_r1,9:16 1k key frame
+2026-09-03T17:16:21Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.6815,still_c24_r1,9:16 1k key frame
+2026-09-03T17:16:21Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.7015,still_c29_r1,9:16 1k key frame
+2026-09-03T17:16:21Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.7215,still_c34_r1,9:16 1k key frame
+2026-09-03T17:16:21Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.7415,still_c43_r1,9:16 1k key frame
+2026-09-03T17:16:21Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.7615,still_c45_r1,9:16 1k key frame
+2026-09-03T17:16:21Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.7815,still_c50_r1,9:16 1k key frame
+2026-09-03T17:16:21Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.8015,still_c56_r1,9:16 1k key frame
+2026-09-03T17:16:21Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.8215,still_c61_r1,9:16 1k key frame
+2026-09-03T17:16:21Z,higgsfield,image,nano_banana_pro,2.0,0.01,0.02,0.8415,still_c74_r1,9:16 1k key frame
+2026-09-03T17:16:21Z,higgsfield,tts,text2speech_v2/elevenlabs,6.0,0.01,0.06,0.9015,vo_full_rc1,2623 chars one piece; estimated 6 credits pending transactions check

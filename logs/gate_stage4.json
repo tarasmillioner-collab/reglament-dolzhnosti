@@ -1,0 +1,36 @@
+{
+  "gate": "stage4",
+  "verdict": "FAIL",
+  "items": [
+    {
+      "id": "G4-1",
+      "pass": true,
+      "evidence": "паспорта: ['heroine.md', 'product.md', 'world.md', 'extras.md']"
+    },
+    {
+      "id": "G4-2",
+      "pass": true,
+      "evidence": "stills.json: 19 стиллов"
+    },
+    {
+      "id": "G4-3",
+      "pass": true,
+      "evidence": "стиллы без паспорта/пути: []"
+    },
+    {
+      "id": "G4-4",
+      "pass": true,
+      "evidence": "текст в кадре (OCR): []"
+    },
+    {
+      "id": "G4-5",
+      "pass": true,
+      "evidence": "глитчи: []"
+    },
+    {
+      "id": "G4-6",
+      "pass": false,
+      "evidence": "key frames без стилла: ['c20', 'c24', 'c29', 'c34', 'c43', 'c45', 'c50', 'c56', 'c61', 'c74']"
+    }
+  ]
+}
