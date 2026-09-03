@@ -1,26 +1,26 @@
 {
   "gate": "stage3",
-  "verdict": "FAIL",
+  "verdict": "PASS",
   "items": [
     {
       "id": "G3-1",
-      "pass": false,
-      "evidence": "TRANSPLANT.md таблица: 0 строк"
+      "pass": true,
+      "evidence": "TRANSPLANT.md таблица: 25 строк"
     },
     {
       "id": "G3-2",
-      "pass": false,
-      "evidence": "слов в SCRIPT_uk=0, донор=0 (±10%)"
+      "pass": true,
+      "evidence": "слов в SCRIPT_uk=430, донор=460 (±10%)"
     },
     {
       "id": "G3-3",
-      "pass": false,
-      "evidence": "карточек=0, все с hot-словом в тексте"
+      "pass": true,
+      "evidence": "карточек=80, все с hot-словом в тексте"
     },
     {
       "id": "G3-4",
-      "pass": false,
-      "evidence": "claims: использовано 0 F-NN, нет в FACTS: []"
+      "pass": true,
+      "evidence": "claims: использовано 28 F-NN, нет в FACTS: []"
     },
     {
       "id": "G3-5",
@@ -35,17 +35,17 @@
     {
       "id": "G3-7",
       "pass": true,
-      "evidence": "кадров с врагом: 0 (≤12)"
+      "evidence": "кадров с врагом: 12 (≤12)"
     },
     {
       "id": "G3-8",
-      "pass": false,
-      "evidence": "начало продажи: клон None vs ДНК None (±5%)"
+      "pass": true,
+      "evidence": "начало продажи: клон 108.91 vs ДНК 108.91 (±5%)"
     },
     {
       "id": "G3-9",
-      "pass": false,
-      "evidence": "роли в карточках: нет ['callback', 'cta', 'hook', 'price', 'proof', 'transformation', 'urgency']"
+      "pass": true,
+      "evidence": "роли в карточках: нет []"
     }
   ]
 }

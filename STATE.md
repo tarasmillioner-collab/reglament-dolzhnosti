@@ -1,4 +1,4 @@
-stage: 2
+stage: 3
 attempt: 1
 status: judging
 budget_cap_usd: 30

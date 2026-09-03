@@ -1,0 +1,76 @@
+{
+  "verdict": "FAIL",
+  "items": [
+    {
+      "id": "D1",
+      "pass": false,
+      "evidence": "donor file missing: cannot re-measure. `ls targ.mp4` -> No such file or directory; `find . -maxdepth 2 -name '*.mp4'` -> empty; tools/ffprobe_wrap.py targ.mp4 raised RuntimeError 'cmd failed (1): ffprobe ... targ.mp4: No such file or directory'. DNA.json declares duration_s=194.49, 720x1280, fps=30.0 but source.present_in_repo=false and source.live_measurement=false (values carried from archive passport-targ.json, measured_at 2026-08-19). Unverifiable at 0% vs 1% tolerance.",
+      "fix": "Положить targ.mp4 в корень репо (или дать доступный путь/URL) и прогнать python3 tools/ffprobe_wrap.py targ.mp4, записав duration/WxH/fps в DNA.json с source.live_measurement=true."
+    },
+    {
+      "id": "D2",
+      "pass": false,
+      "evidence": "donor file missing: cannot re-measure. tools/scene_cuts.py targ.mp4 упал на ffprobe ('No such file or directory'). Дополнительно DNA.json сам признаёт неполноту: cuts.median_len=null и cuts.median_len_note='в архиве нет пошотового списка; медиана не измерена', поэтому даже заявленные n=41 / avg_len=4.74 / sigma=2.27 не с чем сверить, а медианная длина кадра в артефакте отсутствует как значение.",
+      "fix": "После появления донора: python3 tools/scene_cuts.py targ.mp4 -> сохранить полный пошотовый cut list (start/end каждого шота), заполнить cuts.median_len реальным числом и сверить n/avg/median с ±10%."
+    },
+    {
+      "id": "D3",
+      "pass": false,
+      "evidence": "donor file missing: cannot re-measure. Массив scenes[] в DNA.json содержит 13 записей, которые непрерывно покрывают 0.0->194.49 без дыр и наложений (проверено программно), НО каждая помечена note='beat-level span (per-shot cut list not in archive)' и совпадает 1:1 с 13 битами — это границы битов, а не сцены. Реальных 41 шота (cuts.n_shots=41) в артефакте нет, поэтому покрытие таймлайна сценами не проверяемо.",
+      "fix": "Заменить scenes[] на настоящий пошотовый список из scene_cuts.py (41 запись) и проверить непрерывность start[i+1]==end[i] и end[last]==duration_s; beat-спаны держать отдельно в beats[]."
+    },
+    {
+      "id": "D4",
+      "pass": false,
+      "evidence": "donor file missing: cannot re-measure. tools/whisper_words.py targ.mp4 вернул {\"unavailable\": true, \"error\": \"403 Forbidden\"} — нет ни файла, ни доступа к ASR. Заявленные speech.words=460, wpm=142, wps=2.365, segments=51 не сверены с транскриптом; самого транскрипта (пословного или посегментного) в DNA.json нет вообще.",
+      "fix": "Восстановить донор + доступ к whisper (проверить прокси/ключ), прогнать python3 tools/whisper_words.py targ.mp4, приложить word-level транскрипт в work/stage1/ и сверить words/wps с ±10%."
+    },
+    {
+      "id": "D5",
+      "pass": false,
+      "evidence": "donor file missing: cannot re-measure. tools/audio_measure.py упал на ffmpeg ('Error opening input file targ.mp4'). BPM=103.4 не перепроверен; audio.lufs=null с пометкой lufs_note='в архиве не измерено' — то есть громкость в LUFS не зафиксирована вовсе, требование '±1 LUFS' нечем удовлетворить. Признак sung/spoken (speech.mode='sung') по pitch/ритму также не пере-измерен.",
+      "fix": "python3 tools/audio_measure.py targ.mp4 -> заполнить audio.lufs реальным значением (integrated LUFS), пере-подтвердить bpm ±10% и sung/spoken по pitch-контуру."
+    },
+    {
+      "id": "D6",
+      "pass": false,
+      "evidence": "donor file missing: cannot re-measure. tools/caption_ocr.py --video targ.mp4 упал на ffprobe ('No such file or directory'). Заявленные captions.count=89, per_min=27.5, median_hold=1.2, karaoke=false, плашка/цвет (36,29,30)/позиция band 0.674-0.731 взяты из архивного caption-passport.md и не подтверждены пиксельным пере-измерением.",
+      "fix": "python3 tools/caption_ocr.py --video targ.mp4 -> сверить число титров ±10%, median_hold, наличие караоке-подсветки и координаты плашки; приложить сырой OCR-дамп рядом с DNA.json."
+    },
+    {
+      "id": "D7",
+      "pass": true,
+      "evidence": "Проверено по содержимому DNA.json программно: все 13 битов B01-B13 имеют непустые start/end, role, in_frame, belief. Роли (hook, backstory, problem, agitate, problem, mentor, diagnosis, handover, proof, proof, transformation, resolution, brand) все входят в role_enum (18 значений). Биты непрерывны без дыр и наложений: 0.0->194.49, конец точно равен duration_s=194.49. Параллельный role_profile_pct корректно помечен как справочный машинный профиль из другого словаря ролей (role_profile_pct_note), т.е. не конфликтует с role_enum.",
+      "fix": "-"
+    },
+    {
+      "id": "D8",
+      "pass": false,
+      "evidence": "donor file missing: cannot re-measure — нет транскрипта (whisper 403 + нет файла), поэтому совпадение секунды начала продажи с первым упоминанием бренда/оффера в транскрипте (±5%) непроверяемо. ВНУТРЕННЯЯ НЕПРОТИВОРЕЧИВОСТЬ (доп. проверка): конфликта нет. sale_starts_definition явно объявляет sale_starts как первое появление продукта-решения в кадре/в руке (handover, B08), и это согласуется с sale_starts_s=108.91 == B08.start=108.91, sale_starts_pct=56 == вычисленные 108.91/194.49=56.0%. B03.in_frame говорит о первом упоминании КАТЕГОРИИ на 19% (== category_first_mention_pct=19), B08.in_frame прямо ссылается на ту же категорию с 19% в B03 и разграничивает её с продуктом-решением. Бренд отдельно: brand_first_mention_pct=93.5 внутри B13 (180.88-194.49 = 93.0-100%), cta_pct=94.9. Три уровня (категория 19% / оффер-продукт 56% / бренд 93.5%) разведены последовательно и без противоречий.",
+      "fix": "После восстановления донора: whisper-транскрипт -> найти таймкод первого упоминания оффера/бренда словами и сверить с sale_starts_s=108.91 (±5%); если рубрику трактовать по бренду, а не по офферу, зафиксировать это расхождение (56% vs 93.5%) явным полем, а не только в sale_starts_definition."
+    },
+    {
+      "id": "D9",
+      "pass": true,
+      "evidence": "Проверено по содержимому DNA.json. Враг назван: enemy.object='текущее средство героини (банка), которое «делает хуже»; сама проблема на коже'; механизм продублирован в B07.belief ('моё средство — часть проблемы (механизм)'). Число кадров посчитано и выведено консистентно с est_shots: enemy.n_shots=12, enemy.beats=[B03,B05,B07], сумма их est_shots = 5+3+4 = 12 — сходится точно, метод раскрыт в enemy.note. Сами est_shots воспроизводимы из beat_len/avg_shot_len_s (все 13 битов совпали при округлении).",
+      "fix": "-"
+    },
+    {
+      "id": "D10",
+      "pass": true,
+      "evidence": "Проверено по содержимому DNA.json. speech.mode='sung' (сквозная баллада, закадровый женский вокал, липсинка нет; audio.note='песня = таймлайн; музыка встроена в вокал (Suno-тип)') -> audio_route='suno-first'. Правило «спето -> Suno-first» применено верно. Отдельное поле audio_route_actual='vo+bed (fallback, D-05: Suno недоступен...)' не подменяет выбор маршрута, а честно фиксирует деградацию исполнения как отдельный red-флаг, т.е. правило и факт разведены.",
+      "fix": "-"
+    }
+  ],
+  "top3_fixes": [
+    "Положить targ.mp4 в корень репо (или дать рабочий путь/URL) — без донора 7 из 10 пунктов рубрики физически непроверяемы; это единственный блокер этапа 1.",
+    "Починить доступ к whisper (tools/whisper_words.py вернул 403 Forbidden — проверить прокси/ключ) и приложить word-level транскрипт в work/stage1/, без него D4 и D8 не закрыть даже при наличии файла.",
+    "Дозаполнить измерения, которых нет как значений даже в архивной версии: cuts.median_len=null (D2) и audio.lufs=null (D5) — прогнать scene_cuts.py и audio_measure.py и записать реальные числа."
+  ],
+  "optional": [
+    "Заменить scenes[] (13 beat-level спанов, дублирующих beats[]) на настоящий пошотовый cut list из 41 шота — сейчас массив называется 'scenes', но сценами не является, что вводит в заблуждение при проверке D3.",
+    "Сумма est_shots по 13 битам = 42, а cuts.n_shots = 41 (расхождение 1 шот, 2.44% — в пределах 10%, не FAIL). Это артефакт округления beat_len/avg_shot_len_s; после появления пошотового списка привязать est_shots к реальным шотам и убрать расхождение.",
+    "source.measured_at=2026-08-19 при source.live_measurement=false — стоит добавить в DNA.md явную шапку 'ДАННЫЕ АРХИВНЫЕ, НЕ ПЕРЕ-ИЗМЕРЕНЫ', чтобы downstream-этапы не приняли их за живые метрики.",
+    "role_profile_pct использует другой словарь ролей (setup/trigger/wound/social/card), чем role_enum. Помечено как справочное, но для чистоты стоит либо смапить на role_enum, либо вынести в отдельный блок archive_reference."
+  ]
+}
