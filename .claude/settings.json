@@ -1,0 +1,20 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Write|Edit|mcp__https_mcp_higgsfield_ai_mcp__generate_video|mcp__https_mcp_higgsfield_ai_mcp__generate_video_batch",
+        "hooks": [
+          {"type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/gate_model.sh", "timeout": 20},
+          {"type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/gate_roles.sh", "timeout": 20}
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {"type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/gate_stage.sh", "timeout": 120}
+        ]
+      }
+    ]
+  }
+}

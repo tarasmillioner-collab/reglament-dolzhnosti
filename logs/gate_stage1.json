@@ -1,0 +1,41 @@
+{
+  "gate": "stage1",
+  "verdict": "PASS",
+  "items": [
+    {
+      "id": "G1-1",
+      "pass": true,
+      "evidence": "обязательные поля: missing=[]"
+    },
+    {
+      "id": "G1-2",
+      "pass": true,
+      "evidence": "сцены покрывают таймлайн: n=13, first=0.0, last=194.49, dur=194.49"
+    },
+    {
+      "id": "G1-3",
+      "pass": true,
+      "evidence": "битов=13, без роли=[], без полей=[]"
+    },
+    {
+      "id": "G1-4",
+      "pass": true,
+      "evidence": "биты покрывают таймлайн без дыр"
+    },
+    {
+      "id": "G1-5",
+      "pass": true,
+      "evidence": "audio_route=suno-first при speech.mode=sung"
+    },
+    {
+      "id": "G1-6",
+      "pass": true,
+      "evidence": "sale_starts_s=108.91"
+    },
+    {
+      "id": "G1-7",
+      "pass": true,
+      "evidence": "targ.mp4 НЕТ → source.live_measurement=False"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "gate": "stage2",
+  "verdict": "FAIL",
+  "items": [
+    {
+      "id": "G2-1",
+      "pass": false,
+      "evidence": "строк FACTS: 0 (≥25)"
+    },
+    {
+      "id": "G2-2",
+      "pass": [],
+      "evidence": "строк с источником: 0/0"
+    },
+    {
+      "id": "G2-3",
+      "pass": false,
+      "evidence": "в FACTS.md нет машинных полей price_1/old_price_1/discount_1_pct"
+    },
+    {
+      "id": "G2-4",
+      "pass": true,
+      "evidence": "фото продукта: 4"
+    },
+    {
+      "id": "G2-5",
+      "pass": true,
+      "evidence": "ROLES.md: DONOR/PRODUCT/MARKET + блок-лист"
+    },
+    {
+      "id": "G2-6",
+      "pass": false,
+      "evidence": "раздел аватара (пол/возраст/боли/слова) в FACTS"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+ "source": "targ.mp4",
+ "format": {
+  "w": 720,
+  "h": 1280,
+  "fps": 30.0,
+  "dur": 194.49
+ },
+ "montage": {
+  "shots": 41,
+  "cuts_per_min": 12.3,
+  "sigma": 2.27,
+  "min": 1.06,
+  "max": 10.07,
+  "under3": 11,
+  "under3_pct": 27
+ },
+ "captions": {
+  "count": 89,
+  "per_min": 27.5,
+  "median_hold": 1.2,
+  "band": {
+   "top": 0.674,
+   "bottom": 0.731,
+   "pill_rgb": [
+    254,
+    254,
+    254
+   ],
+   "ink_rgb": [
+    36,
+    29,
+    30
+   ],
+   "light_pill": true
+  }
+ },
+ "colour": {
+  "sat_thirds": [
+   37.7,
+   57.2,
+   68.7
+  ],
+  "sat_rising": true,
+  "bw_spans": [
+   2.0,
+   5.5
+  ],
+  "clipping": 2.81
+ },
+ "motion": {
+  "halves": [
+   24.4,
+   18.5
+  ],
+  "fading": true
+ },
+ "speech": {
+  "words": 460,
+  "wpm": 142,
+  "syllables": 600,
+  "spm": 185,
+  "lang": "English",
+  "repeats": 0,
+  "segments": 51,
+  "syllable_method": "script-aware (v2, 19.08)"
+ },
+ "tempo": {
+  "bpm": 103.4
+ }
+}
