@@ -1,0 +1,5 @@
+# Stage 6 — полный ролик (full_rc1)
+- Клипы шотов 17–41: seedance_2_0_mini 480p 9:16 по стиллам (`clips.json`); 7 шотов пересданы после 429 rate-limit. Шот 42 (end card) — статичная плита c77 с медленным наездом, текст end card наложен ASS (`endcard.ass`): 1 750 грн зачёркнуто / 895 грн / 3 баночки — 2 055 грн (685 грн за баночку) / НАЙВИГІДНІШЕ / 60 днів гарантії — повернення коштів / Оплата при отриманні · Нова Пошта / ЗАМОВИТИ — все цифры из FACTS (F-27, F-28, F-31, F-32).
+- Сборка: `tools/sandbox/assemble.sh 0 200.87` → `full_rc1.mp4` (200.81 с, 28.0 МБ, sha ea57c789c04722e8) → CDN (`deliver/full_rc1.url.md`).
+- Проверка на том же файле (`tools/sandbox/verify.sh`): `full_metrics.json` — 480×854, −15.9 LUFS, пауз нет, дрейф титров медиана 20 мс (370/440 слов сопоставлено); `rest_sheet.jpg` — 1 кадр на шоты 17–42; `full_endcard.jpg` — кадр end card (t=199 с); `endcard_ocr.json` — tesseract по регионам.
+- `deliver/production_kit/` — DNA.json, TRANSPLANT.md, SCRIPT_uk.md, cards.json, prompts.json, паспорта, timeline/words, subs.ass, endcard.ass, clips_stage5/6.json (job id + URL каждого клипа), vo.json (VO: job id, URL, atempo).
