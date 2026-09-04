@@ -1,13 +1,14 @@
 {
  "name": "excerpt",
- "duration": 42.0,
+ "duration": 49.92,
  "w": 480,
  "h": 854,
  "lufs": "I: -15.9 LUFS",
  "max_gap_s": 0.0,
- "asr_words": 85,
- "ass_words": 85,
- "matched": 76,
+ "asr_words": 105,
+ "ass_words": 101,
+ "matched": 88,
  "median_abs_drift_ms": 20.0,
- "p90_abs_drift_ms": 400.0
+ "p90_abs_drift_ms": 480.0,
+ "source": "tools/sandbox/verify.sh on excerpt_rc2.mp4 (sha256[:16] 74ca34f85a55056c) in Higgsfield sandbox"
 }

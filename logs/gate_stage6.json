@@ -5,12 +5,12 @@
     {
       "id": "G6-1",
       "pass": false,
-      "evidence": "deliver/full_rcN.mp4: нет в репо (red carried: файл на CDN, см. deliver/full_rc1.url.md; доставка — D-16)"
+      "evidence": "deliver/full_rcN.mp4: нет в репо (red carried: файл на CDN, см. deliver/full_rc2.url.md; доставка — D-16)"
     },
     {
       "id": "G6-2",
       "pass": true,
-      "evidence": "длительность 200.8 vs донор 194.49 (±5%) — метрики sandbox (tools/sandbox/verify.sh) на том же файле"
+      "evidence": "длительность 199.7 vs донор 194.49 (±5%) — метрики sandbox (tools/sandbox/verify.sh) на том же файле"
     },
     {
       "id": "G6-3",

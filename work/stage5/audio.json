@@ -1,12 +1,12 @@
 {
- "source": "sandbox measurement of the assembled deliverable (tools/sandbox/verify.sh) + vo_words_raw.json",
- "duration": 200.87,
+ "source": "sandbox measurement of the assembled deliverable (tools/sandbox/verify.sh) + vo_words_raw.json — rc2",
+ "duration": 199.68,
  "donor_duration": 194.49,
- "delta_pct": 3.28,
+ "delta_pct": 2.67,
  "lufs": -15.9,
  "max_gap": 0.0,
- "gap_method": "ffmpeg silencedetect n=-35dB d=0.6 on excerpt_rc1.mp4 (no silence >=0.6 s found)",
- "atempo": 1.12,
+ "gap_method": "ffmpeg silencedetect n=-35dB d=0.6 on excerpt_rc2.mp4 (no silence >=0.6 s found)",
+ "atempo": 1.15,
  "voice": "ElevenLabs via Higgsfield text2speech_v2, preset Elena (female)",
  "one_piece": true
 }

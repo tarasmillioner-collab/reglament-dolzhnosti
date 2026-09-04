@@ -472,19 +472,20 @@
   "t_end": 152.72,
   "dur_shot": 6.54,
   "clip_dur": 8,
-  "start_image": "eb4c328a-4057-4bd9-aa76-836cf70cf306",
+  "start_image": "3565ccb3-54dd-4682-98e3-20063fb6674d",
   "world": "hero",
-  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Колега дивиться на шию героїні, збентежено. Героїня крупно, пряма постава.",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the people breathe and blink, no camera shake, no text, no captions, no logos. Keep the exact faces, hair, clothes, lighting and colour grade of the start image. Two clearly separate women: the heroine in the foreground stands straight and open, the colleague half a metre behind her glances at the heroine's neck and looks confused, then looks away. Bodies never overlap or merge.",
   "params": {
    "model": "seedance_2_0_mini",
    "resolution": "480p",
    "aspect_ratio": "9:16",
    "generate_audio": false
   },
-  "job_id": "28d288ae-6a01-45a0-b606-b86709670abd",
+  "job_id": "3ecab061-ae36-4e11-8202-4d9e38550eb2",
   "status": "completed",
-  "rc": 1,
-  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_190838_28d288ae-6a01-45a0-b606-b86709670abd.mp4"
+  "rc": 2,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260904_060640_3ecab061-ae36-4e11-8202-4d9e38550eb2.mp4",
+  "note": "rc2 after judge-final E3/E6 (merged figures): new still c62 round 3; preset IN THE DARK declined; rc1 job 28d288ae superseded"
  },
  {
   "shot": 37,
@@ -571,10 +572,10 @@
   "t_start": 171.12,
   "t_end": 177.4,
   "dur_shot": 6.28,
-  "clip_dur": 8,
+  "clip_dur": 12,
   "start_image": "de2e736c-754f-4235-8720-841262522016",
   "world": "hero",
-  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Долоня на шиї, мʼяка посмішка. Той самий план, повільний відʼїзд.",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, very slow pull-back, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: her palm rests on her neck, a soft calm smile; she lowers the hand, looks straight at the camera, unhurried, then a small nod.",
   "params": {
    "model": "seedance_2_0_mini",
    "resolution": "480p",
@@ -582,10 +583,10 @@
    "generate_audio": false
   },
   "status": "completed",
-  "note": "first submit hit 429 rate limit; resubmitted",
-  "job_id": "77f235e4-5486-48fa-bed3-48e82106f04a",
-  "rc": 1,
-  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260904_031333_77f235e4-5486-48fa-bed3-48e82106f04a.mp4"
+  "note": "rc2: shot 40 now carries c72,c73,c75 (rebalance_r2) -> 12 s clip; same start still de2e736c; rc1 job superseded",
+  "job_id": "8a8e2c67-4e97-45d8-93dc-7e88dafb9aa4",
+  "rc": 2,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260904_060634_8a8e2c67-4e97-45d8-93dc-7e88dafb9aa4.mp4"
  },
  {
   "shot": 41,

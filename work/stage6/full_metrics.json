@@ -1,14 +1,14 @@
 {
  "name": "full",
- "duration": 200.81,
+ "duration": 199.68,
  "w": 480,
  "h": 854,
  "lufs": "I: -15.9 LUFS",
  "max_gap_s": 0.0,
- "asr_words": 431,
- "ass_words": 440,
- "matched": 370,
- "median_abs_drift_ms": 20.0,
- "p90_abs_drift_ms": 460.0,
- "source": "tools/sandbox/verify.sh on full_rc1.mp4 (sha256[:16] ea57c789c04722e8) in Higgsfield sandbox"
+ "asr_words": 449,
+ "ass_words": 454,
+ "matched": 381,
+ "median_abs_drift_ms": 40.0,
+ "p90_abs_drift_ms": 420.0,
+ "source": "tools/sandbox/verify.sh on full_rc2.mp4 (sha256[:16] e366f29fb8a75b3e) in Higgsfield sandbox"
 }

@@ -1,12 +1,16 @@
 {
- "job_id": "432a6987-1221-4de7-8788-ff348ad0d46b",
+ "job_id": "61353ea8-e3aa-4fce-9424-9883b3817649",
  "engine": "text2speech_v2/elevenlabs (Higgsfield)",
  "voice": "Elena ca83ca7f-c186-493d-bd69-0d765fa861b2",
  "text_file": "work/stage5/tts_text.txt",
- "chars": 2623,
- "words": 424,
+ "chars": 4791,
+ "words": 454,
  "status": "completed",
  "rule": "R7: one continuous piece, no per-phrase TTS",
- "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_171515_432a6987-1221-4de7-8788-ff348ad0d46b.mp3",
- "raw_duration_s": 224.96
+ "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260904_060707_61353ea8-e3aa-4fce-9424-9883b3817649.mp3",
+ "raw_duration_s": 229.8,
+ "rc": 2,
+ "raw_lufs": -13.4,
+ "superseded_job": "432a6987-1221-4de7-8788-ff348ad0d46b",
+ "note": "rc2 after judge-final T10 (act rebalance, rebalance_r2.json); same voice, one piece"
 }
