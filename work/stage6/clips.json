@@ -625,7 +625,7 @@
   "t_end": 200.87,
   "dur_shot": 12.79,
   "clip_dur": 12,
-  "start_image": "6ec2e604-2434-4b70-8a4e-b2c513680334",
+  "start_image": "6ec2e604-2434-4b70-ba4b-b2c513680334",
   "world": "hero",
   "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: End card: 3 банки — 2 055 ₴ (685/шт), бейдж «Найвигідніше»; поруч чашка кави. End card: печатка «60 днів гарантії повернення коштів». End card: «Оплата при отриманні · Нова Пошта», кнопка «Замовити». End card: у кутку — шовковий шарф, кинутий на стілець (callback).",
   "params": {
@@ -636,6 +636,6 @@
   },
   "status": "static_endcard",
   "note": "end card composed from still c77 + exact text via ffmpeg (no seedance)",
-  "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_185016_6ec2e604-2434-4b70-8a4e-b2c513680334.png"
+  "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_185016_6ec2e604-2434-4b70-ba4b-b2c513680334.png"
  }
 ]
