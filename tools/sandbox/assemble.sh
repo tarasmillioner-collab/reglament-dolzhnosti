@@ -5,11 +5,12 @@
 # Rules: seedance_2_0_mini 480p clips only (R1); one continuous VO (R7) with atempo from vo_measure.json; picture cut to card timeline.
 set -e
 T0=${1:-0}; T1=${2:-41.98}; OUT=${3:-/home/user/out.mp4}; UP="$4"
+# raw.githubusercontent caches ~5 min: every fetch carries a cache-busting query
 RAW=https://raw.githubusercontent.com/tarasmillioner-collab/reglament-dolzhnosti/claude/vsl-clone-factory-34f2yn
 cd /home/user && mkdir -p asm && cd asm
-for f in clips.json timeline.json captions.ass vo_measure.json vo.json; do curl -sf -o $f "$RAW/work/stage5/$f"; done
-curl -sf -o clips6.json "$RAW/work/stage6/clips.json" || echo '[]' > clips6.json
-curl -sf -o endcard.ass "$RAW/work/stage6/endcard.ass" || rm -f endcard.ass
+for f in clips.json timeline.json captions.ass vo_measure.json vo.json; do curl -sf -o $f "$RAW/work/stage5/$f?v=$RANDOM$RANDOM"; done
+curl -sf -o clips6.json "$RAW/work/stage6/clips.json?v=$RANDOM$RANDOM" || echo '[]' > clips6.json
+curl -sf -o endcard.ass "$RAW/work/stage6/endcard.ass?v=$RANDOM$RANDOM" || rm -f endcard.ass
 VO_URL=$(python3 -c "import json;print(json.load(open('vo.json'))['url'])")
 AT=$(python3 -c "import json;print(json.load(open('vo_measure.json'))['atempo'])")
 [ -s vo_src.mp3 ] || curl -sf -o vo_src.mp3 "$VO_URL"
