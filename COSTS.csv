@@ -107,3 +107,12 @@ ts,provider,op,model,units,unit_cost_usd,cost_usd,cumulative_usd,label,note
 2026-09-04T03:16:12Z,higgsfield,video,,8.0,0.01,0.08,3.9115,,stage6 clip sh39 seedance_2_0_mini 480p (resubmit after 429)
 2026-09-04T03:16:12Z,higgsfield,video,,8.0,0.01,0.08,3.9915,,stage6 clip sh40 seedance_2_0_mini 480p (resubmit after 429)
 2026-09-04T03:16:12Z,higgsfield,video,,12.0,0.01,0.12,4.1115,,stage6 clip sh41 seedance_2_0_mini 480p (resubmit after 429)
+2026-09-04T05:47:14Z,higgsfield,image,,2.0,0.01,0.02,4.1315,,"stage5 rc2: still c08 (wedding band + husband shirt, E8 fix)"
+2026-09-04T05:47:14Z,higgsfield,image,,2.0,0.01,0.02,4.1515,,"stage5 rc2: still c17 (chin fold close-up, E8 fix)"
+2026-09-04T05:48:50Z,higgsfield,video,,8.0,0.01,0.08,4.2315,,stage5 rc2 clip sh05 (E8 fix) seedance_2_0_mini 480p
+2026-09-04T05:48:50Z,higgsfield,video,,5.0,0.01,0.05,4.2815,,stage5 rc2 clip sh14 (E8 fix) seedance_2_0_mini 480p
+2026-09-04T06:02:49Z,higgsfield,image,,4.0,0.01,0.04,4.3215,,"stage6 rc2: stills c16 (solid hand) + c62 (two separate figures), judge-final E3/E6"
+2026-09-04T06:06:46Z,higgsfield,video,,5.0,0.01,0.05,4.3715,,r2 clip shot13 cda3b06a 5s
+2026-09-04T06:06:46Z,higgsfield,video,,12.0,0.01,0.12,4.4915,,r2 clip shot40 8a8e2c67 12s
+2026-09-04T06:06:46Z,higgsfield,video,,8.0,0.01,0.08,4.5715,,r2 clip shot36 3ecab061 8s
+2026-09-04T06:07:48Z,higgsfield,tts,text2speech_v2/elevenlabs,11.0,0.01,0.11,4.6815,vo_full_rc2,"r2 VO one piece Elena 61353ea8, 4791 chars; est 11 credits (6 per 2623 chars rc1)"

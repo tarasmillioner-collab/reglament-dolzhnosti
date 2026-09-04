@@ -1,14 +1,14 @@
 {
- "source_job": "432a6987-1221-4de7-8788-ff348ad0d46b",
- "atempo": 1.12,
- "dur_s": 200.87,
+ "source_job": "61353ea8-e3aa-4fce-9424-9883b3817649",
+ "atempo": 1.15,
+ "dur_s": 199.79,
  "target_s": 194.49,
  "tolerance_pct": 5,
- "lufs_measured": -13.4,
+ "lufs_measured": -13.5,
  "lufs_target": -16,
- "n_words_asr": 431,
- "n_words_script": 424,
- "wps": 2.111,
+ "n_words_asr": 444,
+ "n_words_script": 454,
+ "wps": 2.272,
  "whisper": "small int8 uk, beam 1",
- "notes": "raw VO 224.96 s -> atempo 1.12 (D-15); loudness normalised to -16 LUFS at assembly"
+ "notes": "rc2: raw VO 229.80 s -> atempo 1.15 (D-15 cap) -> 199.79 s (+2.7% vs 194.49); loudnorm I=-16 at assembly"
 }

@@ -104,7 +104,7 @@
   "t_end": 16.08,
   "dur_shot": 3.96,
   "clip_dur": 5,
-  "start_image": "166f67ef-cd5d-4444-91c5-c509311e389e",
+  "start_image": "80d2da5d-9d28-4090-b9ac-37e2fbefc63d",
   "world": "hero",
   "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Героїня застібає верхній ґудзик блузи під шарфом; дзеркало у розфокусі. Той самий план: погляд героїні вниз, долоня лягає на шарф; пауза.",
   "params": {
@@ -113,10 +113,11 @@
    "aspect_ratio": "9:16",
    "generate_audio": false
   },
-  "job_id": "f5bc3c82-f1d1-42ed-a245-b4e624f76746",
+  "job_id": "1cae724b-d9cc-4d54-bc47-a01bc70067e1",
   "status": "completed",
-  "rc": 1,
-  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_175733_f5bc3c82-f1d1-42ed-a245-b4e624f76746.mp4"
+  "rc": 2,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260904_054840_1cae724b-d9cc-4d54-bc47-a01bc70067e1.mp4",
+  "note": "rc2: judge-sidebyside E8 — wedding band on hand at scarf + husband shirt out of focus"
  },
  {
   "shot": 6,
@@ -289,19 +290,20 @@
   "t_end": 35.32,
   "dur_shot": 2.7,
   "clip_dur": 5,
-  "start_image": "79ddac4c-2c91-4519-82b8-af72298812ce",
+  "start_image": "5841d2b3-8499-4d0f-8d48-17f8a1d33218",
   "world": "hero",
-  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Густий білий крем шаром на шиї, важко розтирається.",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, no camera shake, no text, no captions, no logos. Keep the exact hand, neck, skin, lighting and colour grade of the start image. Only one hand is visible, fingers clearly separated; the fingertips slowly spread a thick white cream on the neck, the cream resists and does not absorb. No second hand appears.",
   "params": {
    "model": "seedance_2_0_mini",
    "resolution": "480p",
    "aspect_ratio": "9:16",
    "generate_audio": false
   },
-  "job_id": "89cea6d3-e544-4078-962d-bc84f53dd72d",
+  "job_id": "cda3b06a-0673-4905-8eac-903fad6a3125",
   "status": "completed",
-  "rc": 1,
-  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_185208_89cea6d3-e544-4078-962d-bc84f53dd72d.mp4"
+  "rc": 2,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260904_060634_cda3b06a-0673-4905-8eac-903fad6a3125.mp4",
+  "note": "rc2 after judge-final E6 (ghost hand): new still c16 round 3 + one-hand prompt; rc1 job 89cea6d3 superseded"
  },
  {
   "shot": 14,
@@ -312,7 +314,7 @@
   "t_end": 37.58,
   "dur_shot": 2.26,
   "clip_dur": 5,
-  "start_image": "1d4536be-bcf5-42c6-a0ae-48dc14237792",
+  "start_image": "dbbc0b1f-0b63-47af-9c4d-9c2a71eecab0",
   "world": "hero",
   "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Дзеркало: під підборіддям нова мʼяка складка.",
   "params": {
@@ -321,10 +323,11 @@
    "aspect_ratio": "9:16",
    "generate_audio": false
   },
-  "job_id": "7e26bea2-793b-433b-8834-98f0ed0cb5b8",
+  "job_id": "c82c1ed2-aba3-4586-b0b3-3a6884243b90",
   "status": "completed",
-  "rc": 1,
-  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_185208_7e26bea2-793b-433b-8834-98f0ed0cb5b8.mp4"
+  "rc": 2,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260904_054901_c82c1ed2-aba3-4586-b0b3-3a6884243b90.mp4",
+  "note": "rc2: judge-sidebyside E8 — tight chin/neck fold close-up"
  },
  {
   "shot": 15,
