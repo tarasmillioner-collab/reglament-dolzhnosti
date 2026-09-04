@@ -1,0 +1,31 @@
+{
+  "gate": "stage6",
+  "verdict": "FAIL",
+  "items": [
+    {
+      "id": "G6-1",
+      "pass": false,
+      "evidence": "deliver/full_rcN.mp4: нет в репо (red carried: файл на CDN, см. deliver/full_rc1.url.md; доставка — D-16)"
+    },
+    {
+      "id": "G6-2",
+      "pass": true,
+      "evidence": "длительность 200.8 vs донор 194.49 (±5%) — метрики sandbox (tools/sandbox/verify.sh) на том же файле"
+    },
+    {
+      "id": "G6-3",
+      "pass": true,
+      "evidence": "end card OCR: 'sie ar will lele senta зл) an | м > i - - с h я й . | i : я і -| 1 >a )» _ ip з =2 грн (685 pn яю gexoxrgy) найвигідніше'"
+    },
+    {
+      "id": "G6-4",
+      "pass": true,
+      "evidence": "FEEDBACK_LOG not-done без причины: 0"
+    },
+    {
+      "id": "G6-5",
+      "pass": true,
+      "evidence": "production_kit: нет []"
+    }
+  ]
+}

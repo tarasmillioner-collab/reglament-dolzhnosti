@@ -1,0 +1,12 @@
+{
+ "job_id": "432a6987-1221-4de7-8788-ff348ad0d46b",
+ "engine": "text2speech_v2/elevenlabs (Higgsfield)",
+ "voice": "Elena ca83ca7f-c186-493d-bd69-0d765fa861b2",
+ "text_file": "work/stage5/tts_text.txt",
+ "chars": 2623,
+ "words": 424,
+ "status": "completed",
+ "rule": "R7: one continuous piece, no per-phrase TTS",
+ "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_171515_432a6987-1221-4de7-8788-ff348ad0d46b.mp3",
+ "raw_duration_s": 224.96
+}

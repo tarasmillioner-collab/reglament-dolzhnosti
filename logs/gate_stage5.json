@@ -1,0 +1,46 @@
+{
+  "gate": "stage5",
+  "verdict": "FAIL",
+  "items": [
+    {
+      "id": "G5-1",
+      "pass": true,
+      "evidence": "VO 200.87s vs донор 194.49s (±5%)"
+    },
+    {
+      "id": "G5-2",
+      "pass": true,
+      "evidence": "слов/сек 2.18 vs ДНК 2.365 (±10%)"
+    },
+    {
+      "id": "G5-3",
+      "pass": true,
+      "evidence": "max gap 0.0 (≤1.2)"
+    },
+    {
+      "id": "G5-4",
+      "pass": true,
+      "evidence": "LUFS -15.9 (−16±1)"
+    },
+    {
+      "id": "G5-5",
+      "pass": true,
+      "evidence": "timeline: 80 карточек, unmatched первых 20 = 0"
+    },
+    {
+      "id": "G5-6",
+      "pass": false,
+      "evidence": "deliver/excerpt_rcN.mp4: нет в репо (red carried: файл на CDN, см. deliver/excerpt_rc1.url.md; доставка — D-16)"
+    },
+    {
+      "id": "G5-7",
+      "pass": true,
+      "evidence": "excerpt 480x854 42.0s — метрики sandbox (tools/sandbox/verify.sh) на том же файле"
+    },
+    {
+      "id": "G5-8",
+      "pass": true,
+      "evidence": "дрейф титров медиана 20.0 мс (≤100), метод: faster-whisper small (uk) on excerpt_rc1.mp4 audio vs captio"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+ "source": "tesseract ukr+eng on end-card frame t=199.0 s of full_rc1.mp4 (sandbox crop 240x427 -> 4 text regions, x5 upscale, autocontrast); one card per region/psm pass",
+ "expected": [
+  "895 грн",
+  "1 750 грн",
+  "3 баночки — 2 055 грн",
+  "685 грн за баночку",
+  "НАЙВИГІДНІШЕ",
+  "60 днів гарантії",
+  "повернення коштів",
+  "Оплата при отриманні · Нова Пошта",
+  "ЗАМОВИТИ"
+ ],
+ "visual_check": "end card read by the session from work/stage6/full_endcard.jpg: all nine lines legible",
+ "cards": [
+  {
+   "t": 199.0,
+   "region": "price",
+   "psm": 6,
+   "text": "sie ar will Lele Senta ЗЛ) AN | М > i - - С H я й . |"
+  },
+  {
+   "t": 199.0,
+   "region": "price",
+   "psm": 7,
+   "text": "i : Я і"
+  },
+  {
+   "t": 199.0,
+   "region": "price",
+   "psm": 11,
+   "text": "-| 1 >A )» _ ip"
+  },
+  {
+   "t": 199.0,
+   "region": "pack",
+   "psm": 6,
+   "text": "З =2 грн (685 pn яю Gexoxrgy) НАЙВИГІДНІШЕ"
+  },
+  {
+   "t": 199.0,
+   "region": "pack",
+   "psm": 7,
+   "text": "і i mations"
+  },
+  {
+   "t": 199.0,
+   "region": "pack",
+   "psm": 11,
+   "text": "ЗІібаночкиюо121055Їгрн (668 ер єю Genoxtgy) ший я НАЙВИГІДНІШЕ"
+  },
+  {
+   "t": 199.0,
+   "region": "guar",
+   "psm": 6,
+   "text": "Т ГІ ee 4 бОЗднівігарантії \"зір по повернення|кошті в"
+  },
+  {
+   "t": 199.0,
+   "region": "guar",
+   "psm": 11,
+   "text": "4 0) лАго івягарантії поверне HHAIKOW TBM a ."
+  },
+  {
+   "t": 199.0,
+   "region": "cod",
+   "psm": 6,
+   "text": "Ganev ape Spun - Race Face ЗАМОВИТИ"
+  },
+  {
+   "t": 199.0,
+   "region": "cod",
+   "psm": 11,
+   "text": "ям Фплаца чу йманнійноватіоита!"
+  }
+ ]
+}

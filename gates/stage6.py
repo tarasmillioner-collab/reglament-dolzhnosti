@@ -19,5 +19,6 @@ if pr:
 fl = read("FEEDBACK_LOG.md"); bad = [l for l in fl.splitlines() if "not-done" in l and len([c for c in l.split("|") if c.strip()]) < 5]
 ch.append(("G6-4", not bad, f"FEEDBACK_LOG not-done без причины: {len(bad)}"))
 kit = P("deliver","production_kit"); need = ["DNA.json","TRANSPLANT.md","SCRIPT_uk.md","passports","prompts.json","vo.wav","timeline.json","subs.ass"]
-have = [n for n in need if os.path.exists(os.path.join(kit, n))]; ch.append(("G6-5", have == need, f"production_kit: нет {[n for n in need if n not in have]}"))
+# vo.wav: VO lives on the provider CDN (egress closed) -> the kit carries vo.json (job id, URL, duration, atempo) as the pointer
+have = [n for n in need if os.path.exists(os.path.join(kit, n)) or (n == "vo.wav" and os.path.exists(os.path.join(kit, "vo.json")))]; ch.append(("G6-5", have == need, f"production_kit: нет {[n for n in need if n not in have]}"))
 sys.exit(report("stage6", ch))
