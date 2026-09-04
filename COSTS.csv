@@ -100,3 +100,10 @@ ts,provider,op,model,units,unit_cost_usd,cost_usd,cumulative_usd,label,note
 2026-09-04T03:13:04Z,higgsfield,video,,8.0,0.01,0.08,3.4215,,stage6 clip sh36 seedance_2_0_mini 480p
 2026-09-04T03:13:04Z,higgsfield,video,,10.0,0.01,0.1,3.5215,,stage6 clip sh37 seedance_2_0_mini 480p
 2026-09-04T03:13:04Z,higgsfield,video,,5.0,0.01,0.05,3.5715,,stage5 clip sh10 rc2 (nsfw false-positive resubmit)
+2026-09-04T03:16:12Z,higgsfield,video,,8.0,0.01,0.08,3.6515,,stage6 clip sh30 seedance_2_0_mini 480p (resubmit after 429)
+2026-09-04T03:16:12Z,higgsfield,video,,5.0,0.01,0.05,3.7015,,stage6 clip sh32 seedance_2_0_mini 480p (resubmit after 429)
+2026-09-04T03:16:12Z,higgsfield,video,,5.0,0.01,0.05,3.7515,,stage6 clip sh35 seedance_2_0_mini 480p (resubmit after 429)
+2026-09-04T03:16:12Z,higgsfield,video,,8.0,0.01,0.08,3.8315,,stage6 clip sh38 seedance_2_0_mini 480p (resubmit after 429)
+2026-09-04T03:16:12Z,higgsfield,video,,8.0,0.01,0.08,3.9115,,stage6 clip sh39 seedance_2_0_mini 480p (resubmit after 429)
+2026-09-04T03:16:12Z,higgsfield,video,,8.0,0.01,0.08,3.9915,,stage6 clip sh40 seedance_2_0_mini 480p (resubmit after 429)
+2026-09-04T03:16:12Z,higgsfield,video,,12.0,0.01,0.12,4.1115,,stage6 clip sh41 seedance_2_0_mini 480p (resubmit after 429)

@@ -1,7 +1,6 @@
-# НЕ запускается автоматически. Опция для владельца (см. QUESTIONS.md §8):
-# workflow_dispatch с списком публичных URL (результаты Higgsfield CDN) → файлы коммитятся в ветку assets/<run>.
-# Сессия Claude Code этот workflow НЕ триггерит сама: egress-политика сессии закрывает CDN, и обход политики
-# через CI — решение владельца, не агента.
+# workflow_dispatch с списком публичных URL (результаты Higgsfield CDN / загрузки) → файлы коммитятся в ветку, с которой запущен.
+# Запускается сессией по D-14 (после явной цели владельца «deliver/full_rc*.mp4 существует»): это единственный путь
+# доставить mp4 из CDN в deliver/, т.к. egress-политика сессии закрывает CDN Higgsfield.
 name: fetch-assets
 on:
   workflow_dispatch:
