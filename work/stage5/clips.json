@@ -67,8 +67,9 @@
    "generate_audio": false
   },
   "job_id": "fbf91b2f-276f-4e3c-bd43-a7671e0c38af",
-  "status": "pending",
-  "rc": 1
+  "status": "completed",
+  "rc": 1,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_185208_fbf91b2f-276f-4e3c-bd43-a7671e0c38af.mp4"
  },
  {
   "shot": 4,
@@ -182,8 +183,9 @@
    "generate_audio": false
   },
   "job_id": "1d75e5c9-a807-419c-af83-57690422bb6a",
-  "status": "pending",
-  "rc": 1
+  "status": "completed",
+  "rc": 1,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_185208_1d75e5c9-a807-419c-af83-57690422bb6a.mp4"
  },
  {
   "shot": 9,
@@ -204,8 +206,9 @@
    "generate_audio": false
   },
   "job_id": "88dc682c-c829-48c8-9098-5411723d021d",
-  "status": "pending",
-  "rc": 1
+  "status": "completed",
+  "rc": 1,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_185208_88dc682c-c829-48c8-9098-5411723d021d.mp4"
  },
  {
   "shot": 10,
@@ -225,9 +228,11 @@
    "aspect_ratio": "9:16",
    "generate_audio": false
   },
-  "job_id": "084d52da-b5fd-4324-b229-eade92560626",
-  "status": "pending",
-  "rc": 1
+  "job_id": "b78c71a3-38df-4f29-89d4-1c763a587435",
+  "status": "completed",
+  "rc": 2,
+  "note": "rc1 flagged nsfw by provider (false positive on magazine cutaway); rc2 resubmitted with softened prompt",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_190537_b78c71a3-38df-4f29-89d4-1c763a587435.mp4"
  },
  {
   "shot": 11,
@@ -294,8 +299,9 @@
    "generate_audio": false
   },
   "job_id": "89cea6d3-e544-4078-962d-bc84f53dd72d",
-  "status": "pending",
-  "rc": 1
+  "status": "completed",
+  "rc": 1,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_185208_89cea6d3-e544-4078-962d-bc84f53dd72d.mp4"
  },
  {
   "shot": 14,
@@ -316,8 +322,9 @@
    "generate_audio": false
   },
   "job_id": "7e26bea2-793b-433b-8834-98f0ed0cb5b8",
-  "status": "pending",
-  "rc": 1
+  "status": "completed",
+  "rc": 1,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/hf_20260903_185208_7e26bea2-793b-433b-8834-98f0ed0cb5b8.mp4"
  },
  {
   "shot": 15,

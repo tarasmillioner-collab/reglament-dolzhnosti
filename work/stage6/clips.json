@@ -1,0 +1,601 @@
+[
+ {
+  "shot": 17,
+  "cards": [
+   "c20",
+   "c21",
+   "c22",
+   "c23"
+  ],
+  "t_start": 41.98,
+  "t_end": 49.14,
+  "dur_shot": 7.16,
+  "clip_dur": 8,
+  "start_image": "7fcbac20-cc35-44d5-8e87-c6d438c77c82",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Ніч, кухня, героїня сидить з телефоном. Довгий план. Той самий план, повільний наїзд. Екран телефона: святкове фото, пальці збільшують профіль героїні (без тексту на екрані). Її обличчя над екраном: розуміння.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "bbb1dc3c-25ce-4b05-bdb0-95c474eef392",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 18,
+  "cards": [
+   "c24",
+   "c25",
+   "c26",
+   "c27"
+  ],
+  "t_start": 49.14,
+  "t_end": 59.18,
+  "dur_shot": 10.04,
+  "clip_dur": 12,
+  "start_image": "f12b20b0-7f2b-40b0-847e-5451031a1409",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Чорно-біло: повільний наїзд, долоня на горлі. Чорно-біло: ноутбук, вона закриває камеру пальцем. Чорно-біло: пальці застібають верхній ґудзик блузи. Чорно-біло: руки чоловіка зі спини лягають на плечі, вона завмирає.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "70334bb4-81b4-4ff2-8c67-eab851261924",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 19,
+  "cards": [
+   "c28"
+  ],
+  "t_start": 59.18,
+  "t_end": 61.44,
+  "dur_shot": 2.26,
+  "clip_dur": 5,
+  "start_image": "1d608e07-cdd0-435e-b58e-35f9e99be17a",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Героїня зараз, денне світло, спокійний прямий погляд.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "fda0a3bb-167e-4e21-a8b6-dbb0cb8a4534",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 20,
+  "cards": [
+   "c29",
+   "c30"
+  ],
+  "t_start": 61.44,
+  "t_end": 66.92,
+  "dur_shot": 5.48,
+  "clip_dur": 8,
+  "start_image": "a06be93d-c098-4298-93ef-a04c2c47b6fe",
+  "world": "cutaway",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Cutaway: рука малює маркером на папері зріз щоки (товстий) і шиї (тонка лінія). Cutaway: під тонкою лінією шиї малюється порожнеча і одна смужка мʼяза; олівець обводить.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "90afadae-2ce5-4639-9b09-7f7470940c71",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 21,
+  "cards": [
+   "c31",
+   "c32",
+   "c33"
+  ],
+  "t_start": 66.92,
+  "t_end": 73.2,
+  "dur_shot": 6.28,
+  "clip_dur": 8,
+  "start_image": "a04bf1b8-3d4f-49a2-9d7b-7bea0e5377bf",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Героїня в дзеркалі: пальці тягнуть шар густого білого крему вниз по шиї, шкіра зсувається за рукою (ворог). Той самий план, крупніше: долоня зупиняється, героїня дивиться на свої пальці в кремі. Той самий план: героїня повільно опускає руку; погляд у дзеркало.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "6e30033d-da26-44a4-9931-cb86102de597",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 22,
+  "cards": [
+   "c34",
+   "c35",
+   "c36",
+   "c37"
+  ],
+  "t_start": 73.2,
+  "t_end": 82.66,
+  "dur_shot": 9.46,
+  "clip_dur": 10,
+  "start_image": "7fa1c20e-40ba-40e4-858a-3ffa7b68d40d",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Кухня героїні, субота, ранкове світло. Марта (55, коротке сиве волосся, окуляри, зелений светр) за столом навпроти, дві чашки кави. Один довгий план. Той самий план: погляд Марти зупиняється на шарфі героїни. Той самий план: пауза, Марта мовчить. Той самий план: Марта простягає долоню.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "1a26af2b-074c-4014-afdf-93ef0dbffdac",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 23,
+  "cards": [
+   "c38"
+  ],
+  "t_start": 82.66,
+  "t_end": 84.16,
+  "dur_shot": 1.5,
+  "clip_dur": 5,
+  "start_image": "5485cfd1-865a-4b2d-9e86-e84e55abd73c",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Героїня ставить важку білу банку без назви на кухонний стіл поруч із чашками (ворог).",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "ce11cf7b-998d-486d-877b-90f468400f46",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 24,
+  "cards": [
+   "c39",
+   "c40"
+  ],
+  "t_start": 84.16,
+  "t_end": 88.44,
+  "dur_shot": 4.28,
+  "clip_dur": 5,
+  "start_image": "84e38348-52fb-4837-8858-d5af6a81b2c2",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Руки Марти перевертають банку; етикетка розмита, текст не читається. Крупно: палець Марти веде по розмитій етикетці.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "6c95ae5e-c475-45aa-9f56-eae73849c6d2",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 25,
+  "cards": [
+   "c41",
+   "c42"
+  ],
+  "t_start": 88.44,
+  "t_end": 94.26,
+  "dur_shot": 5.82,
+  "clip_dur": 8,
+  "start_image": "b75fdcbd-4172-4a66-854d-6ecc9a347546",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Обличчя Марти крупно, прямо. Марта показує рукою рух «вниз».",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "c3de9967-bcb9-4230-931f-8c1c5189af64",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 26,
+  "cards": [
+   "c43",
+   "c44"
+  ],
+  "t_start": 94.26,
+  "t_end": 101.16,
+  "dur_shot": 6.9,
+  "clip_dur": 8,
+  "start_image": "c0cfc758-d5f7-4688-9ad8-7949632dbacf",
+  "world": "cutaway",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Cutaway: суха зморщена губка на чорному тлі; падає одна крапля. Cutaway: губка розбухає і стає гладкою (прискорено).",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "982add79-7ceb-40ca-8c53-9afbdb40e668",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 27,
+  "cards": [
+   "c45",
+   "c46",
+   "c49"
+  ],
+  "t_start": 101.16,
+  "t_end": 113.68,
+  "dur_shot": 12.52,
+  "clip_dur": 12,
+  "start_image": "e30f4145-4979-4415-a169-a209f24f52df",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Рука Марти ставить на кухонний стіл лавандову скляну банку goPure з сріблястою кришкою (як на фото) і підсуває героїні. Героїня піднімає банку, зважує в долоні. Банка goPure в долоні героїні, крупно; Марта на другому плані.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "917b45c8-b993-4416-9019-ef35089cca45",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 28,
+  "cards": [
+   "c47",
+   "c48"
+  ],
+  "t_start": 105.7,
+  "t_end": 110.24,
+  "dur_shot": 4.54,
+  "clip_dur": 5,
+  "start_image": "547f91e5-d714-4515-a25c-4712658023f0",
+  "world": "cutaway",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Cutaway: плід купуасу і масло, макро, тропічне світло. Cutaway: макро — масло купуасу тане на шкірі, крапля води розтікається і зникає в ньому.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "7230df3e-5073-40b3-a370-dd1943961b86",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 29,
+  "cards": [
+   "c50"
+  ],
+  "t_start": 113.68,
+  "t_end": 117.24,
+  "dur_shot": 3.56,
+  "clip_dur": 5,
+  "start_image": "e9129c00-cad6-4da5-b1cb-d35f52ea4f13",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Ранок, героїня наносить крем goPure на шию рухами знизу вгору; банка поруч.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "ce89366d-92f1-47d8-a0bb-cca05316b490",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 30,
+  "cards": [
+   "c51",
+   "c52",
+   "c53"
+  ],
+  "t_start": 117.24,
+  "t_end": 123.7,
+  "dur_shot": 6.46,
+  "clip_dur": 8,
+  "start_image": "37004556-38bc-4a05-8ebe-d6b7b9674749",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Кухня, донька (25) заходить з чашкою. Донька дивиться, здивовано-тепло. Героїня торкається відкритої шиї, усміхається.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "status": "submit_429",
+  "note": "rate_limit_reached on first submit; resubmit"
+ },
+ {
+  "shot": 31,
+  "cards": [
+   "c54",
+   "c55"
+  ],
+  "t_start": 123.7,
+  "t_end": 131.2,
+  "dur_shot": 7.5,
+  "clip_dur": 8,
+  "start_image": "4b5bcd9b-6e98-4c8d-9b4b-f9f7ff089165",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Героїня біля вікна тримає телефон збоку, знімає профіль. Екран телефона: її профіль, шия відкрита (без тексту).",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "9bbd81e8-ec5f-4ad4-b405-1eccb0b2c112",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 32,
+  "cards": [
+   "c56",
+   "c57"
+  ],
+  "t_start": 131.2,
+  "t_end": 135.65,
+  "dur_shot": 4.45,
+  "clip_dur": 5,
+  "start_image": "be72c6c8-0eb2-4d98-9b5e-943c2011b902",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Макро шиї: гладка, щільна, природне світло; лінії тонші. Долоня проводить по шиї.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "status": "submit_429",
+  "note": "rate_limit_reached on first submit; resubmit"
+ },
+ {
+  "shot": 33,
+  "cards": [
+   "c58"
+  ],
+  "t_start": 135.65,
+  "t_end": 139.62,
+  "dur_shot": 3.97,
+  "clip_dur": 5,
+  "start_image": "e35ac693-4a38-4c2f-9cd5-72e6d58aa443",
+  "world": "cutaway",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Cutaway: кілька жінок 45–60 на сонячній вулиці, сміються, відкриті шиї; без тексту.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "3e72619a-23de-48ce-a314-c119e7173e3d",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 34,
+  "cards": [
+   "c59",
+   "c60"
+  ],
+  "t_start": 139.62,
+  "t_end": 143.5,
+  "dur_shot": 3.88,
+  "clip_dur": 5,
+  "start_image": "f8a7e6b4-16fa-4108-af5e-2b1d2f71953c",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Вечір, офіс у теплих гірляндах, люди з келихами. Молода колега у натовпі повертається.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "11d9d0a3-435b-4f1b-b4d4-f9825837b8f0",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 35,
+  "cards": [
+   "c61"
+  ],
+  "t_start": 143.5,
+  "t_end": 146.18,
+  "dur_shot": 2.68,
+  "clip_dur": 5,
+  "start_image": "a4bee617-c9ec-4b99-a37e-b8c2a6a4127c",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Героїня в сукні з V-вирізом і тонким ланцюжком, спокійна.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "status": "submit_429",
+  "note": "rate_limit_reached on first submit; resubmit"
+ },
+ {
+  "shot": 36,
+  "cards": [
+   "c62",
+   "c63"
+  ],
+  "t_start": 146.18,
+  "t_end": 152.72,
+  "dur_shot": 6.54,
+  "clip_dur": 8,
+  "start_image": "eb4c328a-4057-4bd9-aa76-836cf70cf306",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Колега дивиться на шию героїні, збентежено. Героїня крупно, пряма постава.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "28d288ae-6a01-45a0-b606-b86709670abd",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 37,
+  "cards": [
+   "c64",
+   "c65",
+   "c66",
+   "c67"
+  ],
+  "t_start": 152.72,
+  "t_end": 160.9,
+  "dur_shot": 8.18,
+  "clip_dur": 10,
+  "start_image": "9671192e-2951-436c-b77e-ee3decb36fd3",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Монтаж: застібка ланцюжка на шиї. Ноутбук: камера увімкнена, вона усміхається в дзвінку. Хтось фотографує її збоку; вона не відвертається. Руки чоловіка на плечах зі спини; вона розслаблена, кладе долоню на його руку.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "job_id": "df2bdb3d-551d-43c8-a81d-68b61ee18fdd",
+  "status": "pending",
+  "rc": 1
+ },
+ {
+  "shot": 38,
+  "cards": [
+   "c68",
+   "c69"
+  ],
+  "t_start": 160.9,
+  "t_end": 166.18,
+  "dur_shot": 5.28,
+  "clip_dur": 8,
+  "start_image": "2fe6b412-96ed-4fe8-bf1e-0bd64a22e831",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Дзеркало, героїня дивиться на себе спокійно. Той самий план, легка усмішка.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "status": "submit_429",
+  "note": "rate_limit_reached on first submit; resubmit"
+ },
+ {
+  "shot": 39,
+  "cards": [
+   "c70",
+   "c71"
+  ],
+  "t_start": 166.18,
+  "t_end": 171.12,
+  "dur_shot": 4.94,
+  "clip_dur": 8,
+  "start_image": "2b91ffb9-8904-4dcf-931c-6042f064b12e",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Шарф складений у шухляду, рука її зачиняє. Героїня у дзеркалі, погляд у камеру.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "status": "submit_429",
+  "note": "rate_limit_reached on first submit; resubmit"
+ },
+ {
+  "shot": 40,
+  "cards": [
+   "c72",
+   "c73"
+  ],
+  "t_start": 171.12,
+  "t_end": 177.4,
+  "dur_shot": 6.28,
+  "clip_dur": 8,
+  "start_image": "de2e736c-754f-4235-8720-841262522016",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Долоня на шиї, мʼяка посмішка. Той самий план, повільний відʼїзд.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "status": "submit_429",
+  "note": "rate_limit_reached on first submit; resubmit"
+ },
+ {
+  "shot": 41,
+  "cards": [
+   "c74",
+   "c75",
+   "c76"
+  ],
+  "t_start": 177.4,
+  "t_end": 188.08,
+  "dur_shot": 10.68,
+  "clip_dur": 12,
+  "start_image": "6db4d5fd-fdb6-43df-b72b-64a5dc7ced41",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: Героїня тримає банку goPure біля обличчя, тепле світло; банка як на фото. Банка в руці; за кадром нічого не змінюється. Банка в руці, вона повільно повертає її до камери і тримає нерухомо; за кадром нічого не змінюється.",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "status": "submit_429",
+  "note": "rate_limit_reached on first submit; resubmit"
+ },
+ {
+  "shot": 42,
+  "cards": [
+   "c77",
+   "c78",
+   "c79",
+   "c80"
+  ],
+  "t_start": 188.08,
+  "t_end": 200.87,
+  "dur_shot": 12.79,
+  "clip_dur": 12,
+  "start_image": "6ec2e604-2434-4b70-ba4b-b2c513680334",
+  "world": "hero",
+  "prompt": "Subtle realistic motion, handheld 35mm documentary feel, slow push-in, natural micro-movements, the person breathes and blinks, no camera shake, no text, no captions, no logos. Keep the exact face, hair, clothes, lighting and colour grade of the start image. Scene: End card: 3 банки — 2 055 ₴ (685/шт), бейдж «Найвигідніше»; поруч чашка кави. End card: печатка «60 днів гарантії повернення коштів». End card: «Оплата при отриманні · Нова Пошта», кнопка «Замовити». End card: у кутку — шовковий шарф, кинутий на стілець (callback).",
+  "params": {
+   "model": "seedance_2_0_mini",
+   "resolution": "480p",
+   "aspect_ratio": "9:16",
+   "generate_audio": false
+  },
+  "status": "static_endcard",
+  "note": "end card composed from still c77 + exact text via ffmpeg (no seedance)"
+ }
+]
