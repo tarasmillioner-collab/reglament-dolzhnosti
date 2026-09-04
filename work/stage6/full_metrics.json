@@ -1,0 +1,14 @@
+{
+ "name": "full",
+ "duration": 200.81,
+ "w": 480,
+ "h": 854,
+ "lufs": "I: -15.9 LUFS",
+ "max_gap_s": 0.0,
+ "asr_words": 431,
+ "ass_words": 440,
+ "matched": 370,
+ "median_abs_drift_ms": 20.0,
+ "p90_abs_drift_ms": 460.0,
+ "source": "tools/sandbox/verify.sh on full_rc1.mp4 (sha256[:16] ea57c789c04722e8) in Higgsfield sandbox"
+}
