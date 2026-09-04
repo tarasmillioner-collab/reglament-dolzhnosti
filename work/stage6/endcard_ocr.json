@@ -73,5 +73,6 @@
    "psm": 11,
    "text": "ям Фплаца чу йманнійноватіоита!"
   }
- ]
+ ],
+ "note_rc2": "rc2: текст end card (endcard.ass) не менялся, только тайминги; кадр rc2 (199.0 с) проверен глазами judge-final F1 по delta_r2_sheet.jpg/full_endcard.jpg; OCR-регионы — с кадра rc1 (тот же ASS-текст, та же плита c77)"
 }

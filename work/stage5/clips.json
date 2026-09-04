@@ -5,9 +5,9 @@
    "c01",
    "c02"
   ],
-  "t_start": 0.0,
-  "t_end": 3.98,
-  "dur_shot": 3.98,
+  "t_start": 0.14,
+  "t_end": 4.54,
+  "dur_shot": 4.4,
   "clip_dur": 5,
   "start_image": "e6c6d38e-c4ea-407d-8661-caa6d9a840b5",
   "world": "hero",
@@ -29,9 +29,9 @@
   "cards": [
    "c03"
   ],
-  "t_start": 3.98,
-  "t_end": 5.9,
-  "dur_shot": 1.92,
+  "t_start": 4.54,
+  "t_end": 6.42,
+  "dur_shot": 1.88,
   "clip_dur": 5,
   "start_image": "7faa87dd-db1b-46ea-9b57-a70b1c0bd94e",
   "world": "hero",
@@ -53,9 +53,9 @@
    "c04",
    "c05"
   ],
-  "t_start": 5.9,
-  "t_end": 10.6,
-  "dur_shot": 4.7,
+  "t_start": 6.42,
+  "t_end": 11.58,
+  "dur_shot": 5.16,
   "clip_dur": 8,
   "start_image": "df06dfe1-6489-415d-a358-bbd77a7d7a35",
   "world": "hero",
@@ -76,9 +76,9 @@
   "cards": [
    "c06"
   ],
-  "t_start": 10.6,
-  "t_end": 12.12,
-  "dur_shot": 1.52,
+  "t_start": 11.58,
+  "t_end": 13.68,
+  "dur_shot": 2.1,
   "clip_dur": 5,
   "start_image": "ec317834-681f-43a2-9cbf-a6b52b4af6d5",
   "world": "hero",
@@ -100,9 +100,9 @@
    "c07",
    "c08"
   ],
-  "t_start": 12.12,
-  "t_end": 16.08,
-  "dur_shot": 3.96,
+  "t_start": 13.68,
+  "t_end": 19.84,
+  "dur_shot": 6.16,
   "clip_dur": 5,
   "start_image": "80d2da5d-9d28-4090-b9ac-37e2fbefc63d",
   "world": "hero",
@@ -124,9 +124,9 @@
   "cards": [
    "c09"
   ],
-  "t_start": 16.08,
-  "t_end": 18.44,
-  "dur_shot": 2.36,
+  "t_start": 19.84,
+  "t_end": 22.26,
+  "dur_shot": 2.42,
   "clip_dur": 5,
   "start_image": "248dadfb-134b-469b-afea-585e915367ec",
   "world": "hero",
@@ -147,9 +147,9 @@
   "cards": [
    "c10"
   ],
-  "t_start": 18.44,
-  "t_end": 21.14,
-  "dur_shot": 2.7,
+  "t_start": 22.26,
+  "t_end": 24.82,
+  "dur_shot": 2.56,
   "clip_dur": 5,
   "start_image": "9353c8fc-0929-44b8-8764-f407326f3ac1",
   "world": "hero",
@@ -170,9 +170,9 @@
   "cards": [
    "c11"
   ],
-  "t_start": 21.14,
-  "t_end": 22.04,
-  "dur_shot": 0.9,
+  "t_start": 24.82,
+  "t_end": 25.94,
+  "dur_shot": 1.12,
   "clip_dur": 5,
   "start_image": "e1b2204b-d4b1-4821-87be-1eab22fe379b",
   "world": "hero",
@@ -193,9 +193,9 @@
   "cards": [
    "c12"
   ],
-  "t_start": 22.04,
-  "t_end": 24.62,
-  "dur_shot": 2.58,
+  "t_start": 25.94,
+  "t_end": 29.18,
+  "dur_shot": 3.24,
   "clip_dur": 5,
   "start_image": "9b3a4c6c-db35-4e26-9c60-78ad181062ab",
   "world": "hero",
@@ -216,9 +216,9 @@
   "cards": [
    "c13"
   ],
-  "t_start": 24.62,
-  "t_end": 26.8,
-  "dur_shot": 2.18,
+  "t_start": 29.18,
+  "t_end": 32.32,
+  "dur_shot": 3.14,
   "clip_dur": 5,
   "start_image": "6e13199a-2194-4f51-a14d-bbe168631ef8",
   "world": "cutaway",
@@ -240,9 +240,9 @@
   "cards": [
    "c14"
   ],
-  "t_start": 26.8,
-  "t_end": 30.46,
-  "dur_shot": 3.66,
+  "t_start": 32.32,
+  "t_end": 37.1,
+  "dur_shot": 4.78,
   "clip_dur": 5,
   "start_image": "df73bfff-4c1f-413a-b4b0-2a874ec75f8c",
   "world": "hero",
@@ -263,9 +263,9 @@
   "cards": [
    "c15"
   ],
-  "t_start": 30.46,
-  "t_end": 32.62,
-  "dur_shot": 2.16,
+  "t_start": 37.1,
+  "t_end": 39.28,
+  "dur_shot": 2.18,
   "clip_dur": 5,
   "start_image": "1485505e-ba11-4838-b9dc-f4b0732a59fd",
   "world": "hero",
@@ -286,9 +286,9 @@
   "cards": [
    "c16"
   ],
-  "t_start": 32.62,
-  "t_end": 35.32,
-  "dur_shot": 2.7,
+  "t_start": 39.28,
+  "t_end": 42.88,
+  "dur_shot": 3.6,
   "clip_dur": 5,
   "start_image": "5841d2b3-8499-4d0f-8d48-17f8a1d33218",
   "world": "hero",
@@ -310,9 +310,9 @@
   "cards": [
    "c17"
   ],
-  "t_start": 35.32,
-  "t_end": 37.58,
-  "dur_shot": 2.26,
+  "t_start": 42.88,
+  "t_end": 45.28,
+  "dur_shot": 2.4,
   "clip_dur": 5,
   "start_image": "dbbc0b1f-0b63-47af-9c4d-9c2a71eecab0",
   "world": "hero",
@@ -334,9 +334,9 @@
   "cards": [
    "c18"
   ],
-  "t_start": 37.58,
-  "t_end": 39.66,
-  "dur_shot": 2.08,
+  "t_start": 45.28,
+  "t_end": 47.1,
+  "dur_shot": 1.82,
   "clip_dur": 5,
   "start_image": "e74d2d3f-ea1f-4ff2-ba61-91f87e1fd4ae",
   "world": "hero",
@@ -357,9 +357,9 @@
   "cards": [
    "c19"
   ],
-  "t_start": 39.66,
-  "t_end": 41.98,
-  "dur_shot": 2.32,
+  "t_start": 47.1,
+  "t_end": 50.02,
+  "dur_shot": 2.92,
   "clip_dur": 5,
   "start_image": "d2403b78-d26e-4c84-9892-0f3a73b4c7e2",
   "world": "hero",

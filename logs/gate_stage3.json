@@ -5,12 +5,12 @@
     {
       "id": "G3-1",
       "pass": true,
-      "evidence": "TRANSPLANT.md таблица: 25 строк"
+      "evidence": "TRANSPLANT.md таблица: 29 строк"
     },
     {
       "id": "G3-2",
       "pass": true,
-      "evidence": "слов в SCRIPT_uk=427, донор=460 (±10%)"
+      "evidence": "слов в SCRIPT_uk=441, донор=460 (±10%)"
     },
     {
       "id": "G3-3",
@@ -40,7 +40,7 @@
     {
       "id": "G3-8",
       "pass": true,
-      "evidence": "начало продажи: клон 108.91 vs ДНК 108.91 (±5%)"
+      "evidence": "начало продажи: клон 107.72 vs ДНК 108.91 (±5%)"
     },
     {
       "id": "G3-9",
