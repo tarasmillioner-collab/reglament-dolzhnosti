@@ -1,0 +1,9 @@
+{
+ "source": "faster-whisper small (uk) on excerpt_rc1.mp4 audio vs captions.ass karaoke word starts (sequence-aligned), tools/sandbox/verify.sh",
+ "words_ass": 85,
+ "words_asr": 85,
+ "matched": 76,
+ "median_drift_ms": 20.0,
+ "p90_drift_ms": 400.0,
+ "note": "OCR-based check impossible locally (mp4 outside repo, CDN closed by egress); ASR-vs-ASS is the equivalent measurement"
+}

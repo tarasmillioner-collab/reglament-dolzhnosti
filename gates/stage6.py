@@ -3,13 +3,17 @@
 import json, os, re, subprocess, sys; sys.path.insert(0, os.path.dirname(__file__)); from common import *
 d = load_json("work/stage1/DNA.json", {}); ch = []
 fu = sorted([f for f in os.listdir(P("deliver")) if f.startswith("full_rc") and f.endswith(".mp4")]) if os.path.isdir(P("deliver")) else []
-ch.append(("G6-1", bool(fu), f"deliver/full_rcN.mp4: {fu[-1] if fu else 'нет'}"))
+urls = sorted([f for f in os.listdir(P("deliver")) if f.startswith("full_rc") and f.endswith(".url.md")]) if os.path.isdir(P("deliver")) else []
+ch.append(("G6-1", bool(fu), f"deliver/full_rcN.mp4: {fu[-1] if fu else 'нет в репо'}" + ("" if fu else f" (red carried: файл на CDN, см. deliver/{urls[-1]}; доставка — D-16)" if urls else "")))
+pr = None
 if fu:
-    p = P("deliver", fu[-1]); r = subprocess.run([sys.executable, P("tools","ffprobe_wrap.py"), p], capture_output=True, text=True); pr = json.loads(r.stdout)
-    ch.append(("G6-2", within(pr["duration"], d.get("duration_s", 0), 5), f"длительность {pr['duration']:.1f} vs донор {d.get('duration_s')} (±5%)"))
-    r = subprocess.run([sys.executable, P("tools","caption_ocr.py"), "--video", p, "--tail", "5", "--band", "0.2,0.95"], capture_output=True, text=True)
-    txt = " ".join(c["text"] for c in (json.loads(r.stdout).get("cards", []) if r.stdout.startswith("{") else [])) if False else ""
-    # OCR результат сохраняется отдельным вызовом с --out; здесь читаем work/stage6/endcard_ocr.json
+    p = P("deliver", fu[-1]); r = subprocess.run([sys.executable, P("tools","ffprobe_wrap.py"), p], capture_output=True, text=True); pr = json.loads(r.stdout); src = "ffprobe локально"
+else:
+    m = load_json("work/stage6/full_metrics.json", {})
+    if m: pr = {"duration": m["duration"]}; src = "метрики sandbox (tools/sandbox/verify.sh) на том же файле"
+if pr:
+    ch.append(("G6-2", within(pr["duration"], d.get("duration_s", 0), 5), f"длительность {pr['duration']:.1f} vs донор {d.get('duration_s')} (±5%) — {src}"))
+    # OCR end card: work/stage6/endcard_ocr.json (tesseract по кадру end card; кадр берётся из mp4 локально или из sandbox-кропа work/stage6/full_endcard.jpg)
     e = load_json("work/stage6/endcard_ocr.json", {}); alltxt = " ".join(c.get("text","") for c in e.get("cards", [])).lower()
     ch.append(("G6-3", any(k in alltxt for k in ("грн","₴")) and any(k in alltxt for k in ("гарант","60")), f"end card OCR: '{alltxt[:120]}'"))
 fl = read("FEEDBACK_LOG.md"); bad = [l for l in fl.splitlines() if "not-done" in l and len([c for c in l.split("|") if c.strip()]) < 5]

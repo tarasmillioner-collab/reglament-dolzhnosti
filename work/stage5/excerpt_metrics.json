@@ -1,0 +1,13 @@
+{
+ "name": "excerpt",
+ "duration": 42.0,
+ "w": 480,
+ "h": 854,
+ "lufs": "I: -15.9 LUFS",
+ "max_gap_s": 0.0,
+ "asr_words": 85,
+ "ass_words": 85,
+ "matched": 76,
+ "median_abs_drift_ms": 20.0,
+ "p90_abs_drift_ms": 400.0
+}

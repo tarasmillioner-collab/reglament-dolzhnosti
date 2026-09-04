@@ -27,7 +27,7 @@ def hand_flags(img):
         try: d = cv2.convexityDefects(c, hull)
         except Exception: continue
         if d is None: continue
-        deep = sum(1 for k in range(d.shape[0]) if d[k, 0, 3] / 256.0 > 0.03 * img.shape[0])
+        d = d.reshape(-1, 4); deep = sum(1 for k in range(d.shape[0]) if d[k, 3] / 256.0 > 0.03 * img.shape[0])
         if deep >= 6: flags.append(f"hand_like_blob_with_{deep+1}_fingers")
     return flags
 
