@@ -1,0 +1,270 @@
+{
+  "analysis": {
+    "product_name": "goPure Tighten & Lift",
+    "description": "Крем для шиї та декольте, 50 мл, матова лавандова скляна банка. 4% масла купуасу, Olive Lipid Complex, гідролізована гіалуронова кислота, кофеїн. Легка текстура, вбирається без липкості.",
+    "value_proposition": "Наповнює, а не замазує: масло купуасу утримує до 440% води й наповнює шкіру вологою без ваги, на відміну від густих кремів, що лягають на шию щоденним вантажем.",
+    "target_audience": "Жінки 45–60 в Україні: обличчя доглянуте, а шия видає вік; бояться уколів, втомились від липких кремів.",
+    "key_features": [
+      "4% масла купуасу (утримує до 440% води)",
+      "легка текстура, вбирається за хвилину",
+      "не липне до коміра й подушки",
+      "60 днів гарантії повернення грошей",
+      "оплата при отриманні на Новій Пошті"
+    ],
+    "pain_points": [
+      {
+        "pain": "Обличчя доглянуте, а шия видає вік",
+        "intensity": "high",
+        "source": "дослідження ринку"
+      },
+      {
+        "pain": "Густі креми липнуть до коміра й подушки — і не дають результату",
+        "intensity": "high",
+        "source": "відгуки"
+      },
+      {
+        "pain": "Страх уколів у шию («там же щитовидка»)",
+        "intensity": "medium",
+        "source": "відгуки"
+      },
+      {
+        "pain": "Доводиться ховати шию під шарфами",
+        "intensity": "medium",
+        "source": "карта ЦА"
+      }
+    ],
+    "tone": "сповідальний, свій, трохи злий на індустрію; без медичних обіцянок",
+    "pricing": "1 банка — 895 грн (було 1750), 2 — 1570 грн, 3 — 2055 грн",
+    "_note": "Аналіз і сценарії підготовлені вручну з брифів goPure (VSL v2, дослідження ринку) замість Gemini: ключа Gemini в цьому середовищі немає.",
+    "industry": "Б'юті · догляд за шиєю",
+    "one_liner": "Легкий крем для шиї з маслом купуасу: наповнює шкіру вологою без ваги, на відміну від густих кремів.",
+    "emotional_hooks": [
+      "Ваш крем не підтягує шию. Він тягне її вниз.",
+      "Є жінки, яким 55, а шия — як у 35.",
+      "І зніміть уже цей шарф."
+    ]
+  },
+  "scripts": [
+    {
+      "asset_id": "gopure_gravity_trap",
+      "title": "Гравітаційна пастка",
+      "style": "ugc",
+      "language": "uk",
+      "duration_seconds": 24,
+      "target_platform": "tiktok",
+      "hook_text": "Ваш крем тягне шию вниз",
+      "segments": [
+        {
+          "type": "hook",
+          "start": 0,
+          "end": 4,
+          "narration": "Ваш крем не підтягує шию. Він тягне її вниз.",
+          "visual": "actor_talking",
+          "broll_prompt": null,
+          "emotion": "ironic",
+          "subtitle_text": "Крем тягне шию вниз"
+        },
+        {
+          "type": "problem",
+          "start": 4.6,
+          "end": 8,
+          "narration": "Бо шкіра на шиї не кріпиться до кістки.",
+          "visual": "broll",
+          "broll_prompt": "55-year-old woman at a bathroom mirror pinches loose neck skin and lets it fall back (Gemini Omni Flash 1.1, 360p, 5s)",
+          "emotion": "frustrated",
+          "subtitle_text": "Шкіра не кріпиться до кістки"
+        },
+        {
+          "type": "solution",
+          "start": 8,
+          "end": 16,
+          "narration": "Густий крем лягає на неї, як щоденна гиря. Тому я перейшла на легкий — goPure Tighten and Lift.",
+          "visual": "actor_talking",
+          "broll_prompt": null,
+          "emotion": "confident",
+          "subtitle_text": "Легкий замість важкого"
+        },
+        {
+          "type": "demo",
+          "start": 16.4,
+          "end": 20.4,
+          "narration": "Масло купуасу наповнює шкіру вологою — без ваги.",
+          "visual": "broll",
+          "broll_prompt": "Close-up: fingertips spread light cream up the neck in slow upward strokes, goPure jar on the vanity (Gemini Omni Flash 1.1 image-to-video from a Nano Banana Pro frame, 5s)",
+          "emotion": "calm",
+          "subtitle_text": "Без ваги"
+        },
+        {
+          "type": "cta",
+          "start": 20.4,
+          "end": 24,
+          "narration": "Шістдесят днів гарантії. Посилання — в профілі.",
+          "visual": "actor_talking",
+          "broll_prompt": null,
+          "emotion": "confident",
+          "subtitle_text": "Посилання в профілі"
+        }
+      ],
+      "full_narration": "Ваш крем не підтягує шию. Він тягне її вниз. Бо шкіра на шиї не кріпиться до кістки. Густий крем лягає на неї, як щоденна гиря. Тому я перейшла на легкий — goPure Tighten and Lift. Масло купуасу наповнює шкіру вологою — без ваги. Шістдесят днів гарантії. Посилання — в профілі.",
+      "actor_description": "a 54 year old Ukrainian woman, shoulder-length dark blonde hair, warm skin tone, minimal makeup, cream silk V-neck blouse, natural real woman",
+      "hashtags": [
+        "#шия",
+        "#доглядзашкірою",
+        "#кремдляшиї",
+        "#goPure",
+        "#антивіковийдогляд",
+        "#українськакосметика",
+        "#ugc"
+      ],
+      "caption": "Ваш крем не підтягує шию — він тягне її вниз 😳 Густа текстура щодня лягає на тонку шкіру шиї вантажем. goPure Tighten & Lift з маслом купуасу — легкий, вбирається за хвилину й не липне. 60 днів гарантії, оплата при отриманні. Посилання в профілі 💜\n\nВідео створене за допомогою ШІ. Результати можуть відрізнятися."
+    },
+    {
+      "asset_id": "gopure_water_magnet",
+      "title": "Амазонський водяний магніт",
+      "style": "shock",
+      "language": "uk",
+      "duration_seconds": 24,
+      "target_platform": "tiktok",
+      "hook_text": "55 років, а шия — на 35",
+      "segments": [
+        {
+          "type": "hook",
+          "start": 0,
+          "end": 6.5,
+          "narration": "Є жінки, яким п'ятдесят п'ять, а шия — як у тридцять п'ять. Без уколів.",
+          "visual": "actor_talking",
+          "broll_prompt": null,
+          "emotion": "intrigued",
+          "subtitle_text": "55, а шия — на 35"
+        },
+        {
+          "type": "problem",
+          "start": 8.2,
+          "end": 12.2,
+          "narration": "Різниця в одному слові: вага. Густий крем лежить на шкірі шиї, як щоденна гиря.",
+          "visual": "broll",
+          "broll_prompt": "Macro slow motion: thick heavy cream sags and drips from a spoon (Gemini Omni Flash 1.1, 360p, 5s)",
+          "emotion": "serious",
+          "subtitle_text": "Різниця — вага"
+        },
+        {
+          "type": "solution",
+          "start": 12.2,
+          "end": 17,
+          "narration": "А масло купуасу з Амазонії утримує до чотирьохсот сорока відсотків води — і наповнює шкіру без ваги.",
+          "visual": "actor_talking",
+          "broll_prompt": null,
+          "emotion": "amazed",
+          "subtitle_text": "+440% води"
+        },
+        {
+          "type": "demo",
+          "start": 18.5,
+          "end": 22.5,
+          "narration": "goPure Tighten & Lift. Наповнює, а не замазує.",
+          "visual": "broll",
+          "broll_prompt": "Close-up: both hands smooth light cream up the neck to the jawline (Gemini Omni Flash 1.1 image-to-video, 5s)",
+          "emotion": "calm",
+          "subtitle_text": "Наповнює, а не замазує"
+        },
+        {
+          "type": "cta",
+          "start": 22.5,
+          "end": 24,
+          "narration": "Посилання — в профілі.",
+          "visual": "actor_talking",
+          "broll_prompt": null,
+          "emotion": "confident",
+          "subtitle_text": "Посилання в профілі"
+        }
+      ],
+      "full_narration": "Є жінки, яким п'ятдесят п'ять, а шия — як у тридцять п'ять. Без уколів. Різниця в одному слові: вага. Густий крем лежить на шкірі шиї, як щоденна гиря. А масло купуасу з Амазонії утримує до чотирьохсот сорока відсотків води — і наповнює шкіру без ваги. goPure Tighten & Lift. Наповнює, а не замазує. Посилання — в профілі.",
+      "actor_description": "faceless format: ElevenLabs v4 female narrator over Gemini Omni Flash scenes (elegant 55-year-old woman, cupuacu fruit, goPure jar)",
+      "hashtags": [
+        "#шия",
+        "#доглядзашкірою",
+        "#кремдляшиї",
+        "#goPure",
+        "#антивіковийдогляд",
+        "#українськакосметика",
+        "#купуасу",
+        "#skincaretok"
+      ],
+      "caption": "Чому в одних у 55 шия виглядає на 35? Без уколів — справа у вазі крему 🪶 Масло купуасу з Амазонії утримує до 440% води й наповнює шкіру вологою без ваги. goPure Tighten & Lift — наповнює, а не замазує. Посилання в профілі 💜\n\nВідео створене за допомогою ШІ. Результати можуть відрізнятися."
+    },
+    {
+      "asset_id": "gopure_scarf_story",
+      "title": "Три роки під шарфом",
+      "style": "story",
+      "language": "uk",
+      "duration_seconds": 24,
+      "target_platform": "tiktok",
+      "hook_text": "3 роки ховала шию",
+      "segments": [
+        {
+          "type": "hook",
+          "start": 0,
+          "end": 4.2,
+          "narration": "Три роки я ховала шию під шарфами.",
+          "visual": "actor_talking",
+          "broll_prompt": null,
+          "emotion": "embarrassed",
+          "subtitle_text": "3 роки під шарфом"
+        },
+        {
+          "type": "problem",
+          "start": 4.2,
+          "end": 8,
+          "narration": "Навіть у серпні.",
+          "visual": "broll",
+          "broll_prompt": "Woman at a hallway mirror drapes a beige silk scarf high under her chin (Gemini Omni Flash 1.1, 360p, 5s)",
+          "emotion": "sad",
+          "subtitle_text": "Навіть у серпні"
+        },
+        {
+          "type": "solution",
+          "start": 8,
+          "end": 16,
+          "narration": "Пробувала густі дорогі креми — шия тільки важчала. А потім подруга дала мені goPure.",
+          "visual": "actor_talking",
+          "broll_prompt": null,
+          "emotion": "relieved",
+          "subtitle_text": "А потім — goPure"
+        },
+        {
+          "type": "demo",
+          "start": 16.3,
+          "end": 20.3,
+          "narration": "Він легкий і вбирається за хвилину.",
+          "visual": "broll",
+          "broll_prompt": "Kitchen windowsill: fingertip scoops light cream from the goPure jar, it melts on the skin (Gemini Omni Flash 1.1 image-to-video, 5s)",
+          "emotion": "warm",
+          "subtitle_text": "Вбирається за хвилину"
+        },
+        {
+          "type": "cta",
+          "start": 20.3,
+          "end": 24,
+          "narration": "А шарф я вже зняла. Посилання — в профілі.",
+          "visual": "actor_talking",
+          "broll_prompt": null,
+          "emotion": "happy",
+          "subtitle_text": "Посилання в профілі"
+        }
+      ],
+      "full_narration": "Три роки я ховала шию під шарфами. Навіть у серпні. Пробувала густі дорогі креми — шия тільки важчала. А потім подруга дала мені goPure. Він легкий і вбирається за хвилину. А шарф я вже зняла. Посилання — в профілі.",
+      "actor_description": "the same 54 year old Ukrainian woman, shoulder-length dark blonde hair, grey knit top, beige silk scarf (first half) / open V-neck (ending)",
+      "hashtags": [
+        "#шия",
+        "#доглядзашкірою",
+        "#кремдляшиї",
+        "#goPure",
+        "#антивіковийдогляд",
+        "#українськакосметика",
+        "#історія",
+        "#доіпісля"
+      ],
+      "caption": "Три роки я ховала шию під шарфами. Навіть у серпні 🧣 Густі креми тільки обтяжували шкіру. goPure Tighten & Lift — легкий, вбирається за хвилину, не липне до коміра. Посилання в профілі 💜\n\nІсторія збірна, відео створене за допомогою ШІ. Результати можуть відрізнятися."
+    }
+  ]
+}

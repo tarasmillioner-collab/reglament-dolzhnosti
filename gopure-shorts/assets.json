@@ -1,0 +1,67 @@
+{
+  "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_39X4DueuoaObGccsCPKMarFan0M/",
+  "sets": {
+    "gopure_gravity_trap": {
+      "kind": "talking",
+      "models": {
+        "image": "Nano Banana Pro (Higgsfield)",
+        "video": "Gemini Omni Flash 1.1 · 360p · native Ukrainian speech",
+        "voice": "native speech of Gemini Omni Flash 1.1",
+        "broll": "Gemini Omni Flash 1.1 · 360p"
+      },
+      "actor": {"job": "f2d80ffd-34af-42cb-b9f8-3ca5e455f925", "file": "hf_20261002_200231_f2d80ffd-34af-42cb-b9f8-3ca5e455f925.png"},
+      "clips": [
+        {"job": "244fc292-bdb4-4d6e-8356-32b696caaf15", "file": "hf_20261002_200509_244fc292-bdb4-4d6e-8356-32b696caaf15.mp4", "say": "Ваш крем не підтягує шию. Він тягне її вниз. Бо шкіра на шиї не кріпиться до кістки."},
+        {"job": "a6feec26-974a-4a24-ada0-058c3dbcb40a", "file": "hf_20261002_200509_a6feec26-974a-4a24-ada0-058c3dbcb40a.mp4", "say": "Густий крем лягає на неї, як щоденна гиря. Тому я перейшла на легкий — goPure Tighten and Lift."},
+        {"job": "e9047ade-53e2-45a8-9582-bac93c5f276a", "file": "hf_20261002_200509_e9047ade-53e2-45a8-9582-bac93c5f276a.mp4", "say": "Масло купуасу наповнює шкіру вологою — без ваги. Шістдесят днів гарантії. Посилання — в профілі."}
+      ],
+      "broll": [
+        {"job": "7ca5f2fd-a084-4c11-b8ba-e352c5b2f742", "file": "hf_20261002_200308_7ca5f2fd-a084-4c11-b8ba-e352c5b2f742.mp4"},
+        {"job": "a3c0ed18-e354-4c7f-bc61-63d2e792db03", "file": "hf_20261002_200517_a3c0ed18-e354-4c7f-bc61-63d2e792db03.mp4"}
+      ],
+      "credits": {"nano_banana_pro_actor": 2, "nano_banana_pro_broll_frame": 2, "omni_flash_talking_3x8s": 24, "omni_flash_broll_2x5s": 10}
+    },
+    "gopure_water_magnet": {
+      "kind": "voiceover",
+      "models": {
+        "image": "Nano Banana Pro (Higgsfield)",
+        "video": "Gemini Omni Flash 1.1 · 360p (scenes, muted)",
+        "voice": "ElevenLabs v4 · voice Elena (Higgsfield)",
+        "broll": "Gemini Omni Flash 1.1 · 360p"
+      },
+      "actor": {"job": "99aa5922-d0c3-454d-bf0e-27053fc32b4a", "file": "hf_20261002_200231_99aa5922-d0c3-454d-bf0e-27053fc32b4a.png"},
+      "voice": {"job": "de5a6e47-d191-4eb0-9268-edd9ce2c8f3b", "file": "hf_20261002_200305_de5a6e47-d191-4eb0-9268-edd9ce2c8f3b.mp3"},
+      "clips": [
+        {"job": "dd027e2c-b1a3-45f7-a7f2-286374b0e79b", "file": "hf_20261002_200312_dd027e2c-b1a3-45f7-a7f2-286374b0e79b.mp4"},
+        {"job": "1e2ab322-ede0-4dc8-be6b-86bf10cfd0c3", "file": "hf_20261002_200318_1e2ab322-ede0-4dc8-be6b-86bf10cfd0c3.mp4"},
+        {"job": "8c700351-71ec-4a7d-957b-aaf5b720fbb0", "file": "hf_20261002_200509_8c700351-71ec-4a7d-957b-aaf5b720fbb0.mp4"},
+        {"job": "9985e3fc-bc9f-4383-91cc-7b0eff360441", "file": "hf_20261002_200509_9985e3fc-bc9f-4383-91cc-7b0eff360441.mp4"}
+      ],
+      "broll": [
+        {"job": "1b875acd-b21a-4615-97d9-fde3a974a4ce", "file": "hf_20261002_200308_1b875acd-b21a-4615-97d9-fde3a974a4ce.mp4"},
+        {"job": "4891ed93-5139-4b5c-83d0-36b28c38b7df", "file": "hf_20261002_200509_4891ed93-5139-4b5c-83d0-36b28c38b7df.mp4"}
+      ],
+      "credits": {"nano_banana_pro_packshots_2x": 4, "elevenlabs_v4_voice": 1.61, "omni_flash_scenes_4x8s": 32, "omni_flash_broll_2x5s": 10}
+    },
+    "gopure_scarf_story": {
+      "kind": "talking",
+      "models": {
+        "image": "Nano Banana Pro (Higgsfield)",
+        "video": "Gemini Omni Flash 1.1 · 360p · native Ukrainian speech",
+        "voice": "native speech of Gemini Omni Flash 1.1",
+        "broll": "Gemini Omni Flash 1.1 · 360p"
+      },
+      "actor": {"job": "907e40a2-521f-40f2-9734-4ff199f039a5", "file": "hf_20261002_200444_907e40a2-521f-40f2-9734-4ff199f039a5.png"},
+      "clips": [
+        {"job": "730a9140-cab1-4be1-ac55-3339ed885c21", "file": "hf_20261002_200542_730a9140-cab1-4be1-ac55-3339ed885c21.mp4", "say": "Три роки я ховала шию під шарфами. Навіть у серпні."},
+        {"job": "2938af4f-4e16-4545-9a95-96b0a85c6374", "file": "hf_20261002_200542_2938af4f-4e16-4545-9a95-96b0a85c6374.mp4", "say": "Пробувала густі дорогі креми — шия тільки важчала. А потім подруга дала мені goPure."},
+        {"job": "82bbe693-7df6-40b2-ba2e-f1422c2b2be8", "file": "hf_20261002_200542_82bbe693-7df6-40b2-ba2e-f1422c2b2be8.mp4", "say": "Він легкий і вбирається за хвилину. А шарф я вже зняла. Посилання — в профілі."}
+      ],
+      "broll": [
+        {"job": "a7b8b28d-f438-4730-ba4c-cdae803fe072", "file": "hf_20261002_200541_a7b8b28d-f438-4730-ba4c-cdae803fe072.mp4"},
+        {"job": "3156846b-8b12-4598-9d97-ff2acb53aa0b", "file": "hf_20261002_200509_3156846b-8b12-4598-9d97-ff2acb53aa0b.mp4"}
+      ],
+      "credits": {"nano_banana_pro_actor_frames_2x": 4, "nano_banana_pro_broll_frame": 2, "omni_flash_talking_3x8s": 24, "omni_flash_broll_2x5s": 10}
+    }
+  }
+}

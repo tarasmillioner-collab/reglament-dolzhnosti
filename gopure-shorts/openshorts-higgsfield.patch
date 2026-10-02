@@ -1,0 +1,590 @@
+diff --git a/app.py b/app.py
+index a781e94..6f34c2e 100644
+--- a/app.py
++++ b/app.py
+@@ -6880,7 +6880,7 @@ class SaaSGenerateRequest(BaseModel):
+     actor_description: Optional[str] = None
+     selected_actor_url: Optional[str] = None  # Pre-selected actor image URL
+     retry_job_id: Optional[str] = None
+-    video_mode: str = "lowcost"  # "lowcost" or "premium"
++    video_mode: str = "lowcost"  # "lowcost", "premium" or "higgsfield"
+     # Publishing to the public /gallery is opt-in: generated videos carry the
+     # user's product name, URL and full script.
+     share_to_gallery: bool = False
+@@ -6898,10 +6898,13 @@ async def saasshorts_generate(
+     fal_key = x_fal_key
+     elevenlabs_key = x_elevenlabs_key
+ 
+-    if not fal_key:
+-        raise HTTPException(status_code=400, detail="Missing fal.ai API Key (X-Fal-Key header)")
+-    if not elevenlabs_key:
+-        raise HTTPException(status_code=400, detail="Missing ElevenLabs API Key (X-ElevenLabs-Key header)")
++    # Higgsfield mode brings its own pre-generated assets (higgsfield_assets.py),
++    # so neither fal.ai nor ElevenLabs is called.
++    if req.video_mode != "higgsfield":
++        if not fal_key:
++            raise HTTPException(status_code=400, detail="Missing fal.ai API Key (X-Fal-Key header)")
++        if not elevenlabs_key:
++            raise HTTPException(status_code=400, detail="Missing ElevenLabs API Key (X-ElevenLabs-Key header)")
+ 
+     # Support retry: reuse output_dir so cached assets (image, voice, head, broll) are kept
+     reused = False
+diff --git a/dashboard/src/components/SaaShortsTab.jsx b/dashboard/src/components/SaaShortsTab.jsx
+index a1c59d1..e1dfdf1 100644
+--- a/dashboard/src/components/SaaShortsTab.jsx
++++ b/dashboard/src/components/SaaShortsTab.jsx
+@@ -17,6 +17,8 @@ const STYLE_OPTIONS = [
+ const STEPS = ['Setup', 'Analysis', 'Configure', 'Generate', 'Result'];
+ 
+ const CACHE_KEY = 'saasshorts_cache';
++
++const formatCost = (value, unit) => (unit === 'credits' ? `${value} cr` : `$${value}`);
+ const CACHE_MAX_AGE = 24 * 60 * 60 * 1000; // 24 hours
+ 
+ function loadCache() {
+@@ -32,10 +34,10 @@ function loadCache() {
+   } catch { return null; }
+ }
+ 
+-function saveCache(url, analysis, webResearch, scripts) {
++function saveCache(url, analysis, webResearch, scripts, videoMode) {
+   try {
+     localStorage.setItem(CACHE_KEY, JSON.stringify({
+-      url, analysis, webResearch, scripts, timestamp: Date.now(),
++      url, analysis, webResearch, scripts, videoMode, timestamp: Date.now(),
+     }));
+   } catch { /* localStorage full */ }
+ }
+@@ -53,7 +55,11 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+ 
+   // Step 0: URL input
+   const [url, setUrl] = useState(() => loadCache()?.url || '');
+-  const [videoMode, setVideoMode] = useState('lowcost'); // "lowcost" or "premium"
++  // "lowcost", "premium" or "higgsfield" (assets pre-generated on Higgsfield,
++  // no fal.ai / ElevenLabs keys needed). Remembered with the cached analysis.
++  const [videoMode, setVideoMode] = useState(() => loadCache()?.videoMode || 'lowcost');
++  const usesHiggsfield = videoMode === 'higgsfield';
++  const keysReady = usesHiggsfield || (falKey && elevenLabsKey);
+   const [description, setDescription] = useState('');
+   const [style, setStyle] = useState('ugc');
+   const [language, setLanguage] = useState('en');
+@@ -239,7 +245,7 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+       setFromCache(false);
+ 
+       // Cache results
+-      saveCache(url.trim(), data.analysis, data.web_research, data.scripts);
++      saveCache(url.trim(), data.analysis, data.web_research, data.scripts, videoMode);
+ 
+       // Pre-fill actor description and narration from first script
+       if (data.scripts.length > 0) {
+@@ -264,11 +270,11 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+   };
+ 
+   const handleGenerate = async () => {
+-    if (!falKey) {
++    if (!usesHiggsfield && !falKey) {
+       alert('fal.ai API key required. Set it in Settings.');
+       return;
+     }
+-    if (!elevenLabsKey) {
++    if (!usesHiggsfield && !elevenLabsKey) {
+       alert('ElevenLabs API key required. Set it in Settings.');
+       return;
+     }
+@@ -425,7 +431,7 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+               {/* Video Mode Selector */}
+               <div>
+                 <label className="eyebrow block mb-3">Video Mode</label>
+-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
++                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                   <button
+                     onClick={() => setVideoMode('lowcost')}
+                     className={`card card-hover p-4 text-left ${
+@@ -452,6 +458,19 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+                     <p className="readout mb-1.5">~$2.00 / VIDEO</p>
+                     <p className="text-xs text-muted leading-relaxed">Kling Avatar v2 Standard. Full integrated movement.</p>
+                   </button>
++                  <button
++                    onClick={() => setVideoMode('higgsfield')}
++                    className={`card card-hover p-4 text-left ${
++                      videoMode === 'higgsfield' ? 'border-brass' : ''
++                    }`}
++                  >
++                    <div className="flex items-center justify-between mb-1.5 gap-2">
++                      <span className={`text-sm font-medium lowercase ${videoMode === 'higgsfield' ? 'text-ink' : 'text-ink2'}`}>Higgsfield</span>
++                      <span className="badge-brass">native speech</span>
++                    </div>
++                    <p className="readout mb-1.5">~40 CREDITS / VIDEO</p>
++                    <p className="text-xs text-muted leading-relaxed">Nano Banana Pro actor, ElevenLabs v4 voice, Gemini Omni Flash video. Assets generated on Higgsfield.</p>
++                  </button>
+                 </div>
+               </div>
+ 
+@@ -1094,10 +1113,17 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+               <div className="card p-4">
+                 <div className="flex items-center justify-between mb-3">
+                   <span className="eyebrow">Estimated Cost</span>
+-                  <span className="readout text-ink">~${videoMode === 'lowcost' ? '0.65' : '2.50'}</span>
++                  <span className="readout text-ink">{usesHiggsfield ? '~40 credits' : `~$${videoMode === 'lowcost' ? '0.65' : '2.50'}`}</span>
+                 </div>
+                 <div className="space-y-1">
+-                  {(videoMode === 'lowcost'
++                  {(usesHiggsfield
++                    ? [
++                        ['Nano Banana Pro actor', '~2 cr'],
++                        ['ElevenLabs v4 voice', '<1 cr'],
++                        ['Gemini Omni Flash 360p video', '8 cr / 8s'],
++                        ['Omni Flash b-roll', '5 cr / 5s'],
++                      ]
++                    : videoMode === 'lowcost'
+                     ? [
+                         ['Flux image', '$0.05'],
+                         ['ElevenLabs voice', '$0.10'],
+@@ -1121,7 +1147,7 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+               </div>
+ 
+               {/* Missing keys warning */}
+-              {(!falKey || !elevenLabsKey) && (
++              {!keysReady && (
+                 <div className="p-3 bg-warn/10 rounded-input flex items-center gap-2 text-sm text-warn">
+                   <AlertCircle size={14} />
+                   {!falKey && 'fal.ai API key missing. '}{!elevenLabsKey && 'ElevenLabs API key missing. '}
+@@ -1151,7 +1177,7 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+               </button>
+               <button
+                 onClick={handleGenerate}
+-                disabled={!falKey || !elevenLabsKey || !selectedActor || generating}
++                disabled={!keysReady || !selectedActor || generating}
+                 className="btn-primary px-6 py-2 text-sm"
+               >
+                 {generating ? (
+@@ -1159,7 +1185,7 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+                 ) : !selectedActor ? (
+                   <><User size={14} /> Select an actor first</>
+                 ) : (
+-                  <><Film size={14} /> Generate video (~${videoMode === 'lowcost' ? '0.65' : '2.00'})</>
++                  <><Film size={14} /> {usesHiggsfield ? 'Generate video (Higgsfield assets)' : `Generate video (~$${videoMode === 'lowcost' ? '0.65' : '2.00'})`}</>
+                 )}
+               </button>
+             </div>
+@@ -1306,15 +1332,15 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+                     <div className="card p-4">
+                       <div className="eyebrow mb-2">Cost Breakdown</div>
+                       <div className="space-y-1">
+-                        {Object.entries(genResult.cost_estimate).filter(([k]) => k !== 'total').map(([k, v]) => (
++                        {Object.entries(genResult.cost_estimate).filter(([k]) => k !== 'total' && k !== 'unit').map(([k, v]) => (
+                           <div key={k} className="flex justify-between readout">
+                             <span>{k.replace(/_/g, ' ')}</span>
+-                            <span>${v}</span>
++                            <span>{formatCost(v, genResult.cost_estimate.unit)}</span>
+                           </div>
+                         ))}
+                         <div className="flex justify-between readout text-ink border-t border-rule pt-1.5 mt-1.5">
+                           <span>Total</span>
+-                          <span>${genResult.cost_estimate.total}</span>
++                          <span>{formatCost(genResult.cost_estimate.total, genResult.cost_estimate.unit)}</span>
+                         </div>
+                       </div>
+                     </div>
+diff --git a/higgsfield_assets.py b/higgsfield_assets.py
+new file mode 100644
+index 0000000..57d565a
+--- /dev/null
++++ b/higgsfield_assets.py
+@@ -0,0 +1,123 @@
++"""
++Higgsfield as an AI Shorts media provider.
++
++The built-in AI Shorts modes generate every asset themselves: an actor portrait
++on fal.ai, a voiceover on ElevenLabs, a lip-synced talking head on fal.ai and
++the b-roll on fal.ai. In "higgsfield" mode those four assets are produced on
++Higgsfield instead (Nano Banana Pro for images, ElevenLabs v4 for voice, Gemini
++Omni Flash for video with native speech) and dropped into an asset set; this
++module stages that set under the file names generate_full_video() already
++caches, so the rest of the pipeline (word-level subtitles, b-roll compositing,
++AI marking) runs unchanged.
++
++Asset set layout, one directory per script under HIGGSFIELD_ASSETS_DIR:
++
++    <asset_id>/
++        manifest.json   {"models": {...}, "credits": {...}}   (optional)
++        actor.png       actor portrait
++        head.mp4        the talking track, audio included
++        voice.mp3       optional; extracted from head.mp4 when missing
++        broll_0.mp4     b-roll for the first segment with visual="broll"
++        broll_1.mp4     ...
++
++The set is found by script["asset_id"], falling back to the slug of the title.
++"""
++
++import json
++import os
++import re
++import shutil
++import subprocess
++from typing import Callable, Dict, List
++
++ASSETS_DIR = os.environ.get(
++    "HIGGSFIELD_ASSETS_DIR",
++    os.path.join(os.path.dirname(os.path.abspath(__file__)), "output", "higgsfield_assets"),
++)
++
++
++def _slug(text: str) -> str:
++    return re.sub(r"[^a-z0-9]+", "_", (text or "").lower()).strip("_")
++
++
++def find_asset_set(script: dict) -> str:
++    candidates = [script.get("asset_id"), _slug(script.get("title", ""))]
++    for name in candidates:
++        if not name:
++            continue
++        path = os.path.join(ASSETS_DIR, name)
++        if os.path.isfile(os.path.join(path, "head.mp4")):
++            return path
++    raise FileNotFoundError(
++        f"No Higgsfield asset set for script '{script.get('title', '')}' in {ASSETS_DIR} "
++        f"(looked for {', '.join(c for c in candidates if c)})"
++    )
++
++
++def load_manifest(asset_dir: str) -> dict:
++    path = os.path.join(asset_dir, "manifest.json")
++    if not os.path.exists(path):
++        return {}
++    with open(path, encoding="utf-8") as f:
++        return json.load(f)
++
++
++def _extract_voice(head_path: str, voice_path: str) -> None:
++    subprocess.run(
++        ["ffmpeg", "-y", "-loglevel", "error", "-i", head_path, "-vn",
++         "-c:a", "libmp3lame", "-b:a", "160k", voice_path],
++        check=True,
++    )
++
++
++def stage_assets(
++    script: dict,
++    paths: Dict[str, str],
++    broll_paths: List[str],
++    log: Callable[[str], None] = print,
++) -> dict:
++    """Copy one asset set onto the cache paths generate_full_video() checks.
++
++    paths: {"actor": ..., "voice": ..., "head": ...}
++    broll_paths: cache path per b-roll segment, in segment order.
++    Returns the set's manifest.
++    """
++    asset_dir = find_asset_set(script)
++    manifest = load_manifest(asset_dir)
++    models = manifest.get("models", {})
++    log(f"[Higgsfield] Using asset set '{os.path.basename(asset_dir)}'")
++
++    actor_src = os.path.join(asset_dir, "actor.png")
++    if os.path.exists(actor_src) and not os.path.exists(paths["actor"]):
++        shutil.copy2(actor_src, paths["actor"])
++    log(f"  actor   <- {models.get('image', 'Higgsfield image')}")
++
++    shutil.copy2(os.path.join(asset_dir, "head.mp4"), paths["head"])
++    log(f"  video   <- {models.get('video', 'Higgsfield video')}")
++
++    voice_src = os.path.join(asset_dir, "voice.mp3")
++    if os.path.exists(voice_src):
++        shutil.copy2(voice_src, paths["voice"])
++    else:
++        _extract_voice(paths["head"], paths["voice"])
++    log(f"  voice   <- {models.get('voice', 'native audio of the video model')}")
++
++    staged = 0
++    for i, dest in enumerate(broll_paths):
++        src = os.path.join(asset_dir, f"broll_{i}.mp4")
++        if os.path.exists(src):
++            shutil.copy2(src, dest)
++            staged += 1
++    if broll_paths:
++        log(f"  b-roll  <- {models.get('broll', models.get('video', 'Higgsfield video'))} "
++            f"({staged}/{len(broll_paths)} clips)")
++    return manifest
++
++
++def cost_estimate(manifest: dict) -> dict:
++    """Credits as recorded by whoever generated the set (Higgsfield bills in credits)."""
++    credits = {k: v for k, v in manifest.get("credits", {}).items() if isinstance(v, (int, float))}
++    credits["ffmpeg_compositing"] = 0
++    credits["total"] = round(sum(credits.values()), 2)
++    credits["unit"] = "credits"
++    return credits
+diff --git a/saasshorts.py b/saasshorts.py
+index ff69863..26d4f70 100644
+--- a/saasshorts.py
++++ b/saasshorts.py
+@@ -16,6 +16,7 @@ import os
+ import re
+ import json
+ import time
++import difflib
+ import subprocess
+ 
+ from ffmpeg_utils import video_encode_args, DELIVERY, mark_ai_generated
+@@ -1068,7 +1069,7 @@ def _format_ass_time(seconds: float) -> str:
+     return f"{h}:{m:02d}:{s:02d}.{cs:02d}"
+ 
+ 
+-def transcribe_audio_for_subs(audio_path: str) -> list:
++def transcribe_audio_for_subs(audio_path: str, hint_text: Optional[str] = None) -> list:
+     """
+     Transcribe audio with word-level timestamps via the configured ASR backend.
+     Returns list of {"word": str, "start": float, "end": float}.
+@@ -1077,7 +1078,7 @@ def transcribe_audio_for_subs(audio_path: str) -> list:
+ 
+     print(f"[SaaSShorts] 🎙️ Transcribing audio for subtitles...")
+     try:
+-        transcript = transcribe_media(audio_path)
++        transcript = transcribe_media(audio_path, initial_prompt=hint_text)
+     finally:
+         # This runs inside the API process, like the thumbnail studio and
+         # the dubbed-subtitle path: the models must not stay resident
+@@ -1095,14 +1096,70 @@ def transcribe_audio_for_subs(audio_path: str) -> list:
+     return words
+ 
+ 
+-def generate_tiktok_subs(audio_path: str, output_path: str, max_words: int = 3) -> str:
++def _norm_token(token: str) -> str:
++    token = token.lower().replace("\u2019", "'").replace("\u02bc", "'")
++    return re.sub(r"[^\w']+", "", token)
++
++
++def align_words_to_script(words: list, script_text: str, keep_heard_digits: bool = True) -> list:
++    """Keep whisper's timing, take the spelling from the script.
++
++    AI Shorts voices are generated from a known script, so the script is the
++    truth for *what* is said and whisper only has to say *when*. Transcript
++    tokens are aligned to script tokens; matched runs keep their timestamps,
++    mismatched runs spread the script words over the same time span, and
++    transcript-only words (fillers, hallucinations) are dropped. A run where
++    whisper heard digits ("55") keeps the digits, they read better on screen
++    (keep_heard_digits=False returns exactly one entry per script word).
++    """
++    script_tokens = []
++    for token in script_text.split():
++        if _norm_token(token):
++            script_tokens.append(token)
++        elif script_tokens:  # a bare "—" or "&" stays glued to the word before it
++            script_tokens[-1] += " " + token
++    if not words or not script_tokens:
++        return words
++    heard = [_norm_token(w["word"]) for w in words]
++    wanted = [_norm_token(t) for t in script_tokens]
++    out = []
++    matcher = difflib.SequenceMatcher(None, heard, wanted, autojunk=False)
++    for tag, i1, i2, j1, j2 in matcher.get_opcodes():
++        if tag == "equal":
++            for k in range(i2 - i1):
++                out.append({**words[i1 + k], "word": script_tokens[j1 + k]})
++            continue
++        if tag == "delete":
++            continue
++        if keep_heard_digits and i2 > i1 and all(
++                any(c.isdigit() for c in words[k]["word"]) for k in range(i1, i2)):
++            out.extend(dict(words[k]) for k in range(i1, i2))
++            continue
++        if i2 > i1:
++            start, end = words[i1]["start"], words[i2 - 1]["end"]
++        else:
++            start = words[i1 - 1]["end"] if i1 > 0 else words[0]["start"]
++            end = words[i1]["start"] if i1 < len(words) else start + 0.3 * (j2 - j1)
++            if end <= start:
++                end = start + 0.2 * (j2 - j1)
++        step = (end - start) / (j2 - j1)
++        for k in range(j2 - j1):
++            out.append({"word": script_tokens[j1 + k],
++                        "start": start + k * step, "end": start + (k + 1) * step})
++    return out
++
++
++def generate_tiktok_subs(audio_path: str, output_path: str, max_words: int = 3,
++                         hint_text: Optional[str] = None) -> str:
+     """
+     Generate TikTok-style ASS subtitles from audio using Whisper transcription.
+ 
+     Style: Big bold centered text, 1-3 words at a time, white with black outline.
+     Matches actual spoken words with precise timestamps.
+     """
+-    words = transcribe_audio_for_subs(audio_path)
++    words = transcribe_audio_for_subs(audio_path, hint_text)
++    if words and hint_text:
++        words = align_words_to_script(words, hint_text)
+     if not words:
+         # Fallback: empty subtitle file
+         with open(output_path, "w") as f:
+@@ -1118,7 +1175,10 @@ def generate_tiktok_subs(audio_path: str, output_path: str, max_words: int = 3)
+         end = group[-1]["end"]
+         chunks.append({"text": text, "start": start, "end": end})
+ 
+-    # Build ASS file with TikTok style
++    # Build ASS file with TikTok style. AI_SHORTS_CAPTION_MARGIN_V lifts the
++    # captions out of the bottom strip that TikTok/Reels cover with their own
++    # UI (default 120 keeps the original placement).
++    margin_v = int(os.environ.get("AI_SHORTS_CAPTION_MARGIN_V", "120"))
+     ass_content = """[Script Info]
+ Title: TikTok Style Subs
+ ScriptType: v4.00+
+@@ -1128,11 +1188,11 @@ WrapStyle: 0
+ 
+ [V4+ Styles]
+ Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+-Style: TikTok,Arial Black,90,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,0,2,40,40,120,1
++Style: TikTok,Arial Black,90,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,0,2,40,40,{margin_v},1
+ 
+ [Events]
+ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+-"""
++""".replace("{margin_v}", str(margin_v))
+ 
+     for chunk in chunks:
+         start = _format_ass_time(chunk["start"])
+@@ -1367,6 +1427,24 @@ def generate_full_video(
+         shutil.copy2(selected_actor, actor_img)
+         log("[1/6] Using pre-selected actor image.")
+ 
++    # Higgsfield mode: actor, voice, talking track and b-roll were generated on
++    # Higgsfield; staging them on the cache paths makes every paid step below
++    # a cache hit, and subtitles + compositing run as usual.
++    video_mode = config.get("video_mode", "premium")
++    hf_manifest = None
++    if video_mode == "higgsfield":
++        from higgsfield_assets import stage_assets
++        n_broll = sum(
++            1 for seg in script.get("segments", [])
++            if seg.get("broll_prompt") and seg.get("visual") == "broll"
++        )
++        hf_manifest = stage_assets(
++            script,
++            {"actor": actor_img, "voice": audio_path, "head": talking_head},
++            [os.path.join(output_dir, f"{title_slug}_broll_{i}.mp4") for i in range(n_broll)],
++            log,
++        )
++
+     need_img = not _exists(actor_img)
+     need_voice = not _exists(audio_path)
+ 
+@@ -1395,7 +1473,6 @@ def generate_full_video(
+         log("[2/6] ✅ Using cached assets.")
+ 
+     # ── Step 3: Generate talking head ──
+-    video_mode = config.get("video_mode", "premium")
+     if not _exists(talking_head):
+         if video_mode == "lowcost":
+             log("[3/6] Generating talking head (Low Cost: Hailuo + VEED Lipsync)... This takes 2-5 minutes.")
+@@ -1458,7 +1535,7 @@ def generate_full_video(
+ 
+     # ── Step 5: Generate subtitles (from actual audio, not script text) ──
+     log("[5/6] Transcribing audio and generating TikTok-style subtitles...")
+-    generate_tiktok_subs(audio_path, srt_path, max_words=2)
++    generate_tiktok_subs(audio_path, srt_path, max_words=2, hint_text=full_narration)
+ 
+     # ── Step 6: Composite final video ──
+     log("[6/6] Compositing final video with FFmpeg...")
+@@ -1473,7 +1550,10 @@ def generate_full_video(
+ 
+     # Cost estimate
+     audio_duration = _get_media_duration(audio_path)
+-    if video_mode == "lowcost":
++    if video_mode == "higgsfield":
++        from higgsfield_assets import cost_estimate
++        cost = cost_estimate(hf_manifest or {})
++    elif video_mode == "lowcost":
+         cost = {
+             "actor_image_flux": 0.05,
+             "voiceover_elevenlabs": round(len(full_narration) * 0.00003, 3),
+@@ -1490,7 +1570,8 @@ def generate_full_video(
+             "broll_kling": round(len(broll_clips) * 5 * 0.07, 2),
+             "ffmpeg_compositing": 0.00,
+         }
+-    cost["total"] = round(sum(cost.values()), 2)
++    if video_mode != "higgsfield":
++        cost["total"] = round(sum(cost.values()), 2)
+ 
+     return {
+         "video_path": final_path,
+diff --git a/serve_dashboard.py b/serve_dashboard.py
+new file mode 100644
+index 0000000..5870637
+--- /dev/null
++++ b/serve_dashboard.py
+@@ -0,0 +1,20 @@
++"""Run the OpenShorts API and the built dashboard on one port.
++
++The repo's docker-compose runs the dashboard as a separate Vite dev server that
++proxies /api, /videos, /gallery and /video to the backend. Where Docker is not
++available we mount the production build (dashboard/dist) on the same FastAPI
++app instead: every API route is registered first, the static mount only
++catches what is left, so the dashboard's relative fetches hit the API as-is.
++"""
++import os
++
++from fastapi.staticfiles import StaticFiles
++
++from app import app
++
++DIST = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dashboard", "dist")
++app.mount("/", StaticFiles(directory=DIST, html=True), name="dashboard")
++
++if __name__ == "__main__":
++    import uvicorn
++    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", "8000")))
+diff --git a/subtitles.py b/subtitles.py
+index 78a22a8..301c322 100644
+--- a/subtitles.py
++++ b/subtitles.py
+@@ -32,6 +32,10 @@ WHISPER_TRANSCRIBE_PARAMS = {
+     "condition_on_previous_text": False,
+     "word_timestamps": True,
+ }
++# Short clips in a less common language (e.g. Ukrainian) are easily detected as
++# a neighbouring one; WHISPER_LANGUAGE pins the decode language when set.
++if os.environ.get("WHISPER_LANGUAGE"):
++    WHISPER_TRANSCRIBE_PARAMS["language"] = os.environ["WHISPER_LANGUAGE"]
+ 
+ 
+ def merge_continuation_words(words):
+diff --git a/transcribe_backends.py b/transcribe_backends.py
+index 2d98c04..153c8a0 100644
+--- a/transcribe_backends.py
++++ b/transcribe_backends.py
+@@ -225,8 +225,11 @@ def run_whisper_transcription(media_path, **params):
+         return _run_whisper_once(media_path, **params)
+ 
+ 
+-def _transcribe_with_whisper(media_path):
+-    segments, info = run_whisper_transcription(media_path, **WHISPER_TRANSCRIBE_PARAMS)
++def _transcribe_with_whisper(media_path, initial_prompt=None):
++    params = dict(WHISPER_TRANSCRIBE_PARAMS)
++    if initial_prompt:
++        params["initial_prompt"] = initial_prompt
++    segments, info = run_whisper_transcription(media_path, **params)
+ 
+     out_segments = []
+     text_parts = []
+@@ -534,8 +537,12 @@ def _has_audio_stream(media_path) -> bool:
+         return True  # probe failed — don't block, let the backend try
+ 
+ 
+-def transcribe_media(media_path):
+-    """Transcribe with the configured backend, falling back to whisper."""
++def transcribe_media(media_path, initial_prompt=None):
++    """Transcribe with the configured backend, falling back to whisper.
++
++    initial_prompt (whisper only) biases decoding toward known text, e.g. the
++    script an AI voice was generated from, so brand names come out spelled right.
++    """
+     # Silent videos (AI-generated clips, muted screen recordings) have no audio
+     # stream; every ASR backend then crashes deep inside libav with an opaque
+     # "tuple index out of range". Detect it up front and fail with a clear,
+@@ -561,4 +568,4 @@ def transcribe_media(media_path):
+             print(f"⚠️ [ASR] parakeet failed ({type(e).__name__}: {e}) — "
+                   f"falling back to whisper")
+ 
+-    return _transcribe_with_whisper(media_path)
++    return _transcribe_with_whisper(media_path, initial_prompt)
