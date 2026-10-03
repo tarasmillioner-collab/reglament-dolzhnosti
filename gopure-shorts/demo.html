@@ -1,0 +1,19 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>goPure × OpenShorts</title>
+<p style="font:16px/1.5 system-ui,sans-serif;padding:24px">Подставляю анализ и сценарии goPure и открываю дашборд…</p>
+<script>
+// Puts the browser in the state the dashboard leaves after an analysis
+// (cached analysis + the three goPure scripts, Higgsfield mode), then opens the app.
+fetch('/demo-data.json')
+  .then((r) => r.json())
+  .then((d) => {
+    localStorage.setItem('openshorts_skip_landing', '1');
+    localStorage.setItem('saasshorts_cache', JSON.stringify({
+      url: '', analysis: d.analysis, webResearch: null, scripts: d.scripts,
+      videoMode: 'higgsfield', timestamp: Date.now(),
+    }));
+    location.replace('/#app');
+  });
+</script>

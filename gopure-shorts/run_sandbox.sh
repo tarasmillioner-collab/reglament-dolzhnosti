@@ -10,6 +10,8 @@
 # 4. backend + built dashboard on :8000, Playwright drives the AI Shorts wizard per script
 # 5. collects the finished shorts, screenshots and the screen recording in $WORK/out/publish
 #    and, if $WORK/uploads.tsv appears (name<TAB>content-type<TAB>presigned PUT url), uploads them.
+#
+# MODE=live stops after step 3 and serves the dashboard on :8000 for a person to use.
 set -euo pipefail
 WORK=${1:-$HOME/gopure-run}
 OPENSHORTS_REV=06a119c280e545bc3f55f2b7b036d4c187630d50
@@ -55,6 +57,15 @@ export AI_SHORTS_CAPTION_MARGIN_V=560
 
 log "3/5 Higgsfield assets -> OpenShorts asset sets"
 python3 "$KIT/prepare_assets.py"
+
+if [ "${MODE:-record}" = live ]; then
+  # Live mode: serve the dashboard for a person instead of recording it.
+  # /gopure.html seeds the browser with the goPure analysis and scripts.
+  cp "$KIT/demo.html" openshorts/dashboard/dist/gopure.html
+  cp "$KIT/scripts_aligned.json" openshorts/dashboard/dist/demo-data.json
+  log "LIVE https://8000-${E2B_SANDBOX_ID:-sandbox}.e2b.app/gopure.html"
+  cd openshorts && exec python3 serve_dashboard.py
+fi
 
 log "4/5 backend + dashboard"
 (cd openshorts && nohup python3 serve_dashboard.py > "$WORK/backend.log" 2>&1 &)

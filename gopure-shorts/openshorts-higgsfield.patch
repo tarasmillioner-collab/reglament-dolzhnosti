@@ -30,7 +30,7 @@ index a781e94..6f34c2e 100644
      # Support retry: reuse output_dir so cached assets (image, voice, head, broll) are kept
      reused = False
 diff --git a/dashboard/src/components/SaaShortsTab.jsx b/dashboard/src/components/SaaShortsTab.jsx
-index a1c59d1..e1dfdf1 100644
+index a1c59d1..bd56264 100644
 --- a/dashboard/src/components/SaaShortsTab.jsx
 +++ b/dashboard/src/components/SaaShortsTab.jsx
 @@ -17,6 +17,8 @@ const STYLE_OPTIONS = [
@@ -55,7 +55,7 @@ index a1c59d1..e1dfdf1 100644
      }));
    } catch { /* localStorage full */ }
  }
-@@ -53,7 +55,11 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+@@ -53,7 +55,13 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
  
    // Step 0: URL input
    const [url, setUrl] = useState(() => loadCache()?.url || '');
@@ -65,10 +65,12 @@ index a1c59d1..e1dfdf1 100644
 +  const [videoMode, setVideoMode] = useState(() => loadCache()?.videoMode || 'lowcost');
 +  const usesHiggsfield = videoMode === 'higgsfield';
 +  const keysReady = usesHiggsfield || (falKey && elevenLabsKey);
++  // A Higgsfield asset set brings its own actor portrait; uploading one is optional.
++  const actorReady = usesHiggsfield || !!selectedActor;
    const [description, setDescription] = useState('');
    const [style, setStyle] = useState('ugc');
    const [language, setLanguage] = useState('en');
-@@ -239,7 +245,7 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+@@ -239,7 +247,7 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
        setFromCache(false);
  
        // Cache results
@@ -77,7 +79,7 @@ index a1c59d1..e1dfdf1 100644
  
        // Pre-fill actor description and narration from first script
        if (data.scripts.length > 0) {
-@@ -264,11 +270,11 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+@@ -264,11 +272,11 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
    };
  
    const handleGenerate = async () => {
@@ -91,7 +93,7 @@ index a1c59d1..e1dfdf1 100644
        alert('ElevenLabs API key required. Set it in Settings.');
        return;
      }
-@@ -425,7 +431,7 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+@@ -425,7 +433,7 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
                {/* Video Mode Selector */}
                <div>
                  <label className="eyebrow block mb-3">Video Mode</label>
@@ -100,7 +102,7 @@ index a1c59d1..e1dfdf1 100644
                    <button
                      onClick={() => setVideoMode('lowcost')}
                      className={`card card-hover p-4 text-left ${
-@@ -452,6 +458,19 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+@@ -452,6 +460,19 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
                      <p className="readout mb-1.5">~$2.00 / VIDEO</p>
                      <p className="text-xs text-muted leading-relaxed">Kling Avatar v2 Standard. Full integrated movement.</p>
                    </button>
@@ -120,7 +122,16 @@ index a1c59d1..e1dfdf1 100644
                  </div>
                </div>
  
-@@ -1094,10 +1113,17 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+@@ -1071,7 +1092,7 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+                   </div>
+                 )}
+ 
+-                {!selectedActor && (actorOptions.length > 0 || actorGallery.length > 0) && (
++                {!actorReady && (actorOptions.length > 0 || actorGallery.length > 0) && (
+                   <p className="text-xs lowercase text-warn mt-2 flex items-center gap-1"><AlertCircle size={12} /> Select an actor to continue</p>
+                 )}
+               </div>
+@@ -1094,10 +1115,17 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
                <div className="card p-4">
                  <div className="flex items-center justify-between mb-3">
                    <span className="eyebrow">Estimated Cost</span>
@@ -140,7 +151,7 @@ index a1c59d1..e1dfdf1 100644
                      ? [
                          ['Flux image', '$0.05'],
                          ['ElevenLabs voice', '$0.10'],
-@@ -1121,7 +1147,7 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+@@ -1121,7 +1149,7 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
                </div>
  
                {/* Missing keys warning */}
@@ -149,17 +160,18 @@ index a1c59d1..e1dfdf1 100644
                  <div className="p-3 bg-warn/10 rounded-input flex items-center gap-2 text-sm text-warn">
                    <AlertCircle size={14} />
                    {!falKey && 'fal.ai API key missing. '}{!elevenLabsKey && 'ElevenLabs API key missing. '}
-@@ -1151,7 +1177,7 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+@@ -1151,15 +1179,15 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
                </button>
                <button
                  onClick={handleGenerate}
 -                disabled={!falKey || !elevenLabsKey || !selectedActor || generating}
-+                disabled={!keysReady || !selectedActor || generating}
++                disabled={!keysReady || !actorReady || generating}
                  className="btn-primary px-6 py-2 text-sm"
                >
                  {generating ? (
-@@ -1159,7 +1185,7 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
-                 ) : !selectedActor ? (
+                   <><Loader2 size={14} className="animate-spin" /> Generating...</>
+-                ) : !selectedActor ? (
++                ) : !actorReady ? (
                    <><User size={14} /> Select an actor first</>
                  ) : (
 -                  <><Film size={14} /> Generate video (~${videoMode === 'lowcost' ? '0.65' : '2.00'})</>
@@ -167,7 +179,7 @@ index a1c59d1..e1dfdf1 100644
                  )}
                </button>
              </div>
-@@ -1306,15 +1332,15 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
+@@ -1306,15 +1334,15 @@ export default function SaaShortsTab({ geminiApiKey, elevenLabsKey, falKey, uplo
                      <div className="card p-4">
                        <div className="eyebrow mb-2">Cost Breakdown</div>
                        <div className="space-y-1">
